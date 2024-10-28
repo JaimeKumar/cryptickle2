@@ -1,0 +1,68 @@
+* {
+   box-sizing: border-box;
+   padding: 0%;
+   margin: 0%; 
+}
+
+body {
+    height: 100vh;
+    height: 100svh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameCont {
+    width: min(80vw, 300px);
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.gameCont table {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.cell {
+    background-color: white;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.cell p
+{
+    pointer-events: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.lineSelect
+{
+    background-color: rgb(206, 244, 255);
+}
+
+.cellSelect
+{
+    background-color: rgb(210, 255, 205);
+}
+
+#r1c1, #r1c3, #r1c5, #r3c1, #r3c3, #r3c5, #r5c1, #r5c3, #r5c5 {
+    background-color: black;
+    cursor: default;
+}
+
+.clueBox
+{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
