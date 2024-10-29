@@ -187,7 +187,8 @@ function checkFin()
 
 function showClue()
 {
-    document.getElementById("clue").innerHTML = puzzles[currentPuzzle].words[selectedLine].clue;
+    var thisClue = puzzles[currentPuzzle].words[selectedLine];
+    document.getElementById("clue").innerHTML = thisClue.clue + ` (${thisClue.word.length})`;
 }
 
 function keyPress(letter)
