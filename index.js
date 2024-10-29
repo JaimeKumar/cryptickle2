@@ -280,16 +280,21 @@ document.getElementById('pseudo').addEventListener('keydown', e => {
     }
 })
 
-for (var cellID in puzzles[currentPuzzle].cells)
+function start()
 {
-    if (!puzzles[currentPuzzle].cells[cellID].clickable) document.getElementById(cellID).classList.add("cellBlocked")
+    for (var cellID in puzzles[currentPuzzle].cells)
+    {
+        if (!puzzles[currentPuzzle].cells[cellID].clickable) document.getElementById(cellID).classList.add("cellBlocked")
+    }
+    
+    var timer = setInterval(() => {
+        time++;
+        var mins = Math.floor(time / 60);
+        var secs = time % 60;
+        document.getElementById("time").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
+    }, 1000)
+    
+    selectCell(Object.keys(puzzles[currentPuzzle].cells).filter(cID => puzzles[currentPuzzle].cells[cID].clickable)[0]);
 }
 
-var timer = setInterval(() => {
-    time++;
-    var mins = Math.floor(time / 60);
-    var secs = time % 60;
-    document.getElementById("time").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
-}, 1000)
-
-selectCell(Object.keys(puzzles[currentPuzzle].cells).filter(cID => puzzles[currentPuzzle].cells[cID].clickable)[0]);
+start();
