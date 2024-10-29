@@ -7,7 +7,10 @@
     <title>cryptickle</title>
 </head>
 <body>
+    <textarea id="pseudo" autofocus="true"></textarea>
+
     <div class="gameCont">
+        <div id="time">0:00</div>
         <table>
             <tr id="row1">
                 <td class="cell" id="r1c1"></td>
@@ -47,7 +50,52 @@
         </table>
 
         <div class="clueBox">
+            <div class="clueArrow" id="clueL" onclick="clueArrow(-1)"><p>&#10094;</p></div>
             <p id="clue"></p>
+            <div class="clueArrow" id="clueR" onclick="clueArrow(1)"><p>&#10095;</p></div>
+        </div>
+
+        <div class="mobileKB">
+            <div class="kbRow">
+                <div class="kbKey" id="q"><p>q</p></div>
+                <div class="kbKey" id="w"><p>w</p></div>
+                <div class="kbKey" id="e"><p>e</p></div>
+                <div class="kbKey" id="r"><p>r</p></div>
+                <div class="kbKey" id="t"><p>t</p></div>
+                <div class="kbKey" id="y"><p>y</p></div>
+                <div class="kbKey" id="u"><p>u</p></div>
+                <div class="kbKey" id="i"><p>i</p></div>
+                <div class="kbKey" id="o"><p>o</p></div>
+                <div class="kbKey" id="p"><p>p</p></div>
+            </div>
+            <div class="kbRow">
+                <div class="kbKey" id="a"><p>a</p></div>
+                <div class="kbKey" id="s"><p>s</p></div>
+                <div class="kbKey" id="d"><p>d</p></div>
+                <div class="kbKey" id="f"><p>f</p></div>
+                <div class="kbKey" id="g"><p>g</p></div>
+                <div class="kbKey" id="h"><p>h</p></div>
+                <div class="kbKey" id="j"><p>j</p></div>
+                <div class="kbKey" id="k"><p>k</p></div>
+                <div class="kbKey" id="l"><p>l</p></div>
+            </div>
+            <div class="kbRow">
+                <div class="kbKey" id="z"><p>z</p></div>
+                <div class="kbKey" id="x"><p>x</p></div>
+                <div class="kbKey" id="c"><p>c</p></div>
+                <div class="kbKey" id="v"><p>v</p></div>
+                <div class="kbKey" id="b"><p>b</p></div>
+                <div class="kbKey" id="n"><p>n</p></div>
+                <div class="kbKey" id="m"><p>m</p></div>
+                <div class="kbKey" id="bkspc" style="transform: rotate(180deg); width: calc(min(90vw, 450px) / 9); font-size: 1.2rem;"><p>&#8998;</p></div>
+            </div>
+        </div>
+
+        <div class="winWindow" id="winWindow">
+            <h1>SOLVED!</h1>
+            <h2 id="solveTime">0:00</h2>
+            <p>Very well done!</p>
+            <p>Come back tomorrow for a new tickle of cryptic!</p>
         </div>
     </div>
     <script src="index.js"></script>

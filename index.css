@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 * {
    box-sizing: border-box;
    padding: 0%;
    margin: 0%; 
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif
 }
 
 body {
@@ -14,13 +17,15 @@ body {
 }
 
 .gameCont {
-    width: min(80vw, 300px);
+    width: min(90vw, 450px);
     aspect-ratio: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     row-gap: 20px;
+    position: relative;
+    z-index: 100;
 }
 
 .gameCont table {
@@ -35,14 +40,12 @@ body {
     width: 20%;
     height: 20%;
     cursor: pointer;
-}
-
-.cell p
-{
-    pointer-events: none;
-    width: 100%;
     text-align: center;
+    vertical-align: middle;
     font-size: 2rem;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .lineSelect
@@ -52,12 +55,13 @@ body {
 
 .cellSelect
 {
-    background-color: rgb(210, 255, 205);
+    background-color: rgb(248, 255, 183);
 }
 
-#r1c1, #r1c3, #r1c5, #r3c1, #r3c3, #r3c5, #r5c1, #r5c3, #r5c5 {
+.cellBlocked {
     background-color: black;
     cursor: default;
+    pointer-events: none;
 }
 
 .clueBox
@@ -65,4 +69,108 @@ body {
     width: 100%;
     text-align: center;
     height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#clue
+{
+    height: min-content;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.clueArrow
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clueArrow p
+{
+    font-size: 2rem;
+    user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+    height: min-content;
+}
+
+.mobileKB
+{
+    display: none;
+    row-gap: 4px;
+    width: 100%;
+    align-items: center;
+}
+
+.kbRow
+{
+    display: flex;
+    column-gap: 4px;
+    width: 100%;
+    justify-content: center;
+}
+
+.kbKey
+{
+    border-radius: 4px;
+    width: calc(min(90vw, 450px) / 11);
+    padding: 8px 0;
+    box-shadow: 0 0 5px #00000055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kbKey p
+{
+    text-transform: uppercase;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.winWindow
+{
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 0 14px #000000cc;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    transition: transform 0.4s ease;
+    transform: scale(0.01);
+    visibility: hidden;
+}
+
+.winned
+{
+    transform: scale(1);
+    visibility: visible;
+}
+
+#pseudo
+{
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1100px) {
+    .mobileKB
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }

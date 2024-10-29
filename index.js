@@ -1,3 +1,14 @@
+class cell
+{
+    constructor()
+    {
+        this.val = "";
+        this.solution = "";
+        this.lineID = [];
+        this.clickable = false;
+    }
+}
+
 class word
 {
     constructor(w, clue)
@@ -7,160 +18,277 @@ class word
     }
 }
 
-const puzzles = [
+class puzzle
+{
+    constructor(words)
     {
-        "1a": new word("caked", "Shuffle the deck and add an Ace, now it's covered."),
-        "2a": new word("stray", "Feral flat fish on the street!"),
-        "1d": new word("cacti", "A tactic without a team is a mess, they're painful to touch."),
-        "2d": new word("regal", "Royal beer, bottoms up!")
-    },
-    {
-        "1a": new word("bowel", "Digestive organ puts energy into crockery")
+        this.words = {...words};
+        this.cells = {};
+        this.initCells();
     }
+        
+    initCells()
+    {
+        for (var i = 1; i < 6; i++)
+        {
+            for (var j = 1; j < 6; j++)
+            {
+                var cellID = `r${i}c${j}`;
+                this.cells[cellID] = new cell();
+            }
+        }
+
+        for (var lineid in this.words)
+        {
+            var dir = lineid.slice(1);
+            if (dir == "a")
+            {
+                var row = +lineid.slice(0, 1);
+                for (var i = 0; i < this.words[lineid].word.length; i++)
+                {
+                    var cellNum = i+1;
+                    var cellID = `r${row}c${cellNum}`;
+                    this.cells[cellID].solution = this.words[lineid].word.charAt(i);;
+                    this.cells[cellID].clickable = true;
+                    this.cells[cellID].lineID.push(lineid);
+                }
+            }
+            else if (dir == "d")
+            {
+                var col = +lineid.slice(0, 1);
+                for (var i = 0; i < this.words[lineid].word.length; i++)
+                {
+                    var cellNum = i+1;
+                    var cellID = `r${cellNum}c${col}`;
+                    this.cells[cellID].solution = this.words[lineid].word.charAt(i);;
+                    this.cells[cellID].clickable = true;
+                    this.cells[cellID].lineID.push(lineid);
+                }
+            }
+        }
+    }
+}
+
+const puzzles = [
+    new puzzle({
+        "2a": new word("caked", "Shuffle the deck and add an Ace, now it's covered."),
+        "4a": new word("stray", "Flat fish on the street, move away!"),
+        "2d": new word("cacti", "A tactic without a team is a mess, they're painful to touch."),
+        "4d": new word("regal", "Royal beer, bottoms up!")
+    }),
+
+    new puzzle({
+        "1a": new word("bowel", "Digestive organ puts energy into crockery")
+    })
 ]
 
 const currentPuzzle = 0;
 var dirSwitch = false;
-var selectedCell = null;
 var selectedLine = null;
-var cellPos = null;
-const bothDirCells = ["r2c2", "r2c4", "r4c2", "r4c4"];
-const cells = {
-    "r2c1": "",
-    "r2c2": "",
-    "r2c3": "",
-    "r2c4": "",
-    "r2c5": "",
-    "r4c1": "",
-    "r4c2": "",
-    "r4c3": "",
-    "r4c4": "",
-    "r4c5": "",
-    "r1c2": "",
-    "r2c2": "",
-    "r3c2": "",
-    "r4c2": "",
-    "r5c2": "",
-    "r1c4": "",
-    "r2c4": "",
-    "r3c4": "",
-    "r4c4": "",
-    "r5c4": ""
-}
-const lines = {
-    "1a": ["r2c1", "r2c2", "r2c3", "r2c4", "r2c5"],
-    "2a": ["r4c1", "r4c2", "r4c3", "r4c4", "r4c5"],
-    "1d": ["r1c2", "r2c2", "r3c2", "r4c2", "r5c2"],
-    "2d": ["r1c4", "r2c4", "r3c4", "r4c4", "r5c4"]
-}
+var selectedCell = null;
+var time = 0;
 
-function setSelected(cell)
+function selectCell(cell)
 {
-    if (selectedCell == cell && bothDirCells.includes(cell)) dirSwitch = !dirSwitch;
     selectedCell = cell;
+    calcLine();
+    updateHighlight();
+    showClue();
+}
 
-    Object.values(lines).forEach(line => line.forEach(c => 
-        {
-            document.getElementById(c).classList.remove("lineSelect");
-            document.getElementById(c).classList.remove("cellSelect");
-        }))
+function calcLine()
+{
+    if (puzzles[currentPuzzle].cells[selectedCell].lineID.length < 2)
+    {
+        selectedLine = puzzles[currentPuzzle].cells[selectedCell].lineID[0];
+    }
+    else
+    {
+        selectedLine = puzzles[currentPuzzle].cells[selectedCell].lineID[+dirSwitch];
+    }
+}
 
-    var clickedLines = [];
-    Object.keys(lines).forEach(lineID => {
-        if (lines[lineID].includes(cell))
-        {
-            clickedLines.push(lineID);
-        }
+function updateHighlight()
+{
+    Object.keys(puzzles[currentPuzzle].cells).forEach(cID => {
+        document.getElementById(cID).classList.remove("lineSelect");
+        document.getElementById(cID).classList.remove("cellSelect");
     })
 
-    highlightLine(clickedLines[clickedLines.length > 1 ? +dirSwitch : 0]);
+    Object.keys(puzzles[currentPuzzle].cells).filter(c => puzzles[currentPuzzle].cells[c].lineID.includes(selectedLine)).forEach(cID => {
+        document.getElementById(cID).classList.add("lineSelect");
+    })
+
+    document.getElementById(selectedCell).classList.add("cellSelect");
 }
 
-function highlightLine(line)
+function moveCell(dir)
 {
-    selectedLine = line;
-    lines[line].forEach(c => document.getElementById(c).classList.add("lineSelect"));    
-    showClue(line);
-    cellPos = lines[line].indexOf(selectedCell);
-    highlightCell(selectedCell);
-}
+    var row = "" + selectedCell.slice(1, 2);
+    var col = "" + selectedCell.slice(3);
+    var newRow = +row;
+    var newCol = +col;
+    var across = true;
 
-function highlightCell(cell)
-{
-    document.getElementById(cell).classList.add("cellSelect");
-    selectedCell = cell;
-}
+    switch(dir)
+    {
+        case "ArrowLeft":
+            newCol--
+            break;
+        case "ArrowUp":
+            newRow--;
+            across = false;
+            break;
+        case "ArrowRight":
+            newCol++;
+            break;
+        case "ArrowDown":
+            newRow++;
+            across = false;
+            break;
+    }
 
-function fillCell(cell, letter)
-{
-    document.getElementById(cell).innerHTML = `<p>${letter}</p>`;
-    cells[cell] = letter;
-    cellPos++;
-    if (cellPos > 4) cellPos = 4;
-    document.getElementById(cell).classList.remove("cellSelect");
-    highlightCell(lines[selectedLine][cellPos]);
-    checkFin();
+    var newCell = `r${newRow}c${newCol}`;
+
+    if (Object.keys(puzzles[currentPuzzle].cells).includes(newCell) && puzzles[currentPuzzle].cells[newCell].clickable)
+    {
+        if ((dir == "ArrowDown" || dir == "ArrowRight")  && puzzles[currentPuzzle].cells[newCell].val != "")
+        {
+            const cids = Object.keys(puzzles[currentPuzzle].cells);
+            const cellsAhead = across 
+                ? cids.filter(cID => cID.slice(1, 2) == row && cID.slice(3) > col) 
+                : cids.filter(cID => cID.slice(3) == col && cID.slice(1, 2) > row);
+            const emptyCellsAhead = cellsAhead.filter(cID => puzzles[currentPuzzle].cells[cID].val == "");
+            if (emptyCellsAhead.length > 0) 
+            {
+                dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
+                selectCell(emptyCellsAhead[0]);
+                return;
+            }
+        }
+        dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
+        selectCell(newCell);
+    }
 }
 
 function checkFin()
 {
-    var filledCells = 0;
-    Object.values(cells).forEach(cellVal => {
-        if (cellVal != "") filledCells++;
-    })
-    if (filledCells == 16) checkCorrect();
+    var clickables = Object.values(puzzles[currentPuzzle].cells).filter(c => c.clickable);
+    var correct = clickables.filter(c => c.val.toUpperCase() == c.solution.toUpperCase()).length;
+    if (correct >= clickables.length) 
+    {
+        clearInterval(timer);
+        var mins = Math.floor(time / 60);
+        var secs = time % 60;
+        document.getElementById("solveTime").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
+        document.getElementById('winWindow').classList.add("winned");
+    }
 }
 
-function checkCorrect()
+function showClue()
 {
-    var hasError = false;
-    Object.keys(lines).forEach(lineID => {
-        lines[lineID].forEach((c, i) => {
-            if (cells[c] != puzzles[currentPuzzle][lineID].word[i])
-            {
-                hasError = true;
-            }
-        })
-    })
-
-    if (!hasError) document.getElementById("clue").innerHTML = "CORRECT!";
+    document.getElementById("clue").innerHTML = puzzles[currentPuzzle].words[selectedLine].clue;
 }
 
-function showClue(line)
+function keyPress(letter)
 {
-    document.getElementById("clue").innerHTML = puzzles[currentPuzzle][line].clue;
+    if (!puzzles[currentPuzzle].cells[selectedCell].clickable) return;
+    document.getElementById(selectedCell).innerHTML = letter;
+    puzzles[currentPuzzle].cells[selectedCell].val = letter;
+    var dir = selectedLine.slice(1);
+    if (dir == "a") moveCell("ArrowRight");
+        else if (dir == "d") moveCell("ArrowDown")
+    checkFin();
 }
 
-window.addEventListener('mousedown', e => {
-    if (!Object.keys(cells).includes(e.target.id)) return;
-    setSelected(e.target.id);
+function backspace()
+{
+    if (!puzzles[currentPuzzle].cells[selectedCell].clickable) return;
+    if (document.getElementById(selectedCell).innerHTML == "")
+    {
+        var dir = selectedLine.slice(1);
+    if (dir == "a") moveCell("ArrowLeft");
+        else if (dir == "d") moveCell("ArrowUp")
+    }
+    else
+    {
+        puzzles[currentPuzzle].cells[selectedCell].val = "";
+        document.getElementById(selectedCell).innerHTML = "";
+    }
+}
+
+function clueArrow(dir)
+{
+    var currentWord = Object.keys(puzzles[currentPuzzle].words).indexOf(selectedLine);
+    var nWords = Object.keys(puzzles[currentPuzzle].words).length;
+    var newIndex = (nWords + currentWord + dir) % nWords;
+    selectedLine = Object.keys(puzzles[currentPuzzle].words)[newIndex];
+
+    var dir = "" + selectedLine.slice(1);
+    if (dir == "a") selectedCell = `r${selectedLine.slice(0, 1)}c1`;
+    else if (dir == "d") selectedCell = `r1c${selectedLine.slice(0, 1)}`;
+    updateHighlight();
+    showClue();
+}
+
+document.querySelectorAll('.cell').forEach(cellElement => {
+    cellElement.addEventListener('click', e => {
+        if (Object.keys(puzzles[currentPuzzle].cells).includes(e.target.id) && puzzles[currentPuzzle].cells[e.target.id].clickable)
+        {
+            if (selectedCell == e.target.id) dirSwitch = !dirSwitch;
+            selectCell("" + e.target.id);
+            document.getElementById('pseudo').focus();
+        }
+    })
 })
 
-window.addEventListener('keydown', e => {
+document.querySelectorAll('.kbKey').forEach(kbkey => {
+    kbkey.addEventListener('click', e => {
+        if (e.target.id == "bkspc")
+        {
+            backspace();
+            return;
+        }
+        keyPress(e.target.id);
+    });
+});
+
+document.getElementById('pseudo').addEventListener('keydown', e => {
+    if ((e.key.match(/[A-Z]/i) && e.key.length < 2) || e.key == "Backspace" || e.key == "Tab" || e.key.match(/Arrow/))
+    {
+        e.preventDefault();
+    }
+
     if (e.key.match(/[A-Z]/i) && e.key.length < 2 && selectedCell)
     {
-        fillCell(selectedCell, e.key);
+        keyPress(e.key);
     }
     else if (e.key == "Backspace" && selectedCell)
     {
-        fillCell(selectedCell, "");
+        backspace();
+    }
+    else if (e.key == "Tab")
+    {
+        e.preventDefault();
+        var dir = e.shiftKey ? -1 : 1;
+        clueArrow(dir);
     }
     else if (e.key.match(/Arrow/))
     {
-        switch(e.key)
-        {
-            case "ArrowLeft":
-            case "ArrowUp":
-                cellPos--;
-                if (cellPos < 0) cellPos = 0;
-                break;
-            case "ArrowRight":
-            case "ArrowDown":
-                cellPos++;
-                if (cellPos > 4) cellPos = 4;
-                break;
-        }
-        document.getElementById(selectedCell).classList.remove("cellSelect");
-        highlightCell(lines[selectedLine][cellPos]);
+        moveCell(e.key);
     }
 })
+
+for (var cellID in puzzles[currentPuzzle].cells)
+{
+    if (!puzzles[currentPuzzle].cells[cellID].clickable) document.getElementById(cellID).classList.add("cellBlocked")
+}
+
+var timer = setInterval(() => {
+    time++;
+    var mins = Math.floor(time / 60);
+    var secs = time % 60;
+    document.getElementById("time").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
+}, 1000)
+
+selectCell(Object.keys(puzzles[currentPuzzle].cells).filter(cID => puzzles[currentPuzzle].cells[cID].clickable)[0]);
