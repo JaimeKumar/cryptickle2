@@ -20,8 +20,8 @@ body {
 .helpButton
 {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     height: 18px;
     width: 18px;
     font-size: 0.8rem;
@@ -44,7 +44,7 @@ body {
     width: min(90vw, 450px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     row-gap: 20px;
     position: relative;
@@ -60,8 +60,13 @@ body {
 
 .logo span
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
+}
+
+.logo p
+{
+    font-size: 0.8rem;
 }
 
 .centralCont
@@ -94,6 +99,8 @@ tbody
     background-color: white;
     width: 20%;
     height: 20%;
+    min-width: calc((100% * 0.1) + 10px);
+    min-height: calc((100% * 0.1) + 10px);
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
@@ -157,7 +164,7 @@ tbody
     height: min-content;
 }
 
-.mobileKB
+/* .mobileKB
 {
     display: none;
     row-gap: 4px;
@@ -190,7 +197,7 @@ tbody
     pointer-events: none;
     user-select: none;
     -webkit-user-select: none;
-}
+} */
 
 .overScreen
 {
@@ -276,14 +283,14 @@ tbody
     position: absolute;
 }
 
-@media only screen and (max-width: 1100px)
+/* @media only screen and (max-width: 1100px)
 {
     .mobileKB
     {
         display: flex;
         flex-direction: column;
     }
-}
+} */
 
 @media only screen and (min-width: 1100px)
 {
