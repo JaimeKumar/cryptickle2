@@ -88,6 +88,27 @@ var selectedLine = null;
 var selectedCell = null;
 var time = 0;
 
+function getCellsInLine(line)
+{
+    var dir = line.slice(1);
+    var index = line.slice(0, 1);
+    var res = [];
+    if (dir == "a")
+    {
+        for (var i = 1; i < 6; i++)
+        {
+            res.push(`r${index}c${i}`);
+        }
+    }
+    else if (dir == "d")
+    {
+        for (var i = 1; i < 6; i++)
+        {
+            res.push(`r${i}c${index}`);
+        }
+    }
+}
+
 function selectCell(cell)
 {
     selectedCell = cell;
@@ -98,6 +119,7 @@ function selectCell(cell)
 
 function calcLine()
 {
+    console.log(selectedCell)
     if (puzzles[currentPuzzle].cells[selectedCell].lineID.length < 2)
     {
         selectedLine = puzzles[currentPuzzle].cells[selectedCell].lineID[0];
@@ -124,11 +146,11 @@ function updateHighlight()
 
 function moveCell(dir)
 {
+    // console.log(selectedCell)
     var row = "" + selectedCell.slice(1, 2);
     var col = "" + selectedCell.slice(3);
     var newRow = +row;
     var newCol = +col;
-    var across = true;
 
     switch(dir)
     {
@@ -137,52 +159,77 @@ function moveCell(dir)
             break;
         case "ArrowUp":
             newRow--;
-            across = false;
             break;
         case "ArrowRight":
             newCol++;
             break;
         case "ArrowDown":
             newRow++;
-            across = false;
             break;
     }
 
     var newCell = `r${newRow}c${newCol}`;
 
-    if (Object.keys(puzzles[currentPuzzle].cells).includes(newCell) && puzzles[currentPuzzle].cells[newCell].clickable)
-    {
-        if ((dir == "ArrowDown" || dir == "ArrowRight")  && puzzles[currentPuzzle].cells[newCell].val != "")
-        {
-            const cids = Object.keys(puzzles[currentPuzzle].cells);
-            const cellsAhead = across 
-                ? cids.filter(cID => cID.slice(1, 2) == row && cID.slice(3) > col) 
-                : cids.filter(cID => cID.slice(3) == col && cID.slice(1, 2) > row);
-            const emptyCellsAhead = cellsAhead.filter(cID => puzzles[currentPuzzle].cells[cID].val == "");
-            if (emptyCellsAhead.length > 0) 
-            {
-                dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
-                selectCell(emptyCellsAhead[0]);
-                return;
-            }
-        }
-        dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
-        selectCell(newCell);
-    }
-}
+    const cids = Object.keys(puzzles[currentPuzzle].cells);
+    const cellsAhead = (dir == "ArrowLeft" || dir == "ArrowRight")
+        ? cids.filter(cID => cID.slice(1, 2) == row && cID.slice(3) > col) 
+        : cids.filter(cID => cID.slice(3) == col && cID.slice(1, 2) > row);
+    const emptyCellsAhead = cellsAhead.filter(cID => puzzles[currentPuzzle].cells[cID].val == "");
 
-function checkFin()
-{
-    var clickables = Object.values(puzzles[currentPuzzle].cells).filter(c => c.clickable);
-    var correct = clickables.filter(c => c.val.toUpperCase() == c.solution.toUpperCase()).length;
-    if (correct >= clickables.length) 
+    if ((dir == "ArrowRight" || dir == "ArrowDown") && !Object.keys(puzzles[currentPuzzle].cells).includes(newCell))
     {
-        clearInterval(timer);
-        var mins = Math.floor(time / 60);
-        var secs = time % 60;
-        document.getElementById("solveTime").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
-        document.getElementById('winWindow').classList.add("winned");
+        if (emptyCellsAhead.length > 0) 
+        {
+            dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
+            selectCell(emptyCellsAhead[0]);
+        }
+        else
+        {
+            clueArrow(1);
+        }
     }
+    else if (Object.keys(puzzles[currentPuzzle].cells).includes(newCell) && puzzles[currentPuzzle].cells[newCell].clickable)
+    {
+        if (puzzles[currentPuzzle].cells[newCell].val == "")
+        {
+            dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
+            selectCell(newCell);
+        }
+        else if ((dir == "ArrowRight" || dir == "ArrowDown") && emptyCellsAhead.length > 0)
+        {
+            dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
+            selectCell(emptyCellsAhead[0]);
+        }
+        else
+        {
+            selectCell(newCell)
+        }
+    }
+
+    // if (Object.keys(puzzles[currentPuzzle].cells).includes(newCell) && puzzles[currentPuzzle].cells[newCell].clickable)
+    // {
+    //     if ((dir == "ArrowDown" || dir == "ArrowRight")  && puzzles[currentPuzzle].cells[newCell].val != "")
+    //     {
+    //         const cids = Object.keys(puzzles[currentPuzzle].cells);
+    //         const cellsAhead = across 
+    //             ? cids.filter(cID => cID.slice(1, 2) == row && cID.slice(3) > col) 
+    //             : cids.filter(cID => cID.slice(3) == col && cID.slice(1, 2) > row);
+    //         const emptyCellsAhead = cellsAhead.filter(cID => puzzles[currentPuzzle].cells[cID].val == "");
+
+    //         if (emptyCellsAhead.length > 0) 
+    //         {
+    //             dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
+    //             selectCell(emptyCellsAhead[0]);
+    //             return;
+    //         }
+    //     }
+    //     dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
+    //     selectCell(newCell);
+    // }
+    // else
+    // {
+    //     clueArrow(1);
+    // }
 }
 
 function showClue()
@@ -198,8 +245,9 @@ function keyPress(letter)
     puzzles[currentPuzzle].cells[selectedCell].val = letter;
     var dir = selectedLine.slice(1);
     if (dir == "a") moveCell("ArrowRight");
-        else if (dir == "d") moveCell("ArrowDown")
-    checkFin();
+        else if (dir == "d") moveCell("ArrowDown");
+    
+    if (checkFin()) checkSolution();
 }
 
 function backspace()
@@ -218,19 +266,97 @@ function backspace()
     }
 }
 
-function clueArrow(dir)
+function clueArrow(dir, override = false)
 {
     var currentWord = Object.keys(puzzles[currentPuzzle].words).indexOf(selectedLine);
     var nWords = Object.keys(puzzles[currentPuzzle].words).length;
     var newIndex = (nWords + currentWord + dir) % nWords;
-    selectedLine = Object.keys(puzzles[currentPuzzle].words)[newIndex];
+    var newSelectedLine = Object.keys(puzzles[currentPuzzle].words)[newIndex];
 
+    if (checkFin() && !override) return;
+
+    // var cellsInNewLine = getCellsInLine(newSelectedLine);
+    // var full = false;
+    // for (var i = 0; i < cellsInNewLine.lenght; i++)
+    // {
+    //     var cID = cellsInNewLine[0];
+    //     if (puzzles[currentPuzzle].cells[cID].val != "")
+    //     {
+    //         full = true;
+    //         break;
+    //     }
+    // }
+
+    // if (full)
+    // {
+    //     clueArrow(dir)
+    // }
+    // else
+    // {
+    //     selectedLine = newSelectedLine;
+    //     var dir = "" + selectedLine.slice(1);
+    //     if (dir == "a") selectedCell = `r${selectedLine.slice(0, 1)}c1`;
+    //     else if (dir == "d") selectedCell = `r1c${selectedLine.slice(0, 1)}`;
+    //     updateHighlight();
+    //     showClue();
+    // }
+
+    selectedLine = newSelectedLine;
     var dir = "" + selectedLine.slice(1);
     if (dir == "a") selectedCell = `r${selectedLine.slice(0, 1)}c1`;
     else if (dir == "d") selectedCell = `r1c${selectedLine.slice(0, 1)}`;
     updateHighlight();
     showClue();
 }
+
+function checkFin()
+{
+    var clickables = Object.values(puzzles[currentPuzzle].cells).filter(c => c.clickable);
+    var filled = clickables.filter(c => c.val != "").length;
+    if (filled >= clickables.length) return true;
+        else return false;
+}
+
+function checkSolution()
+{
+    var clickables = Object.values(puzzles[currentPuzzle].cells).filter(c => c.clickable);
+    var correct = clickables.filter(c => c.val.toUpperCase() == c.solution.toUpperCase()).length;
+    if (correct >= clickables.length) 
+    {
+        clearInterval(timer);
+        var mins = Math.floor(time / 60);
+        var secs = time % 60;
+        document.getElementById("solveTime").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
+        document.getElementById('overScreen').classList.add("showOverScreen");
+        document.getElementById('winWindow').classList.add("winned");
+    }
+}
+
+function help()
+{
+    document.getElementById('helpOverScreen').classList.add("showOverScreen");
+    document.getElementById('helpWindow').classList.add("helpShow");
+}
+
+function closeHelp()
+{
+    document.getElementById('helpOverScreen').classList.remove("showOverScreen");
+    document.getElementById('helpWindow').classList.remove("helpShow");
+}
+
+function closeWin()
+{
+    document.getElementById('overScreen').classList.remove("showOverScreen");
+    document.getElementById('winWindow').classList.remove("winned");
+}
+
+document.querySelectorAll('.overScreen').forEach(cellElement => {
+    cellElement.addEventListener('click', e => {
+        if (e.target.id == "overScreen") closeWin();
+        if (e.target.id == "helpOverScreen") closeHelp();
+        document.getElementById('pseudo').focus();
+    })
+})
 
 document.querySelectorAll('.cell').forEach(cellElement => {
     cellElement.addEventListener('click', e => {
@@ -253,6 +379,10 @@ document.querySelectorAll('.kbKey').forEach(kbkey => {
         keyPress(e.target.id);
     });
 });
+
+document.getElementById('gameCont').addEventListener('click', e => {
+    document.getElementById('pseudo').focus();
+})
 
 document.getElementById('pseudo').addEventListener('keydown', e => {
     if ((e.key.match(/[A-Z]/i) && e.key.length < 2) || e.key == "Backspace" || e.key == "Tab" || e.key.match(/Arrow/))

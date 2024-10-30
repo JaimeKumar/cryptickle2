@@ -8,8 +8,8 @@
 </head>
 <body>
     <textarea id="pseudo" autofocus="true"></textarea>
-    <div class="helpButton"><p>?</p></div>
-    <div class="gameCont">
+    <div class="helpButton" onclick="help()"><p>?</p></div>
+    <div class="gameCont" id="gameCont">
         <div class="logo">
             <span>cryptickle</span>
             <p>A tickle of cryptic! (10)</p>
@@ -58,9 +58,9 @@
             </table>
     
             <div class="clueBox">
-                <div class="clueArrow" id="clueL" onclick="clueArrow(-1)"><p>&#10094;</p></div>
+                <div class="clueArrow" id="clueL" onclick="clueArrow(-1, true)"><p>&#10094;</p></div>
                 <p id="clue"></p>
-                <div class="clueArrow" id="clueR" onclick="clueArrow(1)"><p>&#10095;</p></div>
+                <div class="clueArrow" id="clueR" onclick="clueArrow(1, true)"><p>&#10095;</p></div>
             </div>
         </div>
 
@@ -99,12 +99,33 @@
                 <div class="kbKey" id="bkspc" style="transform: rotate(180deg); width: calc(min(90vw, 450px) / 9); font-size: 1.2rem;"><p>&#8998;</p></div>
             </div>
         </div>
+    </div>
 
+    <div id="overScreen" class="overScreen">
         <div class="winWindow" id="winWindow">
+            <div class="closeButton" onclick="closeWin()">&#10006;</div>
             <h1>SOLVED!</h1>
             <h2 id="solveTime">0:00</h2>
             <p>Very well done!</p>
             <p>Come back tomorrow for a new tickle of cryptic!</p>
+        </div>
+    </div>
+
+    <div class="overScreen" id="helpOverScreen">
+        <div class="helpWindow" id="helpWindow">
+            <div class="closeButton" onclick="closeHelp()">&#10006;</div>
+            <h2>Cryptic clues</h2>
+            <span>Clues will always start or end with a synonym (or sometimes a description) of the answer's definition. Some words can also provide an indication of how you should solve the puzzle. These are called indicators:</span>
+            <h3>Anagram Indicators</h3>
+            <span>Words like shuffled, mixed, confused, broken, drunk, smashed & upset can all indicate you should find an anagram.</span>
+            <h3>Homophone Indicators</h3>
+            <span>Phrases like sounds like, I hear, I say, outspoken & reportedly can all indicate the use of a homophone. <br>e.g - 'I hear a big cat isn't telling the truth' - sounds like Lion... LYING</span>
+            <h3>Reversal Indicators</h3>
+            <span>These words suggest you should reverse a word or some letters: reflected, flipped over, come back, knocked over & around.</span>
+            <h3>Hidden Word Indicators</h3>
+            <span>Phrases like buried in, surrounded by, part of & a bit of can indicate a word is hidden within another.</span>
+            <h3>Deletion Indicators</h3>
+            <span>Some words indicate you should remove some letters from a word, such as excluding, without, dropped & cut. Other words can refer to letter positions such as opener, head, tail, end, half & center, which can indicate you should build a word out of letters from other words.</span>
         </div>
     </div>
     <script src="index.js"></script>
