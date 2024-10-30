@@ -409,14 +409,31 @@ document.getElementById('pseudo').addEventListener('keydown', e => {
 })
 
 window.visualViewport.addEventListener('resize', () => {
-    const newViewportHeight = window.innerHeight;
-    console.log(newViewportHeight)
-    var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
-    document.getElementById("gameTable").style.height = tableW+'px';
+    handleResize();
 });
 
-var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
-document.getElementById("gameTable").style.height = tableW+'px';
+function handleResize()
+{
+    const computedStyle = window.getComputedStyle(document.getElementById("gameCont"));
+    const paddingTop = +computedStyle.paddingTop.slice(0, -2);
+    const paddingBot = +computedStyle.paddingBottom.slice(0, -2);
+    const logoH = document.getElementById("logo").getBoundingClientRect().height;
+    const kbH = document.getElementById("mobileKB").getBoundingClientRect().height;
+    const centralContH = document.getElementById("centralCont").getBoundingClientRect().height;
+
+    const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40;
+    
+    var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
+    
+    if (totalH > window.innerHeight)
+    {
+        tableW = tableW - (totalH - window.innerHeight);
+        document.getElementById("gameTable").style.width = tableW+'px';
+    }
+    document.getElementById("gameTable").style.height = tableW+'px';
+}
+
+handleResize();
 
 for (var cellID in puzzles[currentPuzzle].cells)
 {
