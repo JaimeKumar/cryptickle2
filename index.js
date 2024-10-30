@@ -408,6 +408,12 @@ document.getElementById('pseudo').addEventListener('keydown', e => {
     }
 })
 
+window.addEventListener('resize', () => {
+    const newViewportHeight = window.innerHeight;
+    
+    console.log(newViewportHeight)
+});
+
 var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
 console.log(tableW)
 document.getElementById("gameTable").style.height = tableW+'px';
@@ -425,3 +431,4 @@ var timer = setInterval(() => {
 }, 1000)
 
 selectCell(Object.keys(puzzles[currentPuzzle].cells).filter(cID => puzzles[currentPuzzle].cells[cID].clickable)[0]);
+document.getElementById('pseudo').focus();
