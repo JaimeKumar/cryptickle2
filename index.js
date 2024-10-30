@@ -119,7 +119,6 @@ function selectCell(cell)
 
 function calcLine()
 {
-    console.log(selectedCell)
     if (puzzles[currentPuzzle].cells[selectedCell].lineID.length < 2)
     {
         selectedLine = puzzles[currentPuzzle].cells[selectedCell].lineID[0];
@@ -146,7 +145,6 @@ function updateHighlight()
 
 function moveCell(dir)
 {
-    // console.log(selectedCell)
     var row = "" + selectedCell.slice(1, 2);
     var col = "" + selectedCell.slice(3);
     var newRow = +row;

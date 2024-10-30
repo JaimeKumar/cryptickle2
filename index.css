@@ -71,7 +71,9 @@ body {
 
 .centralCont
 {
-    width: min(100%, 45svh);
+    --thisHeight: min(100%, 45svh);
+    width: var(--thisHeight);
+    height: var(--thisHeight);
     display: flex;
     align-items: center;
     justify-content: center;
