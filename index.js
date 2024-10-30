@@ -429,6 +429,7 @@ function handleResize()
     console.log("kbH: " + kbH)
     console.log("contH: " + centralContH)
     console.log("totalH: " + totalH)
+    console.log("visViewPortH: " + window.visualViewport.height)
     console.log("screenavailH: " + screen.availHeight)
     
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
