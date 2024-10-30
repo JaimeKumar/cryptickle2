@@ -16,7 +16,25 @@ body {
     align-items: center;
 }
 
-.gameCont {
+.helpButton
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 18px;
+    width: 18px;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gameCont
+{
     width: min(90vw, 450px);
     display: flex;
     flex-direction: column;
