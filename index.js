@@ -410,12 +410,12 @@ document.getElementById('pseudo').addEventListener('keydown', e => {
 
 window.visualViewport.addEventListener('resize', () => {
     const newViewportHeight = window.innerHeight;
-    
     console.log(newViewportHeight)
+    var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
+    document.getElementById("gameTable").style.height = tableW+'px';
 });
 
 var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
-console.log(tableW)
 document.getElementById("gameTable").style.height = tableW+'px';
 
 for (var cellID in puzzles[currentPuzzle].cells)
