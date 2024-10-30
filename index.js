@@ -422,12 +422,21 @@ function handleResize()
     const centralContH = document.getElementById("centralCont").getBoundingClientRect().height;
 
     const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40;
+
+    console.log("padT: " + paddingTop)
+    console.log("padB: " + paddingBot)
+    console.log("logoH: " + logoH)
+    console.log("kbH: " + kbH)
+    console.log("contH: " + centralContH)
+    console.log("totalH: " + totalH)
+    console.log("visViewPortH: " + window.visualViewport.height)
+    console.log("screenavailH: " + screen.availHeight)
     
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
     
-    if (totalH > window.visualViewport.height)
+    if (totalH > screen.availHeight)
     {
-        tableW = tableW - (totalH - window.visualViewport.height);
+        tableW = tableW - (totalH - screen.availHeight);
         document.getElementById("gameTable").style.width = tableW+'px';
     }
     document.getElementById("gameTable").style.height = tableW+'px';
