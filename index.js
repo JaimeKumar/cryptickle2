@@ -434,9 +434,9 @@ function handleResize()
     
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
     
-    if (totalH > screen.availHeight)
+    if (totalH > window.visualViewport.height)
     {
-        tableW = tableW - (totalH - screen.availHeight);
+        tableW = tableW - (totalH - window.visualViewport.height);
         document.getElementById("gameTable").style.width = tableW+'px';
     }
     document.getElementById("gameTable").style.height = tableW+'px';
