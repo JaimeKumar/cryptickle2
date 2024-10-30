@@ -408,7 +408,7 @@ document.getElementById('pseudo').addEventListener('keydown', e => {
     }
 })
 
-window.addEventListener('resize', () => {
+window.visualViewport.addEventListener('resize', () => {
     const newViewportHeight = window.innerHeight;
     
     console.log(newViewportHeight)
