@@ -80,20 +80,28 @@ const puzzles = {
 
 function returnPuzzle(year, month, day)
 {
-    return puzzles[year][month][day];    
+    var res = puzzles[year][month][day];
+    if (!res) return null;
+    return res;    
 }
 
 function returnYears(currentYear)
 {
-  return Object.keys(puzzles).filter(yr => +yr <= currentYear);
+    var res = Object.keys(puzzles).filter(yr => +yr <= currentYear);
+    if (!res) return null;
+    return res; 
 }
 
 function returnMonths(year, currentMonth)
 {
-  return Object.keys(puzzles[year]).filter(mo => +mo <= currentMonth);
+    var res = Object.keys(puzzles[year]).filter(mo => +mo <= currentMonth);
+    if (!res) return null;
+    return res; 
 }
 
 function returnDays(year, month, currentDay)
 {
-  return Object.keys(puzzles[year][month]).filter(da => +da <= currentDay);
+    var res = Object.keys(puzzles[year][month]).filter(da => +da <= currentDay);
+    if (!res) return null;
+    return res;
 }
