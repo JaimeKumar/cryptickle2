@@ -68,7 +68,6 @@ const today = new Date();
 const year = today.getFullYear();
 const month = today.getMonth() + 1;
 const day = today.getDate();  
-var thisPuzzle = new puzzle(returnPuzzle(year, month, day)); 
 
 var dirSwitch = false;
 var selectedLine = null;
@@ -477,6 +476,7 @@ function handleResize()
 }
 
 handleResize();
+var thisPuzzle = new puzzle(returnPuzzle(year, month, day)); 
 
 function initPuzzle()
 {
