@@ -1,11 +1,13 @@
 class cell
 {
-    constructor()
+    constructor(setR, setC)
     {
-        this.val = "";
+        this.val = null;
         this.solution = "";
         this.lineID = [];
         this.clickable = false;
+        this.r = setR;
+        this.c = setC;
     }
 }
 
@@ -25,7 +27,7 @@ class puzzle
             for (var j = 1; j < 6; j++)
             {
                 var cellID = `r${i}c${j}`;
-                this.cells[cellID] = new cell();
+                this.cells[cellID] = new cell(i , j);
             }
         }
 
@@ -34,10 +36,11 @@ class puzzle
             var dir = lineid.slice(1);
             if (dir == "a")
             {
+                var startingCol = +this.words[lineid].startingCell.slice(3);
                 var row = +lineid.slice(0, 1);
                 for (var i = 0; i < this.words[lineid].word.length; i++)
                 {
-                    var cellNum = i+1;
+                    var cellNum = startingCol + i;
                     var cellID = `r${row}c${cellNum}`;
                     this.cells[cellID].solution = this.words[lineid].word.charAt(i);;
                     this.cells[cellID].clickable = true;
@@ -46,10 +49,11 @@ class puzzle
             }
             else if (dir == "d")
             {
+                var startingRow = +this.words[lineid].startingCell.slice(1, 2);
                 var col = +lineid.slice(0, 1);
                 for (var i = 0; i < this.words[lineid].word.length; i++)
                 {
-                    var cellNum = i+1;
+                    var cellNum = startingRow + i;
                     var cellID = `r${cellNum}c${col}`;
                     this.cells[cellID].solution = this.words[lineid].word.charAt(i);;
                     this.cells[cellID].clickable = true;
@@ -63,26 +67,30 @@ class puzzle
 const puzzles = [
     new puzzle({
         "2a": {
-          "word": "eggs",
-          "clue": "yum",
-          "startingCell": "r2c2"
+          "word": "caked",
+          "clue": "Shuffle the deck and add an Ace, now it's covered.",
+          "startingCell": "r2c1"
+        },
+        "4a": {
+          "word": "stray",
+          "clue": "Flat fish on the street, move away!",
+          "startingCell": "r4c1"
         },
         "2d": {
-          "word": "eggs",
-          "clue": "yummy",
-          "startingCell": "r2c2"
+          "word": "cacti",
+          "clue": "A tactic without a team is a mess, they're painful to touch.",
+          "startingCell": "r1c2"
+        },
+        "4d": {
+          "word": "regal",
+          "clue": "Royal beer, bottoms up!",
+          "startingCell": "r1c4"
         }
       }),
-    new puzzle({
-        "2a": {word: "caked", clue: "Shuffle the deck and add an Ace, now it's covered."},
-        "4a": {word: "stray", clue: "Flat fish on the street, move away!"},
-        "2d": {word: "cacti", clue: "A tactic without a team is a mess, they're painful to touch."},
-        "4d": {word: "regal", clue: "Royal beer, bottoms up!"}
-    }),
 
-    new puzzle({
-        "1a": {word: "bowel", clue: "Digestive organ puts energy into crockery"}
-    })
+    // new puzzle({
+    //     "1a": {word: "bowel", clue: "Digestive organ puts energy into crockery"}
+    // })
 ]
 
 const currentPuzzle = 0;
@@ -148,8 +156,8 @@ function updateHighlight()
 
 function moveCell(dir)
 {
-    var row = "" + selectedCell.slice(1, 2);
-    var col = "" + selectedCell.slice(3);
+    var row = "" + puzzles[currentPuzzle].cells[selectedCell].r;
+    var col = "" + puzzles[currentPuzzle].cells[selectedCell].c;
     var newRow = +row;
     var newCol = +col;
 
@@ -173,9 +181,9 @@ function moveCell(dir)
 
     const cids = Object.keys(puzzles[currentPuzzle].cells);
     const cellsAhead = (dir == "ArrowLeft" || dir == "ArrowRight")
-        ? cids.filter(cID => cID.slice(1, 2) == row && cID.slice(3) > col) 
-        : cids.filter(cID => cID.slice(3) == col && cID.slice(1, 2) > row);
-    const emptyCellsAhead = cellsAhead.filter(cID => puzzles[currentPuzzle].cells[cID].val == "");
+        ? cids.filter(cID => puzzles[currentPuzzle].cells[cID].r == row && puzzles[currentPuzzle].cells[cID].c > col) 
+        : cids.filter(cID => puzzles[currentPuzzle].cells[cID].c == col && puzzles[currentPuzzle].cells[cID].r > row);
+    const emptyCellsAhead = cellsAhead.filter(cID => !puzzles[currentPuzzle].cells[cID].val);
 
     if ((dir == "ArrowRight" || dir == "ArrowDown") && !Object.keys(puzzles[currentPuzzle].cells).includes(newCell))
     {
@@ -191,7 +199,7 @@ function moveCell(dir)
     }
     else if (Object.keys(puzzles[currentPuzzle].cells).includes(newCell) && puzzles[currentPuzzle].cells[newCell].clickable)
     {
-        if (puzzles[currentPuzzle].cells[newCell].val == "")
+        if (!puzzles[currentPuzzle].cells[newCell].val)
         {
             dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
             selectCell(newCell);
@@ -206,31 +214,6 @@ function moveCell(dir)
             selectCell(newCell)
         }
     }
-
-    // if (Object.keys(puzzles[currentPuzzle].cells).includes(newCell) && puzzles[currentPuzzle].cells[newCell].clickable)
-    // {
-    //     if ((dir == "ArrowDown" || dir == "ArrowRight")  && puzzles[currentPuzzle].cells[newCell].val != "")
-    //     {
-    //         const cids = Object.keys(puzzles[currentPuzzle].cells);
-    //         const cellsAhead = across 
-    //             ? cids.filter(cID => cID.slice(1, 2) == row && cID.slice(3) > col) 
-    //             : cids.filter(cID => cID.slice(3) == col && cID.slice(1, 2) > row);
-    //         const emptyCellsAhead = cellsAhead.filter(cID => puzzles[currentPuzzle].cells[cID].val == "");
-
-    //         if (emptyCellsAhead.length > 0) 
-    //         {
-    //             dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
-    //             selectCell(emptyCellsAhead[0]);
-    //             return;
-    //         }
-    //     }
-    //     dirSwitch = !(dir == "ArrowRight" || dir == "ArrowLeft");
-    //     selectCell(newCell);
-    // }
-    // else
-    // {
-    //     clueArrow(1);
-    // }
 }
 
 function showClue()
@@ -262,13 +245,14 @@ function backspace()
     }
     else
     {
-        puzzles[currentPuzzle].cells[selectedCell].val = "";
-        document.getElementById(selectedCell).innerHTML = "";
+        puzzles[currentPuzzle].cells[selectedCell].val = null;
+        document.getElementById(selectedCell).innerHTML = null;
     }
 }
 
 function clueArrow(dir, override = false)
 {
+    // not going to next clue
     var currentWord = Object.keys(puzzles[currentPuzzle].words).indexOf(selectedLine);
     var nWords = Object.keys(puzzles[currentPuzzle].words).length;
     var newIndex = (nWords + currentWord + dir) % nWords;
@@ -277,9 +261,14 @@ function clueArrow(dir, override = false)
     if (checkFin() && !override) return;
 
     selectedLine = newSelectedLine;
+    var startCell = puzzles[currentPuzzle].words[selectedLine].startingCell;
     var dir = "" + selectedLine.slice(1);
-    if (dir == "a") selectedCell = `r${selectedLine.slice(0, 1)}c1`;
-    else if (dir == "d") selectedCell = `r1c${selectedLine.slice(0, 1)}`;
+
+    var emptyCellsOfNewLine = dir == "a" ? 
+    Object.keys(puzzles[currentPuzzle].cells).filter(cID => puzzles[currentPuzzle].cells[cID].r == puzzles[currentPuzzle].cells[startCell].r && puzzles[currentPuzzle].cells[cID].c >= puzzles[currentPuzzle].cells[startCell].c && !puzzles[currentPuzzle].cells[cID].val) :
+    Object.keys(puzzles[currentPuzzle].cells).filter(cID => puzzles[currentPuzzle].cells[cID].c == puzzles[currentPuzzle].cells[startCell].c && puzzles[currentPuzzle].cells[cID].r >= puzzles[currentPuzzle].cells[startCell].r && !puzzles[currentPuzzle].cells[cID].val);
+    selectedCell = emptyCellsOfNewLine[0];
+    
     updateHighlight();
     showClue();
 }
@@ -287,7 +276,7 @@ function clueArrow(dir, override = false)
 function checkFin()
 {
     var clickables = Object.values(puzzles[currentPuzzle].cells).filter(c => c.clickable);
-    var filled = clickables.filter(c => c.val != "").length;
+    var filled = clickables.filter(c => c.val).length;
     if (filled >= clickables.length) return true;
         else return false;
 }
@@ -295,7 +284,7 @@ function checkFin()
 function checkSolution()
 {
     var clickables = Object.values(puzzles[currentPuzzle].cells).filter(c => c.clickable);
-    var correct = clickables.filter(c => c.val.toUpperCase() == c.solution.toUpperCase()).length;
+    var correct = clickables.filter(c => c.val && c.val.toUpperCase() == c.solution.toUpperCase()).length;
     if (correct >= clickables.length) 
     {
         clearInterval(timer);
@@ -400,15 +389,6 @@ function handleResize()
 
     const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40;
 
-    // console.log("padT: " + paddingTop)
-    // console.log("padB: " + paddingBot)
-    // console.log("logoH: " + logoH)
-    // console.log("kbH: " + kbH)
-    // console.log("contH: " + centralContH)
-    // console.log("totalH: " + totalH)
-    // console.log("visViewPortH: " + window.visualViewport.height)
-    // console.log("screenavailH: " + screen.availHeight)
-    
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
     
     if (totalH > window.visualViewport.height)
