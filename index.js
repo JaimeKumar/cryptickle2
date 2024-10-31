@@ -462,6 +462,10 @@ function handleResize()
 
     const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40;
 
+    console.log("vVh: " + window.visualViewport.height)
+    console.log("wsaH: " + window.screen.availHeight)
+    console.log("tH: " + totalH)
+
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
     
     if (totalH > window.visualViewport.height)
