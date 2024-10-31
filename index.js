@@ -9,15 +9,6 @@ class cell
     }
 }
 
-class word
-{
-    constructor(w, clue)
-    {
-        this.word = w;
-        this.clue = clue;
-    }
-}
-
 class puzzle
 {
     constructor(words)
@@ -71,14 +62,26 @@ class puzzle
 
 const puzzles = [
     new puzzle({
-        "2a": new word("caked", "Shuffle the deck and add an Ace, now it's covered."),
-        "4a": new word("stray", "Flat fish on the street, move away!"),
-        "2d": new word("cacti", "A tactic without a team is a mess, they're painful to touch."),
-        "4d": new word("regal", "Royal beer, bottoms up!")
+        "2a": {
+          "word": "eggs",
+          "clue": "yum",
+          "startingCell": "r2c2"
+        },
+        "2d": {
+          "word": "eggs",
+          "clue": "yummy",
+          "startingCell": "r2c2"
+        }
+      }),
+    new puzzle({
+        "2a": {word: "caked", clue: "Shuffle the deck and add an Ace, now it's covered."},
+        "4a": {word: "stray", clue: "Flat fish on the street, move away!"},
+        "2d": {word: "cacti", clue: "A tactic without a team is a mess, they're painful to touch."},
+        "4d": {word: "regal", clue: "Royal beer, bottoms up!"}
     }),
 
     new puzzle({
-        "1a": new word("bowel", "Digestive organ puts energy into crockery")
+        "1a": {word: "bowel", clue: "Digestive organ puts energy into crockery"}
     })
 ]
 
@@ -272,32 +275,6 @@ function clueArrow(dir, override = false)
     var newSelectedLine = Object.keys(puzzles[currentPuzzle].words)[newIndex];
 
     if (checkFin() && !override) return;
-
-    // var cellsInNewLine = getCellsInLine(newSelectedLine);
-    // var full = false;
-    // for (var i = 0; i < cellsInNewLine.lenght; i++)
-    // {
-    //     var cID = cellsInNewLine[0];
-    //     if (puzzles[currentPuzzle].cells[cID].val != "")
-    //     {
-    //         full = true;
-    //         break;
-    //     }
-    // }
-
-    // if (full)
-    // {
-    //     clueArrow(dir)
-    // }
-    // else
-    // {
-    //     selectedLine = newSelectedLine;
-    //     var dir = "" + selectedLine.slice(1);
-    //     if (dir == "a") selectedCell = `r${selectedLine.slice(0, 1)}c1`;
-    //     else if (dir == "d") selectedCell = `r1c${selectedLine.slice(0, 1)}`;
-    //     updateHighlight();
-    //     showClue();
-    // }
 
     selectedLine = newSelectedLine;
     var dir = "" + selectedLine.slice(1);
