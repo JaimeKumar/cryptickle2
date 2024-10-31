@@ -10,13 +10,15 @@
 </head>
 <body>
     <textarea id="pseudo"></textarea>
-    <div class="helpButton" onclick="help()"><p>?</p></div>
-    <div class="gameCont" id="gameCont">
+    <div class="navbar">
+        <div class="navButton" onclick="archives()"><img src="/resources/archive-button.svg" alt="Cryptickle Archive"></div>
         <div class="logo" id="logo">
             <span>cryptickle</span>
             <p>A tickle of cryptic! (10)</p>
         </div>
-
+        <div class="navButton" onclick="help()"><img src="/resources/help-button.svg" alt="Cryptickle Help Page"></div>
+    </div>
+    <div class="gameCont" id="gameCont">
         <div class="centralCont" id="centralCont">
             <div id="time">0:00</div>
             <table class="gameTable" id="gameTable">
@@ -98,7 +100,7 @@
                 <div class="kbKey" id="b"><p>b</p></div>
                 <div class="kbKey" id="n"><p>n</p></div>
                 <div class="kbKey" id="m"><p>m</p></div>
-                <div class="kbKey" id="bkspc"><img src="./resources/bs-icon.svg" alt="backspace" style="pointer-events: none;"></div>
+                <div class="kbKey" id="bkspc" style="width: calc(min(90vw, 450px) / 8); padding: 8px;"><img src="./resources/bs-icon.svg" alt="backspace" style="pointer-events: none;"></div>
             </div>
         </div>
     </div>
@@ -130,6 +132,15 @@
             <span>Some words indicate you should remove some letters from a word, such as excluding, without, dropped & cut. Other words can refer to letter positions such as opener, head, tail, end, half & center, which can indicate you should build a word out of letters from other words.</span>
         </div>
     </div>
+
+    <div class="overScreen" id="archivesOverscreen">
+        <div class="helpWindow" id="archives">
+            <div class="backButton" onclick="archiveBack()">&lt;&nbsp; Back</div>
+            <!-- <div class="backButton">&#x27F5;</div> -->
+            <div class="archivesDisplay" id="archivesDisplay"></div>
+        </div>
+    </div>
+    <script src="db.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

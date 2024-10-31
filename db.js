@@ -1,0 +1,99 @@
+// If you're reading this and you're yet to try very hard to solve the puzzle, I am disappointed in you.
+
+const puzzles = {
+    "2024": {
+        "11": {
+            "1": {
+                "2a": {
+                  "word": "caked",
+                  "clue": "Shuffle the deck and add an Ace, now it's covered.",
+                  "startingCell": "r2c1"
+                },
+                "4a": {
+                  "word": "stray",
+                  "clue": "Flat fish on the street, move away!",
+                  "startingCell": "r4c1"
+                },
+                "2d": {
+                  "word": "cacti",
+                  "clue": "A tactic without a team is a mess, they're painful to touch.",
+                  "startingCell": "r1c2"
+                },
+                "4d": {
+                  "word": "regal",
+                  "clue": "Royal beer, bottoms up!",
+                  "startingCell": "r1c4"
+                }
+            },
+            "2": {
+                "2a": {
+                  "word": "chill",
+                  "clue": "High ground by the sea, very relaxing.",
+                  "startingCell": "r2c1"
+                },
+                "5a": {
+                  "word": "bowel",
+                  "clue": "Digestive organ puts energy into crockery.",
+                  "startingCell": "r5c1"
+                },
+                "2d": {
+                  "word": "photo",
+                  "clue": "Boiling on a cruise, what an image!",
+                  "startingCell": "r1c2"
+                },
+                "4d": {
+                  "word": "plane",
+                  "clue": "It sounds very dull and flat.",
+                  "startingCell": "r1c4"
+                }
+            },
+            "3": {
+                "1a": {
+                  "word": "aside",
+                  "clue": "My thoughts are confused and detached.",
+                  "startingCell": "r1c1"
+                },
+                "3a": {
+                  "word": "arc",
+                  "clue": "A really clever beginning to a story.",
+                  "startingCell": "r3c2"
+                },
+                "5a": {
+                  "word": "reply",
+                  "clue": "Come back from reputation finished by whispered deception. ",
+                  "startingCell": "r5c1"
+                },
+                "2d": {
+                  "word": "scale",
+                  "clue": "I hear leaf cabbage adds a second degree.",
+                  "startingCell": "r1c2"
+                },
+                "4d": {
+                  "word": "decal",
+                  "clue": "Tied up for design.",
+                  "startingCell": "r1c4"
+                }
+            }
+        }
+    }
+}
+
+function returnPuzzle(year, month, day)
+{
+    return puzzles[year][month][day];    
+}
+
+function returnYears(currentYear)
+{
+  return Object.keys(puzzles).filter(yr => +yr <= currentYear);
+}
+
+function returnMonths(year, currentMonth)
+{
+  return Object.keys(puzzles[year]).filter(mo => +mo <= currentMonth);
+}
+
+function returnDays(year, month, currentDay)
+{
+  return Object.keys(puzzles[year][month]).filter(da => +da <= currentDay);
+}

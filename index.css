@@ -12,9 +12,44 @@ body {
     height: 100svh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.navbar
+{
+    border-bottom: 1px solid #00000022;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 101;
+}
+
+.navButton
+{
+    height: 100%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navButton:hover
+{
+    background-color: #00000022;
+}
+
+.navButton img
+{
+    height: 50%;
+    pointer-events: none;
 }
 
 .helpButton
@@ -24,8 +59,7 @@ body {
     right: 10px;
     height: 18px;
     width: 18px;
-    font-size: 0.8rem;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 50%;
     display:flex;
     justify-content: center;
@@ -37,6 +71,8 @@ body {
 .helpButton p
 {
     pointer-events: none;
+    font-weight: bolder;
+    font-size: 0.7rem;
 }
 
 .gameCont
@@ -286,6 +322,36 @@ tbody
     height: 100vh;
     z-index: 99;
     position: absolute;
+}
+
+.backButton
+{
+    background-color: rgb(25, 73, 115);
+    color: white;
+    font-size: 1rem;
+    padding: 4px 12px;
+    font-weight: bolder;
+    border-radius: 8px;
+    text-align: center;
+    width: fit-content;
+}
+
+.archiveNode
+{
+    padding: 4px 12px;
+    border-radius: 8px;
+    width: fit-content;
+    box-shadow: 0 0 6px #00000088;
+}
+
+.archivesDisplay
+{
+    width: 100%;
+    margin-top: 20px;
+    height: fit-content;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1100px)
