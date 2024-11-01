@@ -344,6 +344,7 @@ function archiveClick(nodeID)
 
 function updateArchiveScreen()
 {
+    var title = "Archives";
     switch (archivesPos)
     {
         case 0:
@@ -352,12 +353,16 @@ function updateArchiveScreen()
         case 1:
             var nodes = returnMonths(archiveYear, month);
             var disp = months;
+            title += " > " + archiveYear;
             break;
         case 2:
             var nodes = returnDays(archiveYear, archiveMonth, day);
             var disp = dates;
+            title += " > " + archiveYear + " > " + months[archiveMonth];
             break;
     }
+
+    document.getElementById("archiveTitle").innerHTML = title;
 
     var elements = [];
     nodes.forEach((nodeID, i) => {
@@ -462,9 +467,9 @@ function handleResize()
 
     const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40 + (0.04 * window.visualViewport.height); // padding 40, footer 4svh
 
-    console.log("vVh: " + window.visualViewport.height)
-    console.log("wsaH: " + window.screen.availHeight)
-    console.log("tH: " + totalH)
+    // console.log("vVh: " + window.visualViewport.height)
+    // console.log("wsaH: " + window.screen.availHeight)
+    // console.log("tH: " + totalH)
 
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
     
@@ -520,17 +525,17 @@ function initPuzzle()
 
 initPuzzle();
 
-document.addEventListener('touchstart', function(event) {
-if (event.touches.length > 1) {
-    event.preventDefault(); // Prevents pinch-to-zoom
-}
-}, { passive: false });
+// document.addEventListener('touchstart', function(event) {
+// if (event.touches.length > 1) {
+//     event.preventDefault(); // Prevents pinch-to-zoom
+// }
+// }, { passive: false });
   
-let lastTouchEnd = 0;
-document.addEventListener('touchend', function(event) {
-let now = (new Date()).getTime();
-if (now - lastTouchEnd <= 300) {
-    event.preventDefault(); // Prevents double-tap-to-zoom
-}
-lastTouchEnd = now;
-}, { passive: false });
+// let lastTouchEnd = 0;
+// document.addEventListener('touchend', function(event) {
+// let now = (new Date()).getTime();
+// if (now - lastTouchEnd <= 300) {
+//     event.preventDefault(); // Prevents double-tap-to-zoom
+// }
+// lastTouchEnd = now;
+// }, { passive: false });

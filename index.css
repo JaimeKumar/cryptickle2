@@ -220,16 +220,24 @@ tbody
 {
     border-radius: 4px;
     width: calc(min(90vw, 450px) / 11);
-    padding: 8px 0;
+    height: clamp(24px, 5vh, 60px);
+    padding: 10px 0;
     box-shadow: 0 0 5px #00000055;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#bkspc
+{
+    width: calc(min(90vw, 450px) / 8); 
+    padding: 8px;
+}
+
 .kbKey img
 {
-    width: 60%;
+    /* width: 60%; */
+    max-height: 55%;
 }
 
 .kbKey p
@@ -238,6 +246,7 @@ tbody
     pointer-events: none;
     user-select: none;
     -webkit-user-select: none;
+    font-size: 1.8vh;
 }
 
 .overScreen
@@ -408,7 +417,18 @@ tbody
     .kbKey
     {
         width: calc(90vw / 11);
-        height: calc((90vw/11) * 0.8)
+        /* height: calc((90vw/11) * 0.8); */
+    }
+
+    #bkspc
+    {
+        width: calc(90vw / 8); 
+        padding: 8px;
+    }
+
+    #bkspc
+    {
+
     }
 }
 

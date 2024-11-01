@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css?v=1.1">
     <!-- <link rel="shortcut icon" href="./resources/favicon.png" type="image/x-icon"> -->
 
     <!-- Basic Favicon in ICO format (fallback for older browsers) -->
@@ -120,7 +120,7 @@
                 <div class="kbKey" id="b"><p>b</p></div>
                 <div class="kbKey" id="n"><p>n</p></div>
                 <div class="kbKey" id="m"><p>m</p></div>
-                <div class="kbKey" id="bkspc" style="width: calc(min(90vw, 450px) / 8); padding: 8px;"><img src="./resources/bs-icon.svg" alt="backspace" style="pointer-events: none;"></div>
+                <div class="kbKey" id="bkspc"><img src="./resources/bs-icon.svg" alt="backspace" style="pointer-events: none;"></div>
             </div>
         </div>
     </div>
@@ -155,7 +155,10 @@
 
     <div class="overScreen" id="archivesOverscreen">
         <div class="helpWindow" id="archives">
-            <div class="backButton" onclick="archiveBack()">&lt;&nbsp; Back</div>
+            <div style="display: flex; column-gap: 20px;">
+                <div class="backButton" onclick="archiveBack()">&lt;&nbsp; Back</div>
+                <b id="archiveTitle">Archives</b>
+            </div>
             <!-- <div class="backButton">&#x27F5;</div> -->
             <div class="archivesDisplay" id="archivesDisplay"></div>
         </div>
@@ -164,7 +167,7 @@
     <div class="footer">
         <p>© 2024 Jaime Kumar. All rights reserved.</p>
     </div>
-    <script src="db.js"></script>
+    <script src="db.js?v=1.1"></script>
     <script src="index.js?v=1.2"></script>
 </body>
 </html>
