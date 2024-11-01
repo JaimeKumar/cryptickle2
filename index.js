@@ -452,6 +452,7 @@ window.visualViewport.addEventListener('resize', () => {
 
 function handleResize()
 {
+    if (window.visualViewport.width !== initialWidth) return;
     const computedStyle = window.getComputedStyle(document.getElementById("gameCont"));
     const paddingTop = +computedStyle.paddingTop.slice(0, -2);
     const paddingBot = +computedStyle.paddingBottom.slice(0, -2);
@@ -474,6 +475,8 @@ function handleResize()
     }
     document.getElementById("gameTable").style.height = tableW+'px';
 }
+
+const initialWidth = window.visualViewport.width;
 
 handleResize();
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day)); 
