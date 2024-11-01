@@ -459,7 +459,7 @@ function handleResize()
     const kbH = document.getElementById("mobileKB").getBoundingClientRect().height;
     const centralContH = document.getElementById("centralCont").getBoundingClientRect().height;
 
-    const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40;
+    const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40 + (0.04 * window.visualViewport.height); // padding 40, footer 4svh
 
     console.log("vVh: " + window.visualViewport.height)
     console.log("wsaH: " + window.screen.availHeight)

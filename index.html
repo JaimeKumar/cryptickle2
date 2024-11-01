@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="./resources/favicon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./resources/favicon.png" type="image/x-icon"> -->
+
+    <!-- Basic Favicon in ICO format (fallback for older browsers) -->
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+   <!-- PNG Versions for Different Sizes -->
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+   <link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+   <link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+
+   <!-- Apple Touch Icon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+   <!-- Android Chrome Icon -->
+   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+
+   <!-- Web App Manifest (for PWA) -->
+   <link rel="manifest" href="manifest.json">
     <meta name="description" content="A tickle of Cryptic! Daily mini cryptic crossword puzzle.">
     <title>cryptickle</title>
 </head>
@@ -139,6 +159,10 @@
             <!-- <div class="backButton">&#x27F5;</div> -->
             <div class="archivesDisplay" id="archivesDisplay"></div>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Jaime Kumar. All rights reserved.</p>
     </div>
     <script src="db.js"></script>
     <script src="index.js"></script>

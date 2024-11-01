@@ -326,7 +326,7 @@ tbody
 
 .backButton
 {
-    background-color: rgb(25, 73, 115);
+    background-color: rgb(45, 97, 142);
     color: white;
     font-size: 1rem;
     padding: 4px 12px;
@@ -334,6 +334,13 @@ tbody
     border-radius: 8px;
     text-align: center;
     width: fit-content;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.backButton:hover
+{
+    background-color: rgb(15, 50, 81);
 }
 
 .archiveNode
@@ -342,6 +349,14 @@ tbody
     border-radius: 8px;
     width: fit-content;
     box-shadow: 0 0 6px #00000088;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: white;
+}
+
+.archiveNode:hover
+{
+    background-color: rgb(220, 244, 255);
 }
 
 .archivesDisplay
@@ -352,6 +367,24 @@ tbody
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+}
+
+.footer
+{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    height: 4svh;
+    pointer-events: none;
+}
+
+.footer p
+{
+    color: #b3b3b3;
+    font-size: 0.6rem;
 }
 
 @media only screen and (max-width: 1100px)
