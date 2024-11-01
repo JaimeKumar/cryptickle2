@@ -516,3 +516,18 @@ function initPuzzle()
 }
 
 initPuzzle();
+
+document.addEventListener('touchstart', function(event) {
+if (event.touches.length > 1) {
+    event.preventDefault(); // Prevents pinch-to-zoom
+}
+}, { passive: false });
+  
+let lastTouchEnd = 0;
+document.addEventListener('touchend', function(event) {
+let now = (new Date()).getTime();
+if (now - lastTouchEnd <= 300) {
+    event.preventDefault(); // Prevents double-tap-to-zoom
+}
+lastTouchEnd = now;
+}, { passive: false });
