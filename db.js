@@ -11,7 +11,7 @@ const puzzles = {
                 },
                 "4a": {
                   "word": "stray",
-                  "clue": "Flat fish on the street, move away!",
+                  "clue": "Wandering beams of light on the street.",
                   "startingCell": "r4c1"
                 },
                 "2d": {
