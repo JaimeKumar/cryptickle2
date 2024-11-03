@@ -73,6 +73,33 @@ const puzzles = {
                   "clue": "Tied up for design.",
                   "startingCell": "r1c4"
                 }
+            },
+            "4": {
+              "1a": {
+                "word": "feast",
+                "clue": "Banquet has iron, arsenic and a suspicion of treason.",
+                "startingCell": "r1c1"
+              },
+              "3a": {
+                "word": "dusty",
+                "clue": "Dirty work includes opening sewers.",
+                "startingCell": "r3c1"
+              },
+              "5a": {
+                "word": "dress",
+                "clue": "Decorate ship with a flurry of red.",
+                "startingCell": "r5c1"
+              },
+              "1d": {
+                "word": "faded",
+                "clue": "Dwindled craze ends with finale of fire and blood.",
+                "startingCell": "r1c1"
+              },
+              "3d": {
+                "word": "aisle",
+                "clue": "Cooperate half-blind and drunk to find a path.",
+                "startingCell": "r1c3"
+              }
             }
         }
     }
