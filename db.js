@@ -100,6 +100,28 @@ const puzzles = {
                 "clue": "Cooperate half-blind and drunk to find a path.",
                 "startingCell": "r1c3"
               }
+            },
+            "5": {
+              "1a": {
+                "word": "fire",
+                "clue": "Oust Italian rebel leader who invades coasts of France.",
+                "startingCell": "r1c1"
+              },
+              "3a": {
+                "word": "royal",
+                "clue": "Nobility on the skirts of removal eats the last of the Pak Choy.",
+                "startingCell": "r3c1"
+              },
+              "1d": {
+                "word": "forks",
+                "clue": "Empty forests are okay, all jostling for branches.",
+                "startingCell": "r1c1"
+              },
+              "5d": {
+                "word": "plot",
+                "clue": "Blind pilot brings about action.",
+                "startingCell": "r2c5"
+              }
             }
         }
     }
