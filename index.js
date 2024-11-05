@@ -18,6 +18,7 @@ class puzzle
         this.words = {...words};
         this.cells = {};
         this.initCells();
+        this.hintsUsed = 0;
     }
         
     initCells()
@@ -60,6 +61,11 @@ class puzzle
                     this.cells[cellID].lineID.push(lineid);
                 }
             }
+        }
+
+        for (var word in this.words)
+        {
+            this.words[word].hintsUsed = 0;
         }
     }
 }
@@ -290,6 +296,7 @@ function checkSolution()
         var mins = Math.floor(time / 60);
         var secs = time % 60;
         document.getElementById("solveTime").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
+        document.getElementById("hintsUsedWin").innerHTML = `Using ${thisPuzzle.hintsUsed} hints.`
         document.getElementById('overScreen').classList.add("showOverScreen");
         document.getElementById('winWindow').classList.add("winned");
     }
@@ -391,10 +398,28 @@ function closeArchives()
     document.getElementById('archives').classList.remove('helpShow');
 }
 
+function hint()
+{
+    var used = thisPuzzle.words[selectedLine].hintsUsed % thisPuzzle.words[selectedLine].hints.length;
+    document.getElementById('hintClue').innerHTML = `for clue ${selectedLine} &nbsp;&nbsp; | &nbsp;&nbsp;   hint ${(used + 1)} / ${thisPuzzle.words[selectedLine].hints.length}`;
+    if (thisPuzzle.words[selectedLine].hintsUsed < thisPuzzle.words[selectedLine].hints.length) thisPuzzle.hintsUsed++;
+    thisPuzzle.words[selectedLine].hintsUsed++;
+    document.getElementById('hintsCont').innerHTML = thisPuzzle.words[selectedLine].hints[used];
+    document.getElementById('hintOverscreen').classList.add('showOverScreen')
+    document.getElementById('hintWindow').classList.add('winned')
+}
+
+function closeHints()
+{
+    document.getElementById('hintOverscreen').classList.remove('showOverScreen')
+    document.getElementById('hintWindow').classList.remove('winned')
+}
+
 document.querySelectorAll('.overScreen').forEach(cellElement => {
     cellElement.addEventListener('click', e => {
         if (e.target.id == "overScreen") closeWin();
         if (e.target.id == "helpOverScreen") closeHelp();
+        if (e.target.id == "hintOverscreen") closeHints();
         document.getElementById('pseudo').focus();
     })
 })
@@ -415,6 +440,11 @@ document.querySelectorAll('.kbKey').forEach(kbkey => {
         if (e.target.id == "bkspc")
         {
             backspace();
+            return;
+        }
+        else if (e.target.id == "hint")
+        {
+            hint();
             return;
         }
         keyPress(e.target.id);
@@ -466,10 +496,6 @@ function handleResize()
     const centralContH = document.getElementById("centralCont").getBoundingClientRect().height;
 
     const totalH = paddingTop + paddingBot + logoH + kbH + centralContH + 40 + (0.04 * window.visualViewport.height); // padding 40, footer 4svh
-
-    // console.log("vVh: " + window.visualViewport.height)
-    // console.log("wsaH: " + window.screen.availHeight)
-    // console.log("tH: " + totalH)
 
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
     

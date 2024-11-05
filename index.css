@@ -230,11 +230,21 @@ tbody
 
 #bkspc
 {
-    width: calc(min(90vw, 450px) / 8); 
     padding: 8px;
+    width: calc(min(90vw, 450px) / 8); 
+}
+
+#hint
+{
+    width: calc(min(90vw, 450px) / 9); 
 }
 
 .kbKey img
+{
+    max-height: 90%;
+}
+
+#bkspc img
 {
     /* width: 60%; */
     max-height: 55%;
@@ -266,6 +276,22 @@ tbody
 {
     width: calc(min(90vw, 450px) * 0.8);
     text-align: center;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 0 14px #000000cc;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    transition: transform 0.4s ease;
+    transform: scale(0.01);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.hintWindow
+{
+    width: calc(min(90vw, 450px) * 0.8);
     background-color: white;
     border-radius: 14px;
     box-shadow: 0 0 14px #000000cc;
@@ -320,6 +346,11 @@ tbody
 }
 
 .helpShow
+{
+    transform: scale(1) translate(-50%, -50%);
+}
+
+.hintShow
 {
     transform: scale(1) translate(-50%, -50%);
 }
