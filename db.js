@@ -116,7 +116,7 @@ const puzzles = {
                 "word": "aisle",
                 "clue": "Cooperate half-blind and drunk to find a path.",
                 "startingCell": "r1c3",
-                "hints": ["'half-blind' - take one of the two 'I's in a word", "'drunk' is an anagram indicator", "The solution means path", "Find a word that means cooperate, take out an I, anagram for a word meaning path"]
+                "hints": ["'half-blind' - take out one of the two 'I's in a word", "'drunk' is an anagram indicator", "The solution means path", "Find a word that means cooperate, take out an I, anagram for a word meaning path"]
               }
             },
             "5": {
