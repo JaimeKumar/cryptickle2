@@ -146,6 +146,62 @@ const puzzles = {
               }
             },
             "6": {
+              "3a": {
+                "word": "hovel",
+                "clue": "Lifeless vole wandering in the empty hall to find shelter",
+                "startingCell": "r3c1",
+                "hints": [
+                  "The solution is synonymous to 'shelter'",
+                  "'Lifeless vole' refers to VOE",
+                  "'wandering' is an anagram indicator",
+                  "'in the empty hall' tells you to empty hall -> H...L and put something inside"
+                ]
+              },
+              "5a": {
+                "word": "spray",
+                "clue": "The sound of praise swirls into the mist",
+                "startingCell": "r5c1",
+                "hints": [
+                  "'The sound of praise' refers to a homophone of 'praise'",
+                  "'swirls' is an anagram indicator",
+                  "The solution means mist",
+                  "Find an anagram of a homophone of 'praise' that can mean 'mist'"
+                ]
+              },
+              "1d": {
+                "word": "aches",
+                "clue": "Sorrows are considerably harder endured solo, at first",
+                "startingCell": "r1c1",
+                "hints": [
+                  "The solution means 'sorrows'",
+                  "'at first' indicates you should look at the first letters of words",
+                  "Are Considerable Harder Endured Solo..."
+                ]
+              },
+              "3d": {
+                "word": "lever",
+                "clue": "Party up, it's a bar!",
+                "startingCell": "r1c3",
+                "hints": [
+                  "The solution is synonymous with 'bar'",
+                  "'up' on a down clue is a reversal indicator",
+                  "Find a word that's synonymous with party and reverse it",
+                  "The reversable word can also mean 'enjoy oneself'"
+                ]
+              },
+              "5d": {
+                "word": "alley",
+                "clue": "I, lacking energy after all, find a way",
+                "startingCell": "r1c5",
+                "hints": [
+                  "'I' refers to EYE",
+                  "The solution means 'way'",
+                  "'I, lacking energy' means remove an E from EYE",
+                  "'after all' is quite literal"
+                ]
+              }
+            },
+            "7": {
               "1a": {
                 "word": "layer",
                 "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
