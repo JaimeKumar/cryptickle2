@@ -409,6 +409,69 @@ tbody
     flex-wrap: wrap;
 }
 
+.hintBox
+{
+    margin-top: 6px;
+    width: 100%;
+    border: 1px solid #777;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    column-gap: 12px;
+    transition: 0.4s;
+    cursor: pointer;
+    justify-content: space-between;
+    /* background: #ddd; */
+}
+
+.hintReveal
+{
+    /* background-color: #1c5b8b; */
+    /* background-color: #ffffff; */
+    border-radius: 6px;
+    /* padding: 4px; */
+    height: 100%;
+    min-height: 35px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.hintBox:hover
+{
+    /* background-color: #083a60; */
+    background-color: #d6d6d6;
+}
+
+.hideHiddenReveal
+{
+    display: none;
+}
+
+.hintDisplay
+{
+    max-height: 40px;
+    font-size: 0.9rem;
+    line-clamp: 3;
+    /* display: -webkit-box; */
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-line-clamp: 3; */
+    overflow: auto;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.hintDivider
+{
+    height: 100%;
+    width: 2px;
+    border-right: 1px solid #ccc;
+}
+
 .footer
 {
     width: 100%;
@@ -455,6 +518,11 @@ tbody
     {
         width: calc(90vw / 8); 
         padding: 8px;
+    }
+
+    .hintBox
+    {
+        display: none;
     }
 }
 

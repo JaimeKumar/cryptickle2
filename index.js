@@ -218,6 +218,10 @@ function showClue()
 {
     var thisClue = thisPuzzle.words[selectedLine];
     document.getElementById("clue").innerHTML = thisClue.clue + ` (${thisClue.word.length})`;
+
+    document.getElementById('hintNum').innerHTML = `0 / ${thisPuzzle.words[selectedLine].hints.length} revealed`;
+    document.getElementById('hintLine').innerHTML = `Hints for ${selectedLine}`;
+    document.getElementById('hiddenReveal').classList.remove('hideHiddenReveal')
 }
 
 function keyPress(letter)
@@ -396,6 +400,17 @@ function closeArchives()
 {
     document.getElementById('archivesOverscreen').classList.remove('showOverScreen');
     document.getElementById('archives').classList.remove('helpShow');
+}
+
+function hintDesktop()
+{
+    document.getElementById('hiddenReveal').classList.add('hideHiddenReveal');
+    var used = thisPuzzle.words[selectedLine].hintsUsed % thisPuzzle.words[selectedLine].hints.length;
+
+    if (thisPuzzle.words[selectedLine].hintsUsed < thisPuzzle.words[selectedLine].hints.length) thisPuzzle.hintsUsed++;
+    thisPuzzle.words[selectedLine].hintsUsed++;
+    document.getElementById('hintDisplay').innerHTML = thisPuzzle.words[selectedLine].hints[used];
+    document.getElementById('hintNum').innerHTML = `${Math.min(thisPuzzle.words[selectedLine].hintsUsed, thisPuzzle.words[selectedLine].hints.length)} / ${thisPuzzle.words[selectedLine].hints.length} revealed`;
 }
 
 function hint()

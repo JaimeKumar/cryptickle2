@@ -14,7 +14,7 @@
    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
    <link rel="manifest" href="manifest.json">
-    <meta name="description" content="A tickle of Cryptic! Daily mini cryptic crossword puzzle.">
+    <meta name="description" content="Daily mini cryptic crossword puzzle · A tickle of Cryptic!">
     <title>cryptickle</title>
 </head>
 <body>
@@ -74,6 +74,21 @@
                 <div class="clueArrow" id="clueL" onclick="clueArrow(-1, true)"><p>&#10094;</p></div>
                 <p id="clue"></p>
                 <div class="clueArrow" id="clueR" onclick="clueArrow(1, true)"><p>&#10095;</p></div>
+            </div>
+
+            <div class="hintBox" onclick="hintDesktop()">
+                <div style="display: flex; column-gap: 12px; width: auto; height: 100%;">
+                    <div class="hintReveal">
+                        <!-- <img src="./resources/hint-button.svg" alt="hint button" style="height: 80%; filter: invert(1);"> -->
+                        <img src="./resources/hint-button.svg" alt="hint button" style="height: 80%;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; font-size: 0.9rem;">
+                        <b id="hintLine" style="white-space: nowrap;">Hints for 1a</b>
+                        <span id="hintNum" style="white-space: nowrap;">0 / 0 revealed</span>
+                    </div>
+                </div>
+                <div class="hintDisplay" id="hintDisplay"></div>
+                <p style="color: white;" id="hiddenReveal">Reveal hint</p>
             </div>
         </div>
 
