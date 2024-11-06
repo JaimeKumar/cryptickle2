@@ -381,7 +381,7 @@ function updateArchiveScreen()
             else elements.push(`<div class="archiveNode" onclick="archiveClick(${nodeID})">${disp[nodeID]}</div>`)
     })
 
-    document.getElementById('archivesDisplay').innerHTML = elements.join('<br>');
+    document.getElementById('archivesDisplay').innerHTML = elements.join('');
 }
 
 function archiveBack()
