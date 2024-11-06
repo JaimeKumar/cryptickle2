@@ -203,6 +203,80 @@ const puzzles = {
             },
             "7": {
               "1a": {
+                "word": "asset",
+                "startingCell": "r1c1",
+                "clue": "Bending chairs is a talent",
+                "hints": [
+                  "Bending is an anagram indicator",
+                  "The solution means 'talent'",
+                  "Find a synonym of chairs that is an anagram for a synonym of talent"
+                ]
+              },
+              "2a": {
+                "word": "polo",
+                "startingCell": "r2c2",
+                "clue": "Greek deity obliterates Albanian for sport",
+                "hints": [
+                  "The solution is a sport",
+                  "'obliterates' is a deletion indicator",
+                  "Albanian = AL",
+                  "A Greek deity without A and L makes a type of sport"
+                ]
+              },
+              "4a": {
+                "word": "ethos",
+                "startingCell": "r4c1",
+                "clue": "Climate is wildly hot between East and South",
+                "hints": [
+                  "'wildly' is an anagram indicator",
+                  "East and South refer to E and S respectively",
+                  "The solution is synonymous with 'Climate'",
+                  "E + anagram of HOT + S = synonym of climate"
+                ]
+              },
+              "2d": {
+                "word": "spats",
+                "startingCell": "r1c2",
+                "clue": "Disagreements from affectionate touch in a boat",
+                "hints": [
+                  "The solution means 'disagreements'",
+                  "'boat' refers to SS",
+                  "Put a word for 'affectionate touch' in S___S for a synonym of disagreements"
+                ]
+              },
+              "3d": {
+                "word": "so",
+                "startingCell": "r1c3",
+                "clue": "Very loud knitting",
+                "hints": [
+                  "The solution means 'very'",
+                  "'loud' is a homophone indicator",
+                  "The solution sounds like a synonym of knitting, that means very"
+                ]
+              },
+              "4d": {
+                "word": "elbow",
+                "startingCell": "r1c4",
+                "clue": "Hinge is broken below",
+                "hints": [
+                  "The solution is a hinge",
+                  "Broken is an anagram indicator"
+                ]
+              },
+              "5d": {
+                "word": "to",
+                "startingCell": "r1c5",
+                "clue": "Egg tea from the south is dear",
+                "hints": [
+                  "'Egg' refers to O",
+                  "'tea' refers to T",
+                  "'from the south' is a reversal indicator",
+                  "The solution is a synonym of 'dear'"
+                ]
+              }
+            },
+            "8": {
+              "1a": {
                 "word": "layer",
                 "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
                 "startingCell": "r1c1",
