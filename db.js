@@ -277,6 +277,55 @@ const puzzles = {
             },
             "8": {
               "1a": {
+                "word": "tepid",
+                "startingCell": "r1c1",
+                "clue": "Warm cooked pastry stored in the drawer openings",
+                "hints": [
+                  "The solution means warm",
+                  "'cooked' is an anagram indicator",
+                  "'the drawer openings' refers to TD (T he   D raw)",
+                  "An anagram of a type of pastry between T and D makes a word for 'warm'"
+                ]
+              },
+              "4a": {
+                "word": "nib",
+                "startingCell": "r4c3",
+                "clue": "Recycle bin, that's a tip",
+                "hints": [
+                  "Recycle is a reversal indicator",
+                  "This one is honestly a bit rubbish, sorry it's 11pm and I haven't finished the puzzle. It's Nib. As in tip/nib, and bin backwards"
+                ]
+              },
+              "1d": {
+                "word": "twin",
+                "startingCell": "r1c1",
+                "clue": "It went swimmingly, minus the extra-terrestrial clone",
+                "hints": [
+                  "'swimmingly' is an anagram indicator",
+                  "The solution is synonymous with 'clone'",
+                  "'minus the extra-terrestrial' means take away the letters ET",
+                  "ITWENT minus ET -> anagram -> clone"
+                ]
+              },
+              "3d": {
+                "word": "plant",
+                "startingCell": "r1c3",
+                "clue": "A scheme takes time to flower",
+                "hints": [
+                  "The solution is synonymous with 'flower'",
+                  "'time' refers to T",
+                  "Find a synonym of 'scheme' and add T for a synonym of flower "
+                ]
+              },
+              "5d": {
+                "word": "doubt",
+                "startingCell": "r1c5",
+                "clue": "Confusion from you cutting birthday before tea",
+                "hints": []
+              }
+            },
+            "9": {
+              "1a": {
                 "word": "layer",
                 "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
                 "startingCell": "r1c1",

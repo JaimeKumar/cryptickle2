@@ -219,6 +219,7 @@ function showClue()
     var thisClue = thisPuzzle.words[selectedLine];
     document.getElementById("clue").innerHTML = thisClue.clue + ` (${thisClue.word.length})`;
 
+    document.getElementById('hintDisplay').innerHTML = "";
     document.getElementById('hintNum').innerHTML = `0 / ${thisPuzzle.words[selectedLine].hints.length} revealed`;
     document.getElementById('hintLine').innerHTML = `Hints for ${selectedLine}`;
     document.getElementById('hiddenReveal').classList.remove('hideHiddenReveal')
