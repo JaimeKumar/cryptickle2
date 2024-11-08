@@ -326,6 +326,43 @@ const puzzles = {
             },
             "9": {
               "1a": {
+                "word": "grave",
+                "startingCell": "r1c1",
+                "clue": "Serious party after midnight",
+                "hints": [
+                  "The solution means 'serious'",
+                  "'midnight' refers to G, as in middle of 'night'"
+                ]
+              },
+              "5a": {
+                "word": "antsy",
+                "startingCell": "r5c1",
+                "clue": "Insect, wise in retrospect, is nervous",
+                "hints": []
+              },
+              "2d": {
+                "word": "ramen",
+                "startingCell": "r1c2",
+                "clue": "Right then finish a prayer for noodle soup",
+                "hints": [
+                  "Right = R",
+                  "The solution means 'noodle soup'",
+                  "'finish a prayer' refers to AMEN"
+                ]
+              },
+              "4d": {
+                "word": "Veins",
+                "startingCell": "r1c4",
+                "clue": "Very choppy wave ",
+                "hints": [
+                  "Very = V",
+                  "'choppy' is a anagram indicator",
+                  "wave refers to SINE"
+                ]
+              }
+            },
+            "10": {
+              "1a": {
                 "word": "layer",
                 "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
                 "startingCell": "r1c1",
