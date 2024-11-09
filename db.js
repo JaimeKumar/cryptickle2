@@ -393,7 +393,7 @@ const puzzles = {
               "2d": {
                 "word": "input",
                 "startingCell": "r1c2",
-                "clue": "Russian politician is all over the place, that's my opinion",
+                "clue": "Russian politician is all over the place, that's an opinion",
                 "hints": [
                   "The solution means 'opinion'",
                   "'is all over the place' is an anagram indicator",
