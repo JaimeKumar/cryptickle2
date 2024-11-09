@@ -363,6 +363,57 @@ const puzzles = {
             },
             "10": {
               "1a": {
+                "word": "minor",
+                "startingCell": "r1c1",
+                "clue": "Child housed by team in orphanage",
+                "hints": [
+                  "The solution means 'child'",
+                  "'housed by' is a hidden-word indicator",
+                  "The solution is hidden withing 'team in orphanage'"
+                ]
+              },
+              "3a": {
+                "word": "apt",
+                "startingCell": "r3c1",
+                "clue": "Fitting wobbly tap",
+                "hints": [
+                  "Solution means 'fitting'",
+                  "'wobbly' is an anagram indicator"
+                ]
+              },
+              "5a": {
+                "word": "tied",
+                "startingCell": "r5c2",
+                "clue": "Edit edit fixed",
+                "hints": [
+                  "The solution means fixed",
+                  "'edit edit' is telling you to edit the word edit. The solution is an anagram of 'edit'"
+                ]
+              },
+              "2d": {
+                "word": "input",
+                "startingCell": "r1c2",
+                "clue": "Russian politician is all over the place, that's my opinion",
+                "hints": [
+                  "The solution means 'opinion'",
+                  "'is all over the place' is an anagram indicator",
+                  "'Russian politician' refers to PUTIN ... it's just a puzzle"
+                ]
+              },
+              "5d": {
+                "word": "rapid",
+                "startingCell": "r1c5",
+                "clue": "Fleet are paid liberally",
+                "hints": [
+                  "The solution means 'fleet'",
+                  "are = R",
+                  "liberally is an anagram indicator",
+                  "R + (PAID) anagram -> fleet (as in fast)"
+                ]
+              }
+            },
+            "11": {
+              "1a": {
                 "word": "layer",
                 "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
                 "startingCell": "r1c1",
