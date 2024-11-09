@@ -353,7 +353,7 @@ const puzzles = {
               "4d": {
                 "word": "Veins",
                 "startingCell": "r1c4",
-                "clue": "Very choppy wave ",
+                "clue": "Very choppy wave carries blood",
                 "hints": [
                   "Very = V",
                   "'choppy' is a anagram indicator",
