@@ -413,6 +413,72 @@ const puzzles = {
               }
             },
             "11": {
+              "1a": {
+                "word": "hope",
+                "startingCell": "r1c2",
+                "clue": "Desire to jump with energy",
+                "hints": [
+                  "The solution means 'Desire'",
+                  "'energy' refers to E",
+                  "Jump refers HOP"
+                ]
+              },
+              "2a": {
+                "word": "hero",
+                "startingCell": "r2c1",
+                "clue": "Champion lives in niche room ",
+                "hints": [
+                  "The solution means 'Champion'",
+                  "'lives in' is a hidden-word indicator",
+                  "",
+                  "",
+                  ""
+                ]
+              },
+              "5a": {
+                "word": "duty",
+                "startingCell": "r5c1",
+                "clue": "At the first sign of danger, you try without a hint of reluctance to fulfil assignment",
+                "hints": [
+                  "The solution means 'assignment'",
+                  "'the first sign of danger' refers to D",
+                  "'without a hint of reluctance' means remove R",
+                  "you = U",
+                  "D + U + (TRY - R) -> assignment"
+                ]
+              },
+              "2d": {
+                "word": "he",
+                "startingCell": "r1c2",
+                "clue": "Half heat walls of house",
+                "hints": [
+                  "The clue is 2 cryptic clues in one",
+                  "'walls of' refers to to the first and last letters of a word",
+                  ""
+                ]
+              },
+              "3d": {
+                "word": "or",
+                "startingCell": "r1c3",
+                "clue": "Otherwise row for the audience backwards",
+                "hints": [
+                  "The solution means 'otherwise'",
+                  "'for the audience' is a homophone indicator",
+                  ""
+                ]
+              },
+              "4d": {
+                "word": "poppy",
+                "startingCell": "r1c4",
+                "clue": "Flower is starting to oppilate within the bounds of possibility",
+                "hints": [
+                  "The solution means 'Flower'",
+                  "'starting to oppilate' refers to OPP",
+                  "'the bounds of possibility' refers to PY"
+                ]
+              }
+            },
+            "12": {
               "2a": {
                 "word": "alive",
                 "startingCell": "r2c1",
@@ -457,7 +523,7 @@ const puzzles = {
                 ]
               }
             },
-            "12": {
+            "13": {
               "1a": {
                 "word": "layer",
                 "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
