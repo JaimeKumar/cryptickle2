@@ -413,6 +413,51 @@ const puzzles = {
               }
             },
             "11": {
+              "2a": {
+                "word": "alive",
+                "startingCell": "r2c1",
+                "clue": "An extravagant veil is flourishing",
+                "hints": [
+                  "An = A",
+                  "'extravagant' is an anagram indicator ",
+                  "The solution means flourishing"
+                ]
+              },
+              "4a": {
+                "word": "story",
+                "startingCell": "r4c1",
+                "clue": "Break down in wise retrospective anecdote",
+                "hints": [
+                  "The solution means 'anecdote'",
+                  "'Break down' refers to ROT",
+                  "'wise' means YS",
+                  "'retrospective' is a reversal indicator"
+                ]
+              },
+              "1d": {
+                "word": "false",
+                "startingCell": "r1c1",
+                "clue": "Fault leaf changes with first sign of summer",
+                "hints": [
+                  "The solution means 'Fault'",
+                  "'changes' is an anagram indicator ",
+                  "'first signs of summer' refers to S",
+                  "LEAF + S ~> synonym for fault"
+                ]
+              },
+              "4d": {
+                "word": "every",
+                "startingCell": "r1c4",
+                "clue": "Each evening before the last moments of January",
+                "hints": [
+                  "The solution means 'Each'",
+                  "'evening' refers to EVE",
+                  "'the last moments of January' refers to RY",
+                  ""
+                ]
+              }
+            },
+            "12": {
               "1a": {
                 "word": "layer",
                 "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
