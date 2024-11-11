@@ -123,6 +123,8 @@ function calcLine()
     {
         selectedLine = thisPuzzle.cells[selectedCell].lineID[+dirSwitch];
     }
+
+    if (!selectedLine) selectedLine = Object.keys(thisPuzzle.words)[0];
 }
 
 function updateHighlight()
@@ -287,6 +289,7 @@ function checkFin()
 {
     var clickables = Object.values(thisPuzzle.cells).filter(c => c.clickable);
     var filled = clickables.filter(c => c.val).length;
+
     if (filled >= clickables.length) return true;
         else return false;
 }
@@ -295,6 +298,7 @@ function checkSolution()
 {
     var clickables = Object.values(thisPuzzle.cells).filter(c => c.clickable);
     var correct = clickables.filter(c => c.val && c.val.toUpperCase() == c.solution.toUpperCase()).length;
+
     if (correct >= clickables.length) 
     {
         clearInterval(timer);
