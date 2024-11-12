@@ -503,7 +503,7 @@ const puzzles = {
               "1d": {
                 "word": "false",
                 "startingCell": "r1c1",
-                "clue": "Fault leaf changes with first sign of summer",
+                "clue": "Faulty leaf changes with first sign of summer",
                 "hints": [
                   "The solution means 'Fault'",
                   "'changes' is an anagram indicator ",
@@ -525,11 +525,106 @@ const puzzles = {
             },
             "13": {
               "1a": {
-                "word": "layer",
-                "clue": "One tier of the cake is found in beer losing weight and gaining reasoning.",
+                "word": "acute",
                 "startingCell": "r1c1",
-                "hints": ["'losing weight' - remove a unit of weight, maybe LB or G", "'gaining reasoning' means adding Y (why)", "The solution means, for example, one tier of the cake", "Find a word for beer that when you remove G and add Y, you get a word that can mean a tier of a cake"]
+                "clue": "Severe injury in A&E",
+                "hints": [
+                  "The solution means 'severe'",
+                  "'in A&E' means put something in A___E"
+                ]
               },
+              "5a": {
+                "word": "force",
+                "startingCell": "r5c1",
+                "clue": "Enemy holding a remote control leads to violence",
+                "hints": [
+                  "The solution means 'violence'",
+                  "'remote control' refers to RC",
+                  "'Enemy' refers to FOE"
+                ]
+              },
+              "1d": {
+                "word": "aloof",
+                "startingCell": "r1c1",
+                "clue": "A drunken fool is unresponsive",
+                "hints": [
+                  "'drunken' is an anagram indicator",
+                  "The solution means 'unresponsive'",
+                  "A + (FOOL) = unresponsive"
+                ]
+              },
+              "3d": {
+                "word": "utter",
+                "startingCell": "r1c3",
+                "clue": "Pure butter without a slice of bread",
+                "hints": [
+                  "The solution means 'pure'",
+                  "'a slice of bread' refers to B"
+                ]
+              },
+              "5d": {
+                "word": "emote",
+                "startingCell": "r1c5",
+                "clue": "Express check-up with ease",
+                "hints": [
+                  "'ease' refers to EE ('E's)",
+                  "The solution means 'express'",
+                  "'check-up' refers to MOT"
+                ]
+              }
+            },
+            "14": {
+              "1a": {
+                "word": "layer",
+                "startingCell": "r1c1",
+                "clue": "One tier of the cake is found in beer losing weight and gaining reasoning",
+                "hints": [
+                  "The solution means 'one tier of the cake'",
+                  "'weight' refers to G",
+                  "'reasoning' refers to Y",
+                  "'beer' refers to LAGER"
+                ]
+              },
+              "4a": {
+                "word": "gated",
+                "startingCell": "r4c1",
+                "clue": "Detained from swearing at educators",
+                "hints": [
+                  "The solution is synonymous with 'Detained'",
+                  "The solution is hidden in the clue"
+                ]
+              },
+              "1d": {
+                "word": "large",
+                "startingCell": "r1c1",
+                "clue": "Mammoth left confusingly angry",
+                "hints": [
+                  "The solution means 'mammoth'",
+                  "'left' = L",
+                  "'confusingly' is an anagram indicator",
+                  "'angry' refers to RAGE"
+                ]
+              },
+              "3d": {
+                "word": "youth",
+                "startingCell": "r1c3",
+                "clue": "Kids are out in the middle of cubbyholes",
+                "hints": [
+                  "The solution means 'kids'",
+                  "'the middle of cubbyholes' refers to YH",
+                  "'out in' means put OUT in Y___H"
+                ]
+              },
+              "5d": {
+                "word": "ready",
+                "startingCell": "r1c5",
+                "clue": "Game day in a wild year",
+                "hints": [
+                  "The solution means 'game'",
+                  "'day' = D",
+                  "'wild' is an anagram indicator"
+                ]
+              }
             }
         }
     }
