@@ -625,6 +625,47 @@ const puzzles = {
                   "'wild' is an anagram indicator"
                 ]
               }
+            },
+            "15": {
+              "1a": {
+                "word": "boost",
+                "startingCell": "r1c1",
+                "clue": "Jump from scary noise behind stone",
+                "hints": [
+                  "The solution means 'jump'",
+                  "'stone' = ST",
+                  "'scary noise' = BOO"
+                ]
+              },
+              "4a": {
+                "word": "erect",
+                "startingCell": "r4c1",
+                "clue": "Build by mixing concrete without weakness",
+                "hints": [
+                  "The solution means 'build'",
+                  "'mixing' is an anagram indicator",
+                  "'weakness' refers to CON"
+                ]
+              },
+              "2d": {
+                "word": "opera",
+                "startingCell": "r1c2",
+                "clue": "Arrange a rope to make a work of art",
+                "hints": [
+                  "'Arrange' is an anagram indicator",
+                  "The solution is 'a work of art'"
+                ]
+              },
+              "4d": {
+                "word": "space",
+                "startingCell": "r1c4",
+                "clue": "Separate last of eggs with speed ",
+                "hints": [
+                  "The solution means 'separate'",
+                  "'last of' is a letter selection indicator",
+                  "'speed' refers to PACE"
+                ]
+              }
             }
         }
     }
