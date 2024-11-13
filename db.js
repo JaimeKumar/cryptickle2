@@ -666,6 +666,59 @@ const puzzles = {
                   "'speed' refers to PACE"
                 ]
               }
+            },
+            "16": {
+              "1a": {
+                "word": "obese",
+                "startingCell": "r1c1",
+                "clue": "Massive award and case of sake",
+                "hints": [
+                  "The solution means 'massive'",
+                  "'case of' indicates to take the first and last letter of a word",
+                  "'award' refers to OBE"
+                ]
+              },
+              "3a": {
+                "word": "class",
+                "startingCell": "r3c1",
+                "clue": "Wrinkled trousers lose the last of sleek elegance",
+                "hints": [
+                  "The solution means 'elegance'",
+                  "'lose the last of sleek' means take out a K",
+                  "'Wrinkled' is an anagram indicator",
+                  "Synonym of 'trousers', take away a K and shuffle for 'elegance'"
+                ]
+              },
+              "5a": {
+                "word": "boy",
+                "startingCell": "r5c3",
+                "clue": "Bold start to the year holds nothing for young man",
+                "hints": [
+                  "The solution means 'young man'",
+                  "Bold = B",
+                  "'start to the year' = Y",
+                  "Nothing = O"
+                ]
+              },
+              "2d": {
+                "word": "bell",
+                "startingCell": "r1c2",
+                "clue": "Curve within superb ellipse",
+                "hints": [
+                  "The solution is a type of curve",
+                  "'within' is a hidden word indicator"
+                ]
+              },
+              "5d": {
+                "word": "essay",
+                "startingCell": "r1c5",
+                "clue": "Try easy mix with a pinch of salt",
+                "hints": [
+                  "The solution means 'try'",
+                  "'mix' is an anagram indicator",
+                  "'touch of salt' refers to S"
+                ]
+              }
             }
         }
     }
