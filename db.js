@@ -719,6 +719,45 @@ const puzzles = {
                   "'touch of salt' refers to S"
                 ]
               }
+            },
+            "17": {
+              "1a": {
+                "word": "suite",
+                "startingCell": "r1c1",
+                "clue": "Apartment is nice repordetly",
+                "hints": [
+                  "The solution means 'apartment'",
+                  "'reportedly' is a homophone indicator"
+                ]
+              },
+              "4a": {
+                "word": "reset",
+                "startingCell": "r4c1",
+                "clue": "Crooked trees are rectified",
+                "hints": [
+                  "The solution means 'rectified'",
+                  "'Crooked' is an anagram indicator"
+                ]
+              },
+              "2d": {
+                "word": "upset",
+                "startingCell": "r1c2",
+                "clue": "Overturn wrong setup",
+                "hints": [
+                  "The solution means 'overturn'",
+                  "'wrong' is an anagram indicator"
+                ]
+              },
+              "4d": {
+                "word": "tube",
+                "startingCell": "r1c4",
+                "clue": "Barrel and low grade pipe",
+                "hints": [
+                  "The solution means 'pipe'",
+                  "'low grade' = E",
+                  "Barrel = tub"
+                ]
+              }
             }
         }
     }
