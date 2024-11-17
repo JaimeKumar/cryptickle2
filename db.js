@@ -724,7 +724,7 @@ const puzzles = {
               "1a": {
                 "word": "suite",
                 "startingCell": "r1c1",
-                "clue": "Apartment is nice repordetly",
+                "clue": "Apartment is nice reportedly",
                 "hints": [
                   "The solution means 'apartment'",
                   "'reportedly' is a homophone indicator"
