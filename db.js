@@ -758,6 +758,57 @@ const puzzles = {
                   "Barrel = tub"
                 ]
               }
+            },
+            "18": {
+              "1a": {
+                "word": "tasty",
+                "startingCell": "r1c1",
+                "clue": "Delicious tea before chaotic holiday",
+                "hints": [
+                  "The solution means 'delicious'",
+                  "'tea' = T",
+                  "'chaotic' is a anagram indicator"
+                ]
+              },
+              "3a": {
+                "word": "agree",
+                "startingCell": "r3c1",
+                "clue": "Settle in a green meadow",
+                "hints": [
+                  "The solution means 'settle'",
+                  "'in' is a hidden word indicator"
+                ]
+              },
+              "5a": {
+                "word": "crowd",
+                "startingCell": "r5c1",
+                "clue": "Fight in seedy mob",
+                "hints": [
+                  "The solution means 'mob'",
+                  "'seedy' = CD",
+                  "'Fight' = ROW"
+                ]
+              },
+              "2d": {
+                "word": "anger",
+                "startingCell": "r1c2",
+                "clue": "Bizarre choice creates outrage",
+                "hints": [
+                  "The solution means 'outrage'",
+                  "'Bizarre' is an anagram indicator",
+                  "'choice' refers to RANGE"
+                ]
+              },
+              "5d": {
+                "word": "yield",
+                "startingCell": "r1c5",
+                "clue": "Delaying, agitated but without complaint, for harvest",
+                "hints": [
+                  "The solution is synonymous with 'harvest'",
+                  "'agitated' is an anagram indicator",
+                  "'complaint' = nag"
+                ]
+              }
             }
         }
     }
