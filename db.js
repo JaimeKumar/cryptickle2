@@ -671,7 +671,7 @@ const puzzles = {
               "1a": {
                 "word": "obese",
                 "startingCell": "r1c1",
-                "clue": "Massive award and case of sake",
+                "clue": "Massive award and case of Sake",
                 "hints": [
                   "The solution means 'massive'",
                   "'case of' indicates to take the first and last letter of a word",
@@ -808,6 +808,52 @@ const puzzles = {
                   "'agitated' is an anagram indicator",
                   "'complaint' = nag"
                 ]
+              }
+            },
+            "19": {
+              "2a": {
+                "word": "forum",
+                "startingCell": "r2c1",
+                "clue": "Turn in form for assembly",
+                "hints": [
+                  "The solution means 'assembly'",
+                  "'Turn' = U (u-turn)"
+                ]
+              },
+              "5a": {
+                "word": "waste",
+                "startingCell": "r5c1",
+                "clue": "We sat awkwardly, creating sewage",
+                "hints": [
+                  "The solution means 'sewage'",
+                  "'awkwardly' is an anagram indicator"
+                ]
+              },
+              "1d": {
+                "word": "flow",
+                "startingCell": "r2c1",
+                "clue": "Gobble up ooze",
+                "hints": [
+                  "The solution means 'ooze'",
+                  "'up' is a reversal indicator on a down clue",
+                  "Gobble -> wolf"
+                ]
+              },
+              "3d": {
+                "word": "press",
+                "startingCell": "r1c3",
+                "clue": "Reporters put half essays on both sides of paper",
+                "hints": [
+                  "The solution means 'reporters'",
+                  "'half essays' = ESS",
+                  "'both sides of paper' = PR (PapeR - both sides!)"
+                ]
+              },
+              "5d": {
+                "word": "image",
+                "startingCell": "r1c5",
+                "clue": "I'm a genius concealing a concept",
+                "hints": []
               }
             }
         }
