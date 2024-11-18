@@ -855,6 +855,66 @@ const puzzles = {
                 "clue": "I'm a genius concealing a concept",
                 "hints": []
               }
+            },
+            "20": {
+              "1a": {
+                "word": "dew",
+                "startingCell": "r1c3",
+                "clue": "Carelessly wed, speech expected",
+                "hints": [
+                  "'Carelessly' is an anagram indicator",
+                  "'speech' is a homophone indicator",
+                  "This is a double clue, there's no solution synonym"
+                ]
+              },
+              "2a": {
+                "word": "ale",
+                "startingCell": "r2c1",
+                "clue": "Alert without arty beer",
+                "hints": [
+                  "'arty' = RT",
+                  "The solution means 'beer'"
+                ]
+              },
+              "4a": {
+                "word": "pound",
+                "startingCell": "r4c1",
+                "clue": "Strike German boat in pond",
+                "hints": [
+                  "The solution means 'Strike'",
+                  "'German boat' = U"
+                ]
+              },
+              "1d": {
+                "word": "ramps",
+                "startingCell": "r1c1",
+                "clue": "Banks alter map in case of recessions ",
+                "hints": [
+                  "The solution means 'Banks'",
+                  "'case of recessions' refers to RS",
+                  "'alter' is an anagram indicator"
+                ]
+              },
+              "3d": {
+                "word": "debut",
+                "startingCell": "r1c3",
+                "clue": "Piped up for launch",
+                "hints": [
+                  "The solution means 'launch'",
+                  "'up' is a reversal indicator on a down clue",
+                  "piped = tubed"
+                ]
+              },
+              "5d": {
+                "word": "words",
+                "startingCell": "r1c5",
+                "clue": "Warped blade comes to terms",
+                "hints": [
+                  "The solution means 'terms'",
+                  "'warped' is an anagram indicator",
+                  "'blade' = sword"
+                ]
+              }
             }
         }
     }
