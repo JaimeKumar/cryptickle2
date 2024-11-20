@@ -556,6 +556,8 @@ function initPuzzle()
     document.getElementById('pseudo').focus();
 }
 
+document.getElementById("year").innerHTML = year;
+
 initPuzzle();
 
 // document.addEventListener('touchstart', function(event) {

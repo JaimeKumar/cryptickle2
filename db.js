@@ -957,6 +957,58 @@ const puzzles = {
                   ""
                 ]
               }
+            },
+            "22": {
+              "1a": {
+                "word": "slump",
+                "startingCell": "r1c1",
+                "clue": "Rotten plums fall",
+                "hints": [
+                  "The solution means 'fall'",
+                  "'Rotten' is an anagram indicator"
+                ]
+              },
+              "5a": {
+                "word": "lanes",
+                "startingCell": "r5c1",
+                "clue": "Evens out landscape's wonky roads",
+                "hints": [
+                  "The solution means 'roads'",
+                  "'Evens out' indicates to remove the even letters of a word",
+                  "'wonky' is an anagram indicator",
+                  ""
+                ]
+              },
+              "1d": {
+                "word": "skill",
+                "startingCell": "r1c1",
+                "clue": "Mastery in brisk illustrations",
+                "hints": [
+                  "The solution means 'Mastery'",
+                  "'in' is a hidden word indicator"
+                ]
+              },
+              "3d": {
+                "word": "urban",
+                "startingCell": "r1c3",
+                "clue": "City newspaper cover-stories have unreliable and biased sources, unfortunately",
+                "hints": [
+                  "The solution means 'city'",
+                  "'cover-stories' indicates to take the first and last letters, N and R",
+                  "'sources' is a first letter selection indicator",
+                  "'unfortunately' is an anagram indicator"
+                ]
+              },
+              "5d": {
+                "word": "pours",
+                "startingCell": "r1c5",
+                "clue": "Spills unusually sour sip of Port",
+                "hints": [
+                  "The solution means 'pours'",
+                  "'unusually' is an anagram indicator",
+                  "'sip of Port' = P"
+                ]
+              }
             }
         }
     }
