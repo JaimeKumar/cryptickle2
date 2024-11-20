@@ -915,6 +915,48 @@ const puzzles = {
                   "'blade' = sword"
                 ]
               }
+            },
+            "21": {
+              "1a": {
+                "word": "merit",
+                "startingCell": "r1c1",
+                "clue": "High quality stopwatch is broken",
+                "hints": [
+                  "The solution means 'high quality'",
+                  "'broken' is an anagram indicator",
+                  "'stopwatch' -> timer"
+                ]
+              },
+              "4a": {
+                "word": "paper",
+                "startingCell": "r4c1",
+                "clue": "Rapper gets drunk and loses right to work",
+                "hints": [
+                  "The solution means 'work'",
+                  "'gets drunk' is an anagram indicator",
+                  "'loses right' means remove an R"
+                ]
+              },
+              "2d": {
+                "word": "equal",
+                "startingCell": "r1c2",
+                "clue": "50% of equity and 40% of sales are one in the same",
+                "hints": [
+                  "The solution means 'one in the same'",
+                  "'50% of equity' = EQU",
+                  "'40% of sales' = AL"
+                ]
+              },
+              "4d": {
+                "word": "idles",
+                "startingCell": "r1c4",
+                "clue": "Does nothing in vapid lesson",
+                "hints": [
+                  "The solution means 'does nothing'",
+                  "'in' is a hidden word indicator",
+                  ""
+                ]
+              }
             }
         }
     }
