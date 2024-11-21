@@ -1009,6 +1009,90 @@ const puzzles = {
                   "'sip of Port' = P"
                 ]
               }
+            },
+            "23": {
+              "2a": {
+                "word": "theme",
+                "startingCell": "r2c1",
+                "clue": "They're gutted about border topic",
+                "hints": [
+                  "The solution means 'topic'",
+                  "'They're gutted' = TE",
+                  "'about' implies T and E are around other letters here",
+                  "'border' = hem"
+                ]
+              },
+              "5a": {
+                "word": "slain",
+                "startingCell": "r5c1",
+                "clue": "Extravagant French delicacy cut to pieces ",
+                "hints": [
+                  "'Extravagant' is an anagram indicator",
+                  "The solution means 'cut to pieces'",
+                  "The 'French delicacy' in question has a shell and is like a slug"
+                ]
+              },
+              "2d": {
+                "word": "shell",
+                "startingCell": "r1c2",
+                "clue": "She will dodge half wild bullet",
+                "hints": [
+                  "The solution means 'bullet'",
+                  "'dodge half wild' means take out half of 'wild' from something"
+                ]
+              },
+              "5d": {
+                "word": "begin",
+                "startingCell": "r1c5",
+                "clue": "Indulge carelessly to start",
+                "hints": [
+                  "The solution means 'start'",
+                  "'carelessly' is an anagram indicator"
+                ]
+              }
+            },
+            "24": {
+              "2a": {
+                "word": "file",
+                "startingCell": "r2c2",
+                "clue": "Put away leaders of faction illegally looting equipment",
+                "hints": [
+                  "The solution means 'put away'",
+                  "'leaders of' is a letter selection indicator"
+                ]
+              },
+              "4a": {
+                "word": "snack",
+                "startingCell": "r4c1",
+                "clue": "Knock back a thousand tins for an appetiser",
+                "hints": [
+                  "The solution means 'appetiser'",
+                  "'Knock back' is a reversal indicator",
+                  "'a thousand' = K",
+                  "'tins' = CANS"
+                ]
+              },
+              "2d": {
+                "word": "fine",
+                "startingCell": "r2c2",
+                "clue": "Faulty blade without an edge is well-made",
+                "hints": [
+                  "The solution means 'well-made'",
+                  "'blade' = KNIFE",
+                  "'Faulty' is an anagram indicator",
+                  "'without an edge' means remove one of the edge letters"
+                ]
+              },
+              "5d": {
+                "word": "seek",
+                "startingCell": "r1c5",
+                "clue": "Request is part of franchisee knowledge",
+                "hints": [
+                  "The solution means 'Fuse'",
+                  "'hot' is an anagram indicator",
+                  "'oven' => kiln"
+                ]
+              }
             }
         }
     }
