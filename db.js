@@ -1093,6 +1093,47 @@ const puzzles = {
                   "'oven' => kiln"
                 ]
               }
+            },
+            "25": {
+              "1a": {
+                "word": "brand",
+                "startingCell": "r1c1",
+                "clue": "Kind group drinks the last drop of beer",
+                "hints": [
+                  "The solution means 'kind'",
+                  "'drinks the last drop of beer' means but an R in another word",
+                  "Group = BAND"
+                ]
+              },
+              "3a": {
+                "word": "event",
+                "startingCell": "r3c1",
+                "clue": "Contest held in uneven terrain",
+                "hints": [
+                  "'held in' is a hidden word indicator",
+                  "The solution is a term that could be used to describe a 'contest'"
+                ]
+              },
+              "5a": {
+                "word": "pluck",
+                "startingCell": "r5c1",
+                "clue": "Take quiet fortune",
+                "hints": [
+                  "The solution means 'take'",
+                  "'quiet' = P (as in piano (sheet music))",
+                  "'fortune' = LUCK"
+                ]
+              },
+              "2d": {
+                "word": "rival",
+                "startingCell": "r1c2",
+                "clue": "Enemy is spreading vigorously",
+                "hints": [
+                  "The solution means 'enemy'",
+                  "'vigorously' is an anagram indicator",
+                  "'spreading' = VIRAL"
+                ]
+              }
             }
         }
     }
