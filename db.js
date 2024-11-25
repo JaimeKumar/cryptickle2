@@ -1134,6 +1134,58 @@ const puzzles = {
                   "'spreading' = VIRAL"
                 ]
               }
+            },
+            "26": {
+              "1a": {
+                "word": "craft",
+                "startingCell": "r1c1",
+                "clue": "Build makeshift boat on the sea",
+                "hints": [
+                  "The solution means 'build'",
+                  "'on the sea' = following C",
+                  "RAFT"
+                ]
+              },
+              "3a": {
+                "word": "equip",
+                "startingCell": "r3c1",
+                "clue": "Provide butt of joke and witty remark",
+                "hints": [
+                  "The solution means 'provide'",
+                  "'butt of joke' = E",
+                  "'witty remark' = QUIP"
+                ]
+              },
+              "5a": {
+                "word": "mercy",
+                "startingCell": "r5c1",
+                "clue": "Grace in summer cycle",
+                "hints": [
+                  "The solution means 'grace'",
+                  "'in' is a hidden word indicator"
+                ]
+              },
+              "1d": {
+                "word": "cream",
+                "startingCell": "r1c1",
+                "clue": "Best mile after untidy acre",
+                "hints": [
+                  "The solution means 'best'",
+                  "'mile' = M",
+                  "'untidy' is an anagram indicator"
+                ]
+              },
+              "5d": {
+                "word": "tipsy",
+                "startingCell": "r1c5",
+                "clue": "Hints and reasoning make an anagram indicator",
+                "hints": [
+                  "The solution is an anagram indicator, yep we've gone meta",
+                  "'reasoning' = Y",
+                  "'hints' = TIPS",
+                  "TIPSY is an anagram indicator!"
+                ]
+              }
             }
         }
     }
