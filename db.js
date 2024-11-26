@@ -1088,9 +1088,8 @@ const puzzles = {
                 "startingCell": "r1c5",
                 "clue": "Request is part of franchisee knowledge",
                 "hints": [
-                  "The solution means 'Fuse'",
-                  "'hot' is an anagram indicator",
-                  "'oven' => kiln"
+                  "The solution means 'Request'",
+                  "'is part of' is a hidden word indicator"
                 ]
               }
             },
@@ -1184,6 +1183,68 @@ const puzzles = {
                   "'reasoning' = Y",
                   "'hints' = TIPS",
                   "TIPSY is an anagram indicator!"
+                ]
+              }
+            },
+            "27": {
+              "1a": {
+                "word": "shelf",
+                "startingCell": "r1c1",
+                "clue": "Put aside quiet toymaker",
+                "hints": [
+                  "The solution means 'put aside'",
+                  "'quiet' = SH",
+                  "as for 'toymaker', think of Christmas, the labourers at the North pole"
+                ]
+              },
+              "3a": {
+                "word": "ore",
+                "startingCell": "r3c1",
+                "clue": "Alternative energy generates metal deposits",
+                "hints": [
+                  "The solution means 'metal deposits'",
+                  "'Alternative' = OR",
+                  "'energy' = E"
+                ]
+              },
+              "5a": {
+                "word": "kempt",
+                "startingCell": "r5c1",
+                "clue": "Keep entrance nearly empty so it's tidy",
+                "hints": [
+                  "The solution means 'tidy'",
+                  "'keep entrance' = K",
+                  "'nearly empty' = EMPT"
+                ]
+              },
+              "1d": {
+                "word": "stock",
+                "startingCell": "r1c1",
+                "clue": "Store overturned bed in empty sack",
+                "hints": [
+                  "The solution means 'store'",
+                  "'overturned' is a reversal indicator",
+                  "'empty sack' = SK",
+                  "'bed' = COT"
+                ]
+              },
+              "3d": {
+                "word": "eye",
+                "startingCell": "r1c3",
+                "clue": "Within grey eruptions is the centre of the storm",
+                "hints": [
+                  "The solution means 'the centre of the storm'",
+                  "'Within' is a hidden word indicator"
+                ]
+              },
+              "5d": {
+                "word": "float",
+                "startingCell": "r1c5",
+                "clue": "Hover in the air all over the place",
+                "hints": [
+                  "The solution means 'hover'",
+                  "'all over the place' is an anagram indicator",
+                  "'in the air' refers to ALOFT"
                 ]
               }
             }
