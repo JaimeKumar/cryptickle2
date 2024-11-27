@@ -1247,6 +1247,60 @@ const puzzles = {
                   "'in the air' refers to ALOFT"
                 ]
               }
+            },
+            "28": {
+              "1a": {
+                "word": "wrist",
+                "startingCell": "r1c1",
+                "clue": "Joint world record is a fraction of time",
+                "hints": [
+                  "'world record' = WR",
+                  "'a fraction of time' = T",
+                  "The solution is a 'joint'",
+                  "WR + IS + T"
+                ]
+              },
+              "3a": {
+                "word": "err",
+                "startingCell": "r3c1",
+                "clue": "In character recently to make mistake",
+                "hints": [
+                  "The solution means 'make mistake'",
+                  "'In' is a hidden word indicator"
+                ]
+              },
+              "5a": {
+                "word": "thick",
+                "startingCell": "r5c1",
+                "clue": "Parasite has an hour to get fat",
+                "hints": [
+                  "The solution means 'fat'",
+                  "'has an hour' means put an H in a word",
+                  "Parasite = TICK"
+                ]
+              },
+              "1d": {
+                "word": "wheat",
+                "startingCell": "r1c1",
+                "clue": "Win competition for grain",
+                "hints": [
+                  "The solution means 'grain'",
+                  "'win' = W",
+                  "'competition'... think a round of races in the Olympics for example"
+                ]
+              },
+              "5d": {
+                "word": "trunk",
+                "startingCell": "r1c5",
+                "clue": "Sigher and enigmatic leader leaves active hunger strike for coffer",
+                "hints": [
+                  "The solution means 'coffer'",
+                  "'active' is an anagram indicator",
+                  "'leaves' is a deletion indicator",
+                  "'enigmatic leader' = E",
+                  "HUNGERSTRIKE without SIGHER = UNTRK"
+                ]
+              }
             }
         }
     }
