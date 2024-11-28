@@ -1301,6 +1301,67 @@ const puzzles = {
                   "HUNGERSTRIKE without SIGHER = UNTRK"
                 ]
               }
+            },
+            "29": {
+              "1a": {
+                "word": "shave",
+                "startingCell": "r1c1",
+                "clue": "Brush quiet road",
+                "hints": [
+                  "'quiet' = SH",
+                  "'road' .. avenue",
+                  "The solution means 'brush' as in to miss something narrowly"
+                ]
+              },
+              "3a": {
+                "word": "abhor",
+                "startingCell": "r3c1",
+                "clue": "Despise corrupt biographer without gripe",
+                "hints": [
+                  "The solution means 'despise'",
+                  "'corrupt' is an anagram indicator",
+                  "'without' is a letter-deletion indicator ",
+                  ""
+                ]
+              },
+              "5a": {
+                "word": "tires",
+                "startingCell": "r5c1",
+                "clue": "Fatigues from lively attempts",
+                "hints": [
+                  "The solution means 'fatigues'",
+                  "'lively' is an anagram indicator",
+                  "'attempts' = TRIES"
+                ]
+              },
+              "1d": {
+                "word": "start",
+                "startingCell": "r1c1",
+                "clue": "Create street art",
+                "hints": [
+                  "The solution means 'create'",
+                  "'street' = ST"
+                ]
+              },
+              "3d": {
+                "word": "ash",
+                "startingCell": "r1c3",
+                "clue": "Has hot embers",
+                "hints": [
+                  "The solution is synonymous with 'ash'",
+                  "'hot' is an anagram indicator"
+                ]
+              },
+              "5d": {
+                "word": "earns",
+                "startingCell": "r1c5",
+                "clue": "Collects vases according to hearsay",
+                "hints": [
+                  "The solution means 'collects'",
+                  "'according to hearsay' is a homophone indicator",
+                  "'vases' refers to URNS"
+                ]
+              }
             }
         }
     }
