@@ -1362,6 +1362,63 @@ const puzzles = {
                   "'vases' refers to URNS"
                 ]
               }
+            },
+            "30": {
+              "1a": {
+                "word": "rig",
+                "startingCell": "r1c3",
+                "clue": "Machine in cellar ignites",
+                "hints": [
+                  "The solution means 'machine'",
+                  "'in' is a hidden word indicator"
+                ]
+              },
+              "3a": {
+                "word": "act",
+                "startingCell": "r3c1",
+                "clue": "Enacted needless manoeuvre",
+                "hints": [
+                  "The solution means 'manoeuvre'",
+                  "'needless' means remove NEED"
+                ]
+              },
+              "5a": {
+                "word": "slots",
+                "startingCell": "r5c1",
+                "clue": "Fits a lot within seconds",
+                "hints": [
+                  "The solution means 'fits'",
+                  "'within seconds' means put something between S___S"
+                ]
+              },
+              "1d": {
+                "word": "chaos",
+                "startingCell": "r1c1",
+                "clue": "Confusion is nothing in endless chase",
+                "hints": [
+                  "The solution means 'confusion'",
+                  "'nothing in' means put O in a word",
+                  "'endless' means remove the last letter"
+                ]
+              },
+              "3d": {
+                "word": "ratio",
+                "startingCell": "r1c3",
+                "clue": "Balance a riot desperately",
+                "hints": [
+                  "'desperately' is an anagram indicator",
+                  "The solution means 'balance'"
+                ]
+              },
+              "5d": {
+                "word": "guess",
+                "startingCell": "r1c5",
+                "clue": "Guests have no time to speculate",
+                "hints": [
+                  "The solution means 'speculate'",
+                  "'have no time' means remove a T"
+                ]
+              }
             }
         }
     }
