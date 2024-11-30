@@ -1420,6 +1420,57 @@ const puzzles = {
                 ]
               }
             }
+        },
+        "12": {
+          "1": {
+            "1a": {
+              "word": "moron",
+              "startingCell": "r1c1",
+              "clue": "Idiot has messy room before noon",
+              "hints": []
+            },
+            "3a": {
+              "word": "yodle",
+              "startingCell": "r3c1",
+              "clue": "Yes, circle left in heartless dance, sing!",
+              "hints": [
+                "The solution means 'sing'",
+                "'yes' = Y",
+                "'circle' = O",
+                "'left' = L",
+                "'heartless dance' = DE"
+              ]
+            },
+            "1d": {
+              "word": "mayor",
+              "startingCell": "r1c1",
+              "clue": "In dismay orchestrating city official",
+              "hints": [
+                "The solution means 'city official'",
+                "'in' is a hidden word indicator"
+              ]
+            },
+            "3d": {
+              "word": "rider",
+              "startingCell": "r1c3",
+              "clue": "Passenger dies gruesomely and without element of safety in Rolls Royce",
+              "hints": [
+                "The solution means 'passenger'",
+                "'element of safety' = S",
+                "'Rolls Royce' = RR",
+                "'gruesomely' is an anagram indicator"
+              ]
+            },
+            "5d": {
+              "word": "need",
+              "startingCell": "r1c5",
+              "clue": "Demand is not elevated, even down, at first",
+              "hints": [
+                "The solution means 'need'",
+                "'at first' is a letter selection indicator"
+              ]
+            }
+          }
         }
     }
 }
