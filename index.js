@@ -359,7 +359,8 @@ function updateArchiveScreen()
             title += " > " + archiveYear;
             break;
         case 2:
-            var nodes = returnDays(archiveYear, archiveMonth, day);
+            var d = (archiveMonth == month) ? day : -1;
+            var nodes = returnDays(archiveYear, archiveMonth, d);
             var disp = dates;
             title += " > " + archiveYear + " > " + months[archiveMonth];
             break;

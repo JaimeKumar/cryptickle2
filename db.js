@@ -1498,7 +1498,7 @@ function returnMonths(year, currentMonth)
 
 function returnDays(year, month, currentDay)
 {
-    var res = Object.keys(puzzles[year][month]).filter(da => +da <= currentDay);
+    var res = (currentDay < 0) ? Object.keys(puzzles[year][month]) : Object.keys(puzzles[year][month]).filter(da => +da <= currentDay);
     if (!res) return null;
     return res;
 }
