@@ -1470,6 +1470,60 @@ const puzzles = {
                 "'at first' is a letter selection indicator"
               ]
             }
+          },
+          "2": {
+            "1a": {
+              "word": "nerve",
+              "startingCell": "r1c1",
+              "clue": "Confidence is never bad",
+              "hints": [
+                "'bad' is an anagram indicator",
+                "The solution means 'confidence'"
+              ]
+            },
+            "3a": {
+              "word": "mango",
+              "startingCell": "r3c1",
+              "clue": "Bizarre complaint about grand fruit",
+              "hints": [
+                "grand = G",
+                "'bizarre' is an anagram indicator",
+                "'complaint' refers to moan",
+                "The solution is a fruit"
+              ]
+            },
+            "5a": {
+              "word": "deter",
+              "startingCell": "r5c1",
+              "clue": "Prevent red alien warping",
+              "hints": [
+                "'warping' is an anagram indicator",
+                "'alien' = ET",
+                "The solution means prevent"
+              ]
+            },
+            "1d": {
+              "word": "named",
+              "startingCell": "r1c1",
+              "clue": "Entitled mother enters lair and flips",
+              "hints": [
+                "The solution means 'entitled'",
+                "'flips' is a reversal indicator",
+                "'mother' = MA",
+                "lair = DEN"
+              ]
+            },
+            "4d": {
+              "word": "vague",
+              "startingCell": "r1c4",
+              "clue": "Unclear victor, half the guests leave after midday",
+              "hints": [
+                "The solution means unclear",
+                "'victor' = V",
+                "half the guests = GUE",
+                "'middy' = A (mid of DAY)"
+              ]
+            }
           }
         }
     }
