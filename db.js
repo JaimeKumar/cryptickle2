@@ -1524,6 +1524,63 @@ const puzzles = {
                 "'middy' = A (mid of DAY)"
               ]
             }
+          },
+          "3": {
+            "1a": {
+              "word": "cow",
+              "startingCell": "r1c1",
+              "clue": "Heroic owner finds an animal",
+              "hints": []
+            },
+            "2a": {
+              "word": "hid",
+              "startingCell": "r2c3",
+              "clue": "Cowered and shied, losing some of esteem",
+              "hints": [
+                "The solution means 'cowered'",
+                "'losing some of esteem' means take away SE from somthing"
+              ]
+            },
+            "4a": {
+              "word": "steep",
+              "startingCell": "r4c1",
+              "clue": "Expensive brine",
+              "hints": [
+                "The solution means both expensive (adj) and brine (v)"
+              ]
+            },
+            "1d": {
+              "word": "clash",
+              "startingCell": "r1c1",
+              "clue": "Debate rambling scholars without second alternative",
+              "hints": [
+                "The solution means 'debate'",
+                "'rambling' is an anagram indicator",
+                "'second alternative' = S OR"
+              ]
+            },
+            "3d": {
+              "word": "wheel",
+              "startingCell": "r1c3",
+              "clue": "Roll small length and rush back ",
+              "hints": [
+                "'rush back' = H",
+                "'small' = WEE",
+                "'length' = L",
+                "The solution means roll"
+              ]
+
+            },
+            "5d": {
+              "word": "adopt",
+              "startingCell": "r1c5",
+              "clue": "Take on curious toad with perfect head",
+              "hints": [
+                "The solution means 'take on'",
+                "'curious' is an anagram indicator",
+                "'perfect head'  = P"
+              ]
+            }
           }
         }
     }
