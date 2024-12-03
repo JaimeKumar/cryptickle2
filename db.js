@@ -1581,6 +1581,55 @@ const puzzles = {
                 "'perfect head'  = P"
               ]
             }
+          },
+          "4": {
+            "1a": {
+              "word": "enter",
+              "startingCell": "r1c1",
+              "clue": "Sign up for mixing course ",
+              "hints": [
+                "'mixing' is an anagram indicator",
+                "The solution means 'sign up'",
+                "'course' = ENTRE"
+              ]
+            },
+            "3a": {
+              "word": "boxer",
+              "startingCell": "r3c1",
+              "clue": "Dog fighter",
+              "hints": [
+                "It's both a dog and a fighter"
+              ]
+            },
+            "5a": {
+              "word": "arson",
+              "startingCell": "r5c1",
+              "clue": "It sounds like our offspring is burning houses",
+              "hints": [
+                "The solution means 'burning houses'",
+                "'It sounds like' is of course a homophone indicator"
+              ]
+            },
+            "3d": {
+              "word": "texts",
+              "startingCell": "r1c3",
+              "clue": "Kiss in confusing experiment sends a message",
+              "hints": [
+                "The solution means 'sends a message'",
+                "Kiss = X",
+                "experiment = TEST",
+                "'confusing' is an anagram indicate"
+              ]
+            },
+            "5d": {
+              "word": "rerun",
+              "startingCell": "r1c5",
+              "clue": "Concerning bolt, I've seen this before!",
+              "hints": [
+                "'Concerning' = RE (like an email)",
+                "'bolt' = RUN"
+              ]
+            }
           }
         }
     }
