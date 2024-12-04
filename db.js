@@ -1630,6 +1630,275 @@ const puzzles = {
                 "'bolt' = RUN"
               ]
             }
+          }, 
+          "5": {
+            "2a": {
+              "word": "range",
+              "startingCell": "r2c1",
+              "clue": "Assortment of peeled oranges",
+              "hints": [
+                "The solution means 'assortment'",
+                "'peeled' is a letter-deletion indicator (peel both end letters)"
+              ]
+            },
+            "4a": {
+              "word": "imply",
+              "startingCell": "r4c1",
+              "clue": "Hint is simply don't start",
+              "hints": [
+                "The solution means 'hint'",
+                "'don't start' is a letter deletion indicator"
+              ]
+            },
+            "1d": {
+              "word": "drain",
+              "startingCell": "r1c1",
+              "clue": "Unload, daring to lose weight",
+              "hints": [
+                "The solution means 'unload'",
+                "'lose weight' is a letter-deletion indicator, weight could refer to G, W, KG etc."
+              ]
+            },
+            "3d": {
+              "word": "snap",
+              "startingCell": "r1c3",
+              "clue": "Broken pans crack",
+              "hints": [
+                "The solution means 'crack'",
+                "'Broken' is an anagram indicator"
+              ]
+            },
+            "5d": {
+              "word": "kenya",
+              "startingCell": "r1c5",
+              "clue": "Headless snake slithers a yard in African country",
+              "hints": [
+                "The solution is an African country",
+                "'Headless' is a letter-deletion indicator",
+                "'slithers' is an anagram indicator",
+                "'yard' = Y"
+              ]
+            }
+          },
+          "6" : {
+            "1a": {
+              "word": "enema",
+              "startingCell": "r1c1",
+              "clue": "Careless menace, without a hint of contrition, enters through the back",
+              "hints": [
+                "'without a hint of contrition' means remove a C",
+                "'Careless' is an anagram indicator",
+                "The solution 'enters through the back'",
+                "It's a medical procedure"
+              ]
+            },
+            "3a": {
+              "word": "scrap",
+              "startingCell": "r3c1",
+              "clue": "Throw away small clutter",
+              "hints": [
+                "The solution means 'throw away'",
+                "'small' = S"
+              ]
+            },
+            "5a": {
+              "word": "drive",
+              "startingCell": "r5c1",
+              "clue": "Steer to victory in turbulent ride",
+              "hints": [
+                "The solution means 'steer'",
+                "'victory' = V",
+                "'turbulent' is an anagram indicator"
+              ]
+            },
+            "2d": {
+              "word": "nicer",
+              "startingCell": "r1c2",
+              "clue": "Tail of salmon on steamed rice is more enjoyable",
+              "hints": [
+                "The solution means 'more enjoyable'",
+                "'Tail of salmon' = N",
+                "'steamed' is an anagram indicator"
+              ]
+            },
+            "5d": {
+              "word": "ample",
+              "startingCell": "r1c5",
+              "clue": "Plenty trickling syrup",
+              "hints": [
+                "The solution means 'plenty'",
+                "'trickling' is an anagram indicator",
+                "The syrup in quest tends to be Canadian"
+              ]
+            }
+          },
+          "7": {
+            "2a": {
+              "word": "clone",
+              "startingCell": "r2c1",
+              "clue": "Perfume isn't half good, make a copy",
+              "hints": [
+                "The solution means 'make a copy'",
+                "'isn't half good' means take out GO or OD",
+                "perfume = cologne"
+              ]
+            },
+            "4a": {
+              "word": "clues",
+              "startingCell": "r4c1",
+              "clue": "This is one of them, cooked deshelled muscles",
+              "hints": [
+                "'cooked' is an anagram indicator",
+                "'deshelled' means remove the first and last letters"
+              ]
+            },
+            "3d": {
+              "word": "bonus",
+              "startingCell": "r1c3",
+              "clue": "Extra empty bistro before sunrise",
+              "hints": [
+                "The solution means 'extra'",
+                "'empty bistro' = BO",
+                "'sunrise' on a down clue = NUS (SUN rises)"
+              ]
+            },
+            "5d": {
+              "word": "tense",
+              "startingCell": "r1c5",
+              "clue": "Anxious energy sent spiralling",
+              "hints": [
+                "The solution means 'anxious'",
+                "'energy' = E",
+                "'spiralling' is an anagram indicator"
+              ]
+            }
+          },
+          "8": {
+            "2a": {
+              "word": "hobby",
+              "startingCell": "r2c1",
+              "clue": "Bees surrounded by honey without any thing to do other than work",
+              "hints": [
+                "The solution means 'thing to do other than work'",
+                "'bees' = BB",
+                "'honey without any'  = HONEY - NE = HOY"
+              ]
+            },
+            "4a": {
+              "word": "panda",
+              "startingCell": "r4c1",
+              "clue": "Father and father bear",
+              "hints": [
+                "The solution is a bear",
+                "and = N (as in rock n roll)",
+                "Father = PA ... and DA"
+              ]
+            },
+            "1d": {
+              "word": "shape",
+              "startingCell": "r1c1",
+              "clue": "Phase out model",
+              "hints": [
+                "The solution means model",
+                "'out' is an anagram indicator"
+              ]
+            },
+            "3d": {
+              "word": "band",
+              "startingCell": "r2c3",
+              "clue": "Music group makes forbidden sound",
+              "hints": [
+                "The solution means 'music group'",
+                "The solution sounds like a word that means 'forbidden'"
+              ]
+            },
+            "5d": {
+              "word": "year",
+              "startingCell": "r2c5",
+              "clue": "Pine endlessly for time",
+              "hints": [
+                "'endlessly' is a letter-deletion indicator",
+                "The solution is an amount of time",
+                "pine = yearn"
+              ]
+            }
+          },
+          "9" : {
+            "1a": {
+              "word": "jewel",
+              "startingCell": "r1c1",
+              "clue": "Rock sheep in vacant jail",
+              "hints": [
+                "The solution means 'rock'",
+                "the sheep in question is female",
+                "'vacant jail' = JL"
+              ]
+            },
+            "3a": {
+              "word": "strap",
+              "startingCell": "r3c1",
+              "clue": "Fasten components wrong way round",
+              "hints": [
+                "The solution means 'fasten'",
+                "'wrong way round' is a reversal indicator"
+              ]
+            },
+            "5a": {
+              "word": "ladle",
+              "startingCell": "r5c1",
+              "clue": "Young man with empty linguine spoon ",
+              "hints": [
+                "The solution means 'spoon'",
+                "'empty linguine' = LE",
+                "young man = LAD"
+              ]
+            },
+            "3d": {
+              "word": "wired",
+              "startingCell": "r1c3",
+              "clue": "Erratically strange, I've had too much caffeine",
+              "hints": [
+                "The solution is what you may feel after too much caffeine"
+              ]
+            }
+          },
+          "10": {
+            "3a": {
+              "word": "evict",
+              "startingCell": "r3c1",
+              "clue": "Captive doesn't want the crusts of pizza, remove",
+              "hints": [
+                "The solution means 'remove'",
+                "'crusts of pizza' = PA"
+              ]
+            },
+            "5a": {
+              "word": "greet",
+              "startingCell": "r5c1",
+              "clue": "Shake hands to secretly agree terms ",
+              "hints": [
+                "'secretly' is a hidden word indicator",
+                "The solution means 'shake hands'"
+              ]
+            },
+            "2d": {
+              "word": "cover",
+              "startingCell": "r1c2",
+              "clue": "See over shelter",
+              "hints": [
+                "The solution means 'solution'",
+                "see = C"
+              ]
+            },
+            "4d": {
+              "word": "acre",
+              "startingCell": "r2c4",
+              "clue": "Trim edges of sacred land",
+              "hints": [
+                "The solution kind of means 'land', its a bit tenuous",
+                "'trim edges' is a letter-deletion indicator"
+              ]
+            }
           }
         }
     }
