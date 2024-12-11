@@ -1954,6 +1954,56 @@ const puzzles = {
                 "tea = T"
               ]
             }
+          },
+          "12": {
+            "1a": {
+              "word": "gloat",
+              "startingCell": "r1c1",
+              "clue": "Animal eats large relish",
+              "hints": [
+                "The solution means 'relish'",
+                "'large' = L",
+                "Animal in question is somewhat like a sheep and is good at climbing"
+              ]
+            },
+            "3a": {
+              "word": "sets",
+              "startingCell": "r3c2",
+              "clue": "Find places from space in ship",
+              "hints": [
+                "The solution means 'places'",
+                "'from space' = ET",
+                "'ship' = SS"
+              ]
+            },
+            "5a": {
+              "word": "rare",
+              "startingCell": "r5c2",
+              "clue": "Hardly cook painter again",
+              "hints": [
+                "The solution means 'hardly cook'",
+                "'painter' = RA (Royal Academy - it's a cryptic crossword norm)",
+                "'again' = RE"
+              ]
+            },
+            "2d": {
+              "word": "loser",
+              "startingCell": "r1c2",
+              "clue": "Close report to conceal failure",
+              "hints": [
+                "The solution means 'failure'",
+                "'conceal' is a hidden word indicator"
+              ]
+            },
+            "4d": {
+              "word": "alter",
+              "startingCell": "r1c4",
+              "clue": "Adjust later",
+              "hints": [
+                "The solution means 'adjust'...",
+                "...but adjust is also an anagram indicator"
+              ]
+            }
           }
         }
     }
