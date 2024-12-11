@@ -495,7 +495,9 @@ window.visualViewport.addEventListener('resize', () => {
 
 function handleResize()
 {
+    console.log('resize trig');
     if (window.visualViewport.width !== initialWidth) return;
+    console.log('resize followthru');
     const computedStyle = window.getComputedStyle(document.getElementById("gameCont"));
     const paddingTop = +computedStyle.paddingTop.slice(0, -2);
     const paddingBot = +computedStyle.paddingBottom.slice(0, -2);
