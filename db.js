@@ -1899,6 +1899,61 @@ const puzzles = {
                 "'trim edges' is a letter-deletion indicator"
               ]
             }
+          },
+          "11": {
+            "1a": {
+              "word": "sips",
+              "startingCell": "r1c2",
+              "clue": "Units take quiet gulps",
+              "hints": [
+                "The solution means 'gulps'",
+                "quiet = P (as in piano)",
+                "units = SIs"
+              ]
+            },
+            "3a": {
+              "word": "arise",
+              "startingCell": "r3c1",
+              "clue": "Stand up to wrong Zodiac sign",
+              "hints": [
+                "The solution means stand up",
+                "'wrong' is an anagram indicator",
+                "the zodiac sign in question is Aries"
+              ]
+            },
+            "5a": {
+              "word": "cysts",
+              "startingCell": "r5c1",
+              "clue": "See why time in ship caused growth",
+              "hints": [
+                "The solution means 'growth'  (n)",
+                "see why = C Y",
+                "'ship' = SS"
+              ]
+            },
+            "2d": {
+              "word": "sorry",
+              "startingCell": "r1c2",
+              "clue": "Mixed our sauce right and I'm regretful",
+              "hints": [
+                "The solution means 'regretful'",
+                "'mixed' is an anagram indicator",
+                "'right' = R",
+                "'our' = R",
+                "the sauce in question is SOY"
+              ]
+            },
+            "4d": {
+              "word": "posit",
+              "startingCell": "r1c4",
+              "clue": "Presume police officer is back with tea",
+              "hints": [
+                "The solution means 'presume'",
+                "'police officer' = PO",
+                "'back' is a reversal indicator",
+                "tea = T"
+              ]
+            }
           }
         }
     }
