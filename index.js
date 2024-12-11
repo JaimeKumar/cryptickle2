@@ -493,11 +493,6 @@ window.visualViewport.addEventListener('resize', () => {
     handleResize();
 });
 
-window.addEventListener('focus', e => {
-    handleResize();
-})
-
-
 function handleResize()
 {
     if (window.visualViewport.width !== initialWidth) return;
@@ -555,7 +550,8 @@ function initPuzzle()
         time++;
         var mins = Math.floor(time / 60);
         var secs = time % 60;
-        document.getElementById("time").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`
+        document.getElementById("time").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`;
+        handleResize();
     }, 1000)
     
     selectCell(Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
