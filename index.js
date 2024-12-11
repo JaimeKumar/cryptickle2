@@ -495,9 +495,7 @@ window.visualViewport.addEventListener('resize', () => {
 
 function handleResize()
 {
-    console.log('resize trig');
     if (window.visualViewport.width !== initialWidth) return;
-    console.log('resize followthru');
     const computedStyle = window.getComputedStyle(document.getElementById("gameCont"));
     const paddingTop = +computedStyle.paddingTop.slice(0, -2);
     const paddingBot = +computedStyle.paddingBottom.slice(0, -2);
@@ -509,12 +507,12 @@ function handleResize()
 
     var tableW = document.getElementById("gameTable").getBoundingClientRect().width;
     
-    if (totalH > window.visualViewport.height)
+    if (totalH > window.visualViewport.height || true) // or true is to allow resize not only if content is too big, but also too small!
     {
         tableW = tableW - (totalH - window.visualViewport.height);
-        document.getElementById("gameTable").style.width = tableW+'px';
+        document.getElementById("gameTable").style.width = tableW +'px';
     }
-    document.getElementById("gameTable").style.height = tableW+'px';
+    document.getElementById("gameTable").style.height = tableW +'px';
 }
 
 const initialWidth = window.visualViewport.width;
