@@ -551,7 +551,7 @@ function initPuzzle()
         var mins = Math.floor(time / 60);
         var secs = time % 60;
         document.getElementById("time").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`;
-        handleResize();
+        // handleResize();
     }, 1000)
     
     selectCell(Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
