@@ -1866,7 +1866,7 @@ const puzzles = {
             "3a": {
               "word": "evict",
               "startingCell": "r3c1",
-              "clue": "Captive doesn't want the crusts of pizza, remove",
+              "clue": "Crazy captive doesn't want the crusts of pizza, remove",
               "hints": [
                 "The solution means 'remove'",
                 "'crusts of pizza' = PA"
@@ -2002,6 +2002,55 @@ const puzzles = {
               "hints": [
                 "The solution means 'adjust'...",
                 "...but adjust is also an anagram indicator"
+              ]
+            }
+          }, 
+          "13": {
+            "1a": {
+              "word": "grass",
+              "startingCell": "r1c1",
+              "clue": "Sugarcane sugars don't keep you active",
+              "hints": [
+                "'sugarcane' is an example of the solution",
+                "'active' an anagram indicator",
+                "'don't keep you' is a letter-deletion indicator"
+              ]
+            },
+            "3a": {
+              "word": "arena",
+              "startingCell": "r3c1",
+              "clue": "Oddly close to a stadium",
+              "hints": [
+                "The solution means 'stadium'",
+                "'oddly' is an anagram indicator",
+                "'close to' = near"
+              ]
+            },
+            "5a": {
+              "word": "count",
+              "startingCell": "r5c1",
+              "clue": "Include nobleman",
+              "hints": [
+                "The solution means both 'include' and 'nobleman'"
+              ]
+            },
+            "3d": {
+              "word": "age",
+              "startingCell": "r1c3",
+              "clue": "For example, a revolutionary era",
+              "hints": [
+                "The solution means 'era'",
+                "'revolutionary' is a reversal indicator",
+                "'for example' = EG"
+              ]
+            },
+            "5d": {
+              "word": "smart",
+              "startingCell": "r1c5",
+              "clue": "Take trams back to be quick?",
+              "hints": [
+                "'back' is a reversal indicator",
+                "The solution means 'quick', but the question mark implies it's not the conventional meaning of quick"
               ]
             }
           }
