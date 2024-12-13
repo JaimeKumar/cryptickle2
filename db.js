@@ -2053,6 +2053,55 @@ const puzzles = {
                 "The solution means 'quick', but the question mark implies it's not the conventional meaning of quick"
               ]
             }
+          },
+          "14": {
+            "2a": {
+              "word": "eater",
+              "startingCell": "r2c1",
+              "clue": "In awe at erratic consumer",
+              "hints": [
+                "The solution means 'consumer'",
+                "'In' is a hidden-word indicator"
+              ]
+            },
+            "4a": {
+              "word": "lie",
+              "startingCell": "r4c1",
+              "clue": "Pretend rest",
+              "hints": [
+                "The solution means pretend and rest"
+              ]
+            },
+            "1d": {
+              "word": "cells",
+              "startingCell": "r1c1",
+              "clue": "The sound of trades for units",
+              "hints": [
+                "The solution means 'units'",
+                "'trades' = SELLS"
+              ]
+            },
+            "3d": {
+              "word": "otter",
+              "startingCell": "r1c3",
+              "clue": "Old tease has extremely eager animal",
+              "hints": [
+                "The solution is an animal",
+                "'tease' = TT",
+                "'extremely' is a letter-selection indicator for the extremes of the word i.e. first and last letter",
+                "old = O"
+              ]
+            },
+            "5d": {
+              "word": "drama",
+              "startingCell": "r1c5",
+              "clue": "A mother stalks doctor causing controversy",
+              "hints": [
+                "The solution means 'controversy'",
+                "'mother' = MA",
+                "'doctor' = DR"
+              ]
+            }
           }
         }
     }
