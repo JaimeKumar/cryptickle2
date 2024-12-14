@@ -2144,6 +2144,60 @@ const puzzles = {
                 "One could also say 'considers cash', or 'observes cash'"
               ]
             }
+          }, 
+          "16": {
+            "2a": {
+              "word": "relax",
+              "startingCell": "r2c1",
+              "clue": "Convert left cross with a concerning temper",
+              "hints": [
+                "The solution means 'temper'",
+                "'convert' is an anagram indicator",
+                "'cross' = X",
+                "'concerning' = RE (i.e. an email)",
+                "'left' = L"
+              ]
+            },
+            "4a": {
+              "word": "panel",
+              "startingCell": "r4c1",
+              "clue": "Controls quiet meandering lane",
+              "hints": [
+                "The solution is synonymous with 'controls'",
+                "quiet = P",
+                "'meandering' is an anagram indicator"
+              ]
+            },
+            "1d": {
+              "word": "erupt",
+              "startingCell": "r1c1",
+              "clue": "Boil up pure tea",
+              "hints": [
+                "The solution is synonymous with 'boil'",
+                "'up' is a reversal indicator for a down clue",
+                "'tea' = T"
+              ]
+            },
+            "3d": {
+              "word": "blank",
+              "startingCell": "r1c3",
+              "clue": "Bank takes loss and becomes vacant",
+              "hints": [
+                "The solution means 'vacant'",
+                "'loss' = L"
+              ]
+            },
+            "5d": {
+              "word": "exile",
+              "startingCell": "r1c5",
+              "clue": "Separation, times I left in ease",
+              "hints": [
+                "The solution means separation",
+                "'times' = X",
+                "'in ease' = E___E",
+                "left = L"
+              ]
+            }
           }
         }
     }
