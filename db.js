@@ -2102,6 +2102,48 @@ const puzzles = {
                 "'doctor' = DR"
               ]
             }
+          },
+          "15": {
+            "1a": {
+              "word": "agony",
+              "startingCell": "r1c1",
+              "clue": "Pain since New Years",
+              "hints": [
+                "The solution means 'pain'",
+                "for 'since', think of finding a synonym in the following scenario, 'many years since'",
+                "It could also be 'pain before new years', how might else you say 'many years before'"
+              ]
+            },
+            "4a": {
+              "word": "wheel",
+              "startingCell": "r4c1",
+              "clue": "We'll hear it rotates",
+              "hints": [
+                "The solution rotates",
+                "'hear' is a homophone indicator",
+                "The solution rotates and sounds like 'we'll'"
+              ]
+            },
+            "1d": {
+              "word": "avows",
+              "startingCell": "r1c1",
+              "clue": "Waves at sea don't come from the East, nothing inside maintains",
+              "hints": [
+                "The solution means 'maintains'",
+                "'at sea' is an anagram indicator",
+                "'don't come from the East' means remove an E",
+                "'nothing inside' means add an O inside"
+              ]
+            },
+            "4d": {
+              "word": "notes",
+              "startingCell": "r1c4",
+              "clue": "Accepts cash",
+              "hints": [
+                "The solution means both 'accepts' and 'cash'",
+                "One could also say 'considers cash', or 'observes cash'"
+              ]
+            }
           }
         }
     }
