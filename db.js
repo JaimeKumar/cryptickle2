@@ -2198,6 +2198,149 @@ const puzzles = {
                 "left = L"
               ]
             }
+          },
+          "17": {
+            "2a": {
+              "word": "south",
+              "startingCell": "r2c1",
+              "clue": "Down and out in silence",
+              "hints": [
+                "The solution is synonymous with 'down'",
+                "'silence' = SH"
+              ]
+            },
+            "4a": {
+              "word": "moral",
+              "startingCell": "r4c1",
+              "clue": "Some miss spoken lesson",
+              "hints": [
+                "'some miss' = M",
+                "The solution means 'lesson'"
+              ]
+            },
+            "2d": {
+              "word": "donor",
+              "startingCell": "r1c2",
+              "clue": "Contributor can do no right",
+              "hints": [
+                "The solution means 'contributor'",
+                "'right' = R"
+              ]
+            },
+            "4d": {
+              "word": "straw",
+              "startingCell": "r1c4",
+              "clue": "Back warts, you don't want the shortest one",
+              "hints": [
+                "'back' is a reversal indicator",
+                "You don't want the shortest one of the solution"
+              ]
+            }
+          },
+          "18": {
+            "1a": {
+              "word": "terms",
+              "startingCell": "r1c1",
+              "clue": "Set back involving regularly prim titles?",
+              "hints": [
+                "The solution means 'titles'",
+                "'regularly prim' = RM",
+                "'back' is a reversal indicator "
+              ]
+            },
+            "3a": {
+              "word": "elude",
+              "startingCell": "r3c1",
+              "clue": "Fight with energy, fight to escape",
+              "hints": [
+                "'fight' in one of its uses is an anagram indicator",
+                "The solution means 'escape'",
+                "'fight' in one of its uses = DUEL",
+                "'energy' = E"
+              ]
+            },
+            "5a": {
+              "word": "stern",
+              "startingCell": "r5c1",
+              "clue": "Severe numb head after bad rest, am I seeing double?",
+              "hints": [
+                "The solution means 'severe'",
+                "'numb head' = N",
+                "'bad' is an anagram indicator",
+                "'am I seeing double?', the solution is repeated elsewhere in the puzzle. I don't know if that's cool or lazy but voila"
+              ]
+            },
+            "1d": {
+              "word": "trees",
+              "startingCell": "r1c1",
+              "clue": "Head of team turns prophet, they grow branches",
+              "hints": [
+                "'head of team' = T",
+                "'prophet' = SEER"
+              ]
+            },
+            "3d": {
+              "word": "route",
+              "startingCell": "r1c3",
+              "clue": "Confusing tour before eastward journey",
+              "hints": [
+                "The solution means 'journey'",
+                "'eastward' = E",
+                "'confusing' is an anagram indicator"
+              ]
+            },
+            "5d": {
+              "word": "stern",
+              "startingCell": "r1c5",
+              "clue": "Rent's changed, it's unforgiving",
+              "hints": [
+                "The solution means 'unforgiving'",
+                "'changed' is an anagram indicator"
+              ]
+            }
+          }, 
+          "25": {
+            "1a": {
+              "word": "birth",
+              "startingCell": "r1c1",
+              "clue": "Bee hit Rudolph's nose somehow, it's why we celebrate",
+              "hints": [
+                "The solution is the reason we celebrate, what Christmas is really about",
+                "'Bee' = B",
+                "'Rudolph's nose' = R",
+                "'somehow' is an anagram indicator"
+              ]
+            },
+            "3a": {
+              "word": "carol",
+              "startingCell": "r3c1",
+              "clue": "Stocking-filler for bad children are confused for song",
+              "hints": [
+                "The solution means 'song'",
+                "'are' = R",
+                "'confused' is an anagram indicator",
+                "'stocking-filler for bad children' = COAL"
+              ]
+            },
+            "5a": {
+              "word": "candy",
+              "startingCell": "r5c1",
+              "clue": "A piece of chocolate and some yummy sweets",
+              "hints": [
+                "The solution means 'sweets'",
+                "'a piece of chocolate' = C",
+                "'some yummy' = Y"
+              ]
+            },
+            "5d": {
+              "word": "holly",
+              "startingCell": "r1c5",
+              "clue": "Jolly without a hint of jitters after holiday begins with festive foliage",
+              "hints": [
+                "The solution means 'festive foliage'",
+                "'a hint of jitters' = J"
+              ]
+            }
           }
         }
     }
