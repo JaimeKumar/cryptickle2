@@ -2221,7 +2221,7 @@ const puzzles = {
             "2d": {
               "word": "donor",
               "startingCell": "r1c2",
-              "clue": "Contributor can do no right",
+              "clue": "Contributor can, in part, do no right",
               "hints": [
                 "The solution means 'contributor'",
                 "'right' = R"
@@ -2298,7 +2298,7 @@ const puzzles = {
                 "'changed' is an anagram indicator"
               ]
             }
-          }, 
+          },
           "25": {
             "1a": {
               "word": "birth",
