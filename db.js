@@ -2299,6 +2299,58 @@ const puzzles = {
               ]
             }
           },
+          "19": {
+            "1a": {
+              "word": "swipe",
+              "startingCell": "r1c1",
+              "clue": "Steal work in progress in vacuous scheme",
+              "hints": [
+                "The solution means 'steal'",
+                "'vacuous' is a letter-deletion indicator, indicating to remove all inside letters",
+                "'work in progress' = WIP"
+              ]
+            },
+            "3a": {
+              "word": "occur",
+              "startingCell": "r3c1",
+              "clue": "Happen to seize our mess",
+              "hints": [
+                "The solution means 'happen'",
+                "'seize' = CC",
+                "'mess' is an anagram indicator"
+              ]
+            },
+            "1d": {
+              "word": "shone",
+              "startingCell": "r1c1",
+              "clue": "Quiet one stood out",
+              "hints": [
+                "The solution means 'stood out'",
+                "'quiet' = SH"
+              ]
+            },
+            "3d": {
+              "word": "inch",
+              "startingCell": "r1c3",
+              "clue": "A small distance from headless bird",
+              "hints": [
+                "The solution is 'a small distance'",
+                "'headless' means remove the first letter",
+                "The bird in question is FINCH"
+              ]
+            },
+            "5d": {
+              "word": "early",
+              "startingCell": "r1c5",
+              "clue": "Listener left before the first slice of Yule log, too soon",
+              "hints": [
+                "The solution means 'too soon'",
+                "'first slice of Yule log' = Y",
+                "'left' = L",
+                "'listener' = EAR"
+              ]
+            }
+          },
           "25": {
             "1a": {
               "word": "birth",
