@@ -2351,6 +2351,55 @@ const puzzles = {
               ]
             }
           },
+          "20": {
+            "1a": {
+              "word": "fuses",
+              "startingCell": "r1c1",
+              "clue": "Combines electrical components",
+              "hints": [
+                "The solution means both 'combines' and is a type of electrical component"
+              ]
+            },
+            "4a": {
+              "word": "lured",
+              "startingCell": "r4c1",
+              "clue": "Tempted Duke succeeds mad ruler who was beheaded",
+              "hints": [
+                "The solution means 'tempted'",
+                "'Duke' = D",
+                "'mad' is an anagram indicator",
+                "D succeeds ULER(jumbled) i.e. the D comes after"
+              ]
+            },
+            "1d": {
+              "word": "feel",
+              "startingCell": "r1c1",
+              "clue": "There's sense in safe electrics?",
+              "hints": [
+                "The solution means 'sense'",
+                "'There's sense in' indicates its a hidden-word clue"
+              ]
+            },
+            "3d": {
+              "word": "sharp",
+              "startingCell": "r1c3",
+              "clue": "Small instrument is shrill",
+              "hints": [
+                "The solution means 'shrill'",
+                "'small' = S",
+                "The instrument in question is stringed and heavenly"
+              ]
+            },
+            "5d": {
+              "word": "shed",
+              "startingCell": "r1c5",
+              "clue": "Get rid of outhouse ",
+              "hints": [
+                "The solution means both 'get rid of' and 'outhouse'",
+                "'get rid of' in terms of hair perhaps"
+              ]
+            }
+          },
           "25": {
             "1a": {
               "word": "birth",
