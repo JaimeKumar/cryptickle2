@@ -2400,6 +2400,56 @@ const puzzles = {
               ]
             }
           },
+          "21": {
+            "1a": {
+              "word": "stool",
+              "startingCell": "r1c1",
+              "clue": "Steals back chair",
+              "hints": [
+                "The solution means 'chair'",
+                "'back' is a reversal indicator",
+                "steals like in riots"
+              ]
+            },
+            "4a": {
+              "word": "run",
+              "startingCell": "r4c1",
+              "clue": "Peel the prune and escape!",
+              "hints": [
+                "The solution means 'escape'",
+                "'peel' means take off the outer letters"
+              ]
+            },
+            "1d": {
+              "word": "store",
+              "startingCell": "r1c1",
+              "clue": "Keep metal found on street",
+              "hints": [
+                "The solution means 'keep'",
+                "metal = ORE",
+                "street = ST"
+              ]
+            },
+            "3d": {
+              "word": "open",
+              "startingCell": "r1c3",
+              "clue": "Old enclosure is unlatched",
+              "hints": [
+                "The solution means 'unlatched'",
+                "old = O",
+                "enclosure like for pigs"
+              ]
+            },
+            "5d": {
+              "word": "leaps",
+              "startingCell": "r1c5",
+              "clue": "Jumps every four years",
+              "hints": [
+                "The solution means 'jumps'",
+                " and the solution is what the year does every 4 years"
+              ]
+            }
+          },
           "25": {
             "1a": {
               "word": "birth",
