@@ -2443,10 +2443,10 @@ const puzzles = {
             "5d": {
               "word": "leaps",
               "startingCell": "r1c5",
-              "clue": "Jumps every four years",
+              "clue": "In February, we notice it jumps",
               "hints": [
                 "The solution means 'jumps'",
-                " and the solution is what the year does every 4 years"
+                " and the solution is what the year does every 4 years and we notice it in February.. because there are more days"
               ]
             }
           },
