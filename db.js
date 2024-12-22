@@ -2476,6 +2476,44 @@ const puzzles = {
                   "hints": ["The solution means royal", "'bottoms up' - indicates reversal on a down clue", "Reverse a type of beer to find a synonym of royal"]
                 }
           },
+          "23": {
+            "1a": {
+              "word": "water",
+              "startingCell": "r1c1",
+              "clue": "Blind waiter serves drink",
+              "hints": [
+                "The solution is a drink",
+                "Blind = no eye = take out an 'I'"
+              ]
+            },
+            "3a": {
+              "word": "pesto",
+              "startingCell": "r3c1",
+              "clue": "Mix poets into sauce",
+              "hints": [
+                "The solution is a sauce",
+                "'mix' is an anagram indicator"
+              ]
+            },
+            "2d": {
+              "word": "agent",
+              "startingCell": "r1c2",
+              "clue": "Spy is a courteous man",
+              "hints": [
+                "The solution means 'spy'",
+                "'courteous man' = GENT"
+              ]
+            },
+            "4d": {
+              "word": "entry",
+              "startingCell": "r1c4",
+              "clue": "Doorway is hidden, why even try",
+              "hints": [
+                "The solution means 'doorway'",
+                "'hidden' is a hidden word indicator"
+              ]
+            }
+          },
           "25": {
             "1a": {
               "word": "birth",
