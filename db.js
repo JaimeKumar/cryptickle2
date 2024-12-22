@@ -2450,6 +2450,32 @@ const puzzles = {
               ]
             }
           },
+          "22": {
+                "2a": {
+                  "word": "caked",
+                  "clue": "Shuffle a deck, now it's covered.",
+                  "startingCell": "r2c1",
+                  "hints": ["'now it's covered' - the solution means 'covered'", "'Shuffle a deck' - anagram of 'a deck'"]
+                },
+                "4a": {
+                  "word": "stray",
+                  "clue": "Wandering beam of light on the street.",
+                  "startingCell": "r4c1",
+                  "hints": ["The solution means 'wandering'", "'beam of light' - means RAY", "'on the street' - means ST"]
+                },
+                "2d": {
+                  "word": "cacti",
+                  "clue": "A tactic without a team leader is a mess, they're painful to touch.",
+                  "startingCell": "r1c2",
+                  "hints": ["The solution are painful to touch", "'is a mess' - find an anagram", "'without a team leader' - removing a T", "'A tactic without a team leader is a mess' - find an anagram of TACIC"]
+                },
+                "4d": {
+                  "word": "regal",
+                  "clue": "Royal beer, bottoms up!",
+                  "startingCell": "r1c4",
+                  "hints": ["The solution means royal", "'bottoms up' - indicates reversal on a down clue", "Reverse a type of beer to find a synonym of royal"]
+                }
+          },
           "25": {
             "1a": {
               "word": "birth",
