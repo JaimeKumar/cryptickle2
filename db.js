@@ -2725,6 +2725,47 @@ const puzzles = {
                 "'charge' = TAX"
               ]
             }
+          },
+          "28": {
+            "2a": {
+              "word": "deter",
+              "startingCell": "r2c1",
+              "clue": "Scare off animal with junction",
+              "hints": [
+                "The solution means 'scare off'",
+                "the animal in question is DEER",
+                "the junction in question is a T junction"
+              ]
+            },
+            "1d": {
+              "word": "admit",
+              "startingCell": "r1c1",
+              "clue": "Confess to beheading bad man before Italian",
+              "hints": [
+                "The solution means 'confess'",
+                "'beheading bad' = AD",
+                "man = M",
+                "Italian = IT"
+              ]
+            },
+            "3d": {
+              "word": "tone",
+              "startingCell": "r2c3",
+              "clue": "Wrong note",
+              "hints": [
+                "The solution means 'note'",
+                "The solution is also an anagram of 'note' (wrong is an anagram indicator)"
+              ]
+            },
+            "5d": {
+              "word": "crust",
+              "startingCell": "r1c5",
+              "clue": "See rust layer",
+              "hints": [
+                "The solution means 'layer'",
+                "See = C"
+              ]
+            }
           }
         }
     }
