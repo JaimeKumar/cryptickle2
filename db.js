@@ -2673,6 +2673,58 @@ const puzzles = {
                 "'heartless' means remove middle letters"
               ]
             }
+          },
+          "27": {
+            "1a": {
+              "word": "draft",
+              "startingCell": "r1c1",
+              "clue": "Conscription Airforce in evacuated dogfight",
+              "hints": [
+                "The solution means 'conscription'",
+                "Airforce = RAF",
+                "'evacuated dogfight' = DT"
+              ]
+            },
+            "4a": {
+              "word": "ennui",
+              "startingCell": "r4c1",
+              "clue": "Boredom amongst a dozen nuisances ",
+              "hints": [
+                "The solution means 'boredom'",
+                "'amongst' is a hidden word indicator"
+              ]
+            },
+            "1d": {
+              "word": "date",
+              "startingCell": "r1c1",
+              "clue": "Daughter ate fruit",
+              "hints": [
+                "The solution is a fruit",
+                "Daughter = D",
+                "ate = ATE"
+              ]
+            },
+            "3d": {
+              "word": "amend",
+              "startingCell": "r1c3",
+              "clue": "Change a movie's original end",
+              "hints": [
+                "The solution means 'change'",
+                "'movie's original' = M",
+                "a = A",
+                "end = END"
+              ]
+            },
+            "5d": {
+              "word": "taxi",
+              "startingCell": "r1c5",
+              "clue": "Charge one cab",
+              "hints": [
+                "The solution means 'cab'",
+                "'one' = I",
+                "'charge' = TAX"
+              ]
+            }
           }
         }
     }
