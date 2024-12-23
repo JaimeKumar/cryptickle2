@@ -2451,30 +2451,44 @@ const puzzles = {
             }
           },
           "22": {
-                "2a": {
-                  "word": "caked",
-                  "clue": "Shuffle a deck, now it's covered.",
-                  "startingCell": "r2c1",
-                  "hints": ["'now it's covered' - the solution means 'covered'", "'Shuffle a deck' - anagram of 'a deck'"]
-                },
-                "4a": {
-                  "word": "stray",
-                  "clue": "Wandering beam of light on the street.",
-                  "startingCell": "r4c1",
-                  "hints": ["The solution means 'wandering'", "'beam of light' - means RAY", "'on the street' - means ST"]
-                },
-                "2d": {
-                  "word": "cacti",
-                  "clue": "A tactic without a team leader is a mess, they're painful to touch.",
-                  "startingCell": "r1c2",
-                  "hints": ["The solution are painful to touch", "'is a mess' - find an anagram", "'without a team leader' - removing a T", "'A tactic without a team leader is a mess' - find an anagram of TACIC"]
-                },
-                "4d": {
-                  "word": "regal",
-                  "clue": "Royal beer, bottoms up!",
-                  "startingCell": "r1c4",
-                  "hints": ["The solution means royal", "'bottoms up' - indicates reversal on a down clue", "Reverse a type of beer to find a synonym of royal"]
-                }
+            "1a": {
+              "word": "third",
+              "startingCell": "r1c1",
+              "clue": "A fraction behind runner-up",
+              "hints": [
+                "The solution means 'behind runner-up' and is also a fraction",
+                "If runner-up is second (place), what's behind that? "
+              ]
+            },
+            "4a": {
+              "word": "angle",
+              "startingCell": "r4c1",
+              "clue": "Perspective of corrupt angel ",
+              "hints": [
+                "corrupt is an anagram indicator",
+                "The solution means 'perspective'"
+              ]
+            },
+            "2d": {
+              "word": "haunt",
+              "startingCell": "r1c2",
+              "clue": "Visit relative after finishing lunch",
+              "hints": [
+                "The solution means 'visit'",
+                "'finishing lunch' = H",
+                "'relative' = AUNT"
+              ]
+            },
+            "4d": {
+              "word": "rifle",
+              "startingCell": "r1c4",
+              "clue": "Rummage through disorganised file, but first start reading",
+              "hints": [
+                "The solution means 'rummage'",
+                "'disorganised' is an anagram indicator",
+                "'start reading' = R"
+              ]
+            }
           },
           "23": {
             "1a": {
@@ -2511,6 +2525,57 @@ const puzzles = {
               "hints": [
                 "The solution means 'doorway'",
                 "'hidden' is a hidden word indicator"
+              ]
+            }
+          },
+          "24": {
+            "1a": {
+              "word": "house",
+              "startingCell": "r1c1",
+              "clue": "Make room for hospital on a river",
+              "hints": [
+                "The solution means 'make room for'",
+                "'hospital' = H",
+                "the river in question is the River Ouse"
+              ]
+            },
+            "3a": {
+              "word": "afoot",
+              "startingCell": "r3c1",
+              "clue": "A base on the horizon",
+              "hints": [
+                "The solution means 'on the horizon'",
+                "'base' = FOOT"
+              ]
+            },
+            "5a": {
+              "word": "write",
+              "startingCell": "r5c1",
+              "clue": "Unfortunately become fatigued after winning record?",
+              "hints": [
+                "The solution means 'record'",
+                "'winning' = W",
+                "'Unfortunately' is an anagram indicator",
+                "'become fatigued' = TIRE"
+              ]
+            },
+            "2d": {
+              "word": "offer",
+              "startingCell": "r1c2",
+              "clue": "Propose to rotten Queen",
+              "hints": [
+                "The solution means 'propose'",
+                "queen = ER",
+                "'rotten' = OFF"
+              ]
+            },
+            "4d": {
+              "word": "shout",
+              "startingCell": "r1c4",
+              "clue": "Cry, trapped in hellish outhouse",
+              "hints": [
+                "The solution means 'cry'",
+                "'trapped in' is a hidden word indicator"
               ]
             }
           },
@@ -2554,6 +2619,58 @@ const puzzles = {
               "hints": [
                 "The solution means 'festive foliage'",
                 "'a hint of jitters' = J"
+              ]
+            }
+          },
+          "26": {
+            "2a": {
+              "word": "trace",
+              "startingCell": "r2c1",
+              "clue": "Remnant of wild rat at church",
+              "hints": [
+                "The solution means 'remnant'",
+                "church = CE",
+                "'wild' is an anagram indicator"
+              ]
+            },
+            "4a": {
+              "word": "award",
+              "startingCell": "r4c1",
+              "clue": "Assign an apprentice",
+              "hints": [
+                "The solution means 'assign'",
+                "'an' = A",
+                "'apprentice' = WARD"
+              ]
+            },
+            "1d": {
+              "word": "steam",
+              "startingCell": "r1c1",
+              "clue": "Friends dancing in the mist",
+              "hints": [
+                "The solution means 'mist'",
+                "'dancing' is an anagram indicator",
+                "friends = mates"
+              ]
+            },
+            "3d": {
+              "word": "japan",
+              "startingCell": "r1c3",
+              "clue": "Country is just opening a crater ",
+              "hints": [
+                "The solution is a country",
+                "'just opening' = J",
+                "crater = PAN",
+                ""
+              ]
+            },
+            "5d": {
+              "word": "deed",
+              "startingCell": "r1c5",
+              "clue": "Depraved, heartless act",
+              "hints": [
+                "The solution means 'act'",
+                "'heartless' means remove middle letters"
               ]
             }
           }
