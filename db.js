@@ -2766,8 +2766,127 @@ const puzzles = {
                 "See = C"
               ]
             }
+          },
+          "29": {
+            "2a": {
+              "word": "oscar",
+              "startingCell": "r2c1",
+              "clue": "Award for old healed wound ",
+              "hints": [
+                "The solution is an award",
+                "'old' = O",
+                "'healed wound' = SCAR"
+              ]
+            },
+            "4a": {
+              "word": "audio",
+              "startingCell": "r4c1",
+              "clue": "Day ten comes after golden sound",
+              "hints": [
+                "The solution means 'sound'",
+                "'ten' = IO",
+                "'golden' = AU",
+                "day = D"
+              ]
+            },
+            "2d": {
+              "word": "issue",
+              "startingCell": "r1c2",
+              "clue": "Is suede secretly a problem?",
+              "hints": [
+                "The solution means 'problem'",
+                "'secretly' is a hidden-word indicator"
+              ]
+            },
+            "4d": {
+              "word": "habit",
+              "startingCell": "r1c4",
+              "clue": "Funny gag or routine ",
+              "hints": [
+                "The solution is synonymous with 'routine'",
+                "'funny' = HA",
+                "'gag' = BIT"
+              ]
+            }
+          },
+          "30": {
+            "2a": {
+              "word": "spoil",
+              "startingCell": "r2c1",
+              "clue": "Ruin the South Pole with petroleum",
+              "hints": [
+                "The solution means 'ruin'"
+              ]
+            },
+            "4a": {
+              "word": "movie",
+              "startingCell": "r4c1",
+              "clue": "Film wingless dove that is after a bite of mealworm",
+              "hints": [
+                "The solution means 'film'",
+                "'that is' = i.e. = IE",
+                "'wingless' is a letter-removal indicator, 'dove' becomes OV",
+                "'a bite of mealworm' = M"
+              ]
+            },
+            "3d": {
+              "word": "solve",
+              "startingCell": "r1c3",
+              "clue": "Somehow loves what you're trying to do to this clue",
+              "hints": [
+                "'somehow' is an anagram indicator",
+                "The solution is 'what you're trying to do to this clue'... as in to decipher it..."
+              ]
+            }
+          },
+          "31": {
+            "3a": {
+              "word": "owner",
+              "startingCell": "r3c1",
+              "clue": "Egg excites bird keeper",
+              "hints": [
+                "The solution means 'keeper'",
+                "'egg' = O",
+                "'excites' is an anagram indicator",
+                "the bird in question is a WREN"
+              ]
+            },
+            "1d": {
+              "word": "float",
+              "startingCell": "r1c1",
+              "clue": "Opening in flat pier",
+              "hints": [
+                "The solution means 'pier'",
+                "'opening' = O"
+              ]
+            },
+            "3d": {
+              "word": "handy",
+              "startingCell": "r1c3",
+              "clue": "Useful hour and year",
+              "hints": [
+                "The solution means 'useful'",
+                "hour = H",
+                "year = Y",
+                "and = AND"
+              ]
+            },
+            "5d": {
+              "word": "carve",
+              "startingCell": "r1c5",
+              "clue": "Vehicle has very elegant front shape?",
+              "hints": [
+                "The solution means 'shape' but not as a noun",
+                "very = V",
+                "'elegant front' = E",
+                "vehicle = CAR"
+              ]
+            }
           }
         }
+    },
+    "2025": {
+      "1": {}
     }
 }
 
