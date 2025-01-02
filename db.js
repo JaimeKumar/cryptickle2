@@ -2970,6 +2970,46 @@ const puzzles = {
               "'sound of car' = KAR"
             ]
           }
+        },
+        "3": {
+          "2a": {
+            "word": "widen",
+            "startingCell": "r2c1",
+            "clue": "Stretch part of jaw I dented",
+            "hints": [
+              "The solution means 'stretch'",
+              "'part of' is a hidden word indicator"
+            ]
+          },
+          "5a": {
+            "word": "opal",
+            "startingCell": "r5c2",
+            "clue": "Gem given by old friend",
+            "hints": [
+              "The solution is a gem",
+              "Old = O",
+              "friend = PAL"
+            ]
+          },
+          "2d": {
+            "word": "bingo",
+            "startingCell": "r1c2",
+            "clue": "Leave after rubbish game",
+            "hints": [
+              "The solution is a game",
+              "'rubbish' = BIN",
+              "'leave' = GO"
+            ]
+          },
+          "4d": {
+            "word": "media",
+            "startingCell": "r1c4",
+            "clue": "Journalism is poorly aimed",
+            "hints": [
+              "The solution is synonymous with 'journalism'",
+              "'poorly' is an anagram indicator"
+            ]
+          }
         }
       }
     }
