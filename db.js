@@ -2887,38 +2887,41 @@ const puzzles = {
     },
     "2025": {
       "1": {
-        "3a": {
-          "word": "duvet",
-          "startingCell": "r3c1",
-          "clue": "Couple takes first bit of vacation in blanket",
-          "hints": [
-            "The solution means 'blanket'",
-            "'first bit of vacation' = V",
-            "couple = DUET"
-          ]
+        "1": {
+          "3a": {
+            "word": "duvet",
+            "startingCell": "r3c1",
+            "clue": "Couple takes first bit of vacation in blanket",
+            "hints": [
+              "The solution means 'blanket'",
+              "'first bit of vacation' = V",
+              "couple = DUET"
+            ]
+          },
+          "2d": {
+            "word": "court",
+            "startingCell": "r1c2",
+            "clue": "Apprehended and heard at the tribunal",
+            "hints": [
+              "'and heard' is a homophone indicator",
+              "the solution means 'tribunal'",
+              "find a homophone of 'apprehended'"
+            ]
+          },
+          "4d": {
+            "word": "siege",
+            "startingCell": "r1c4",
+            "clue": "Front of soldier line, for example, sits at border of emergency barricade",
+            "hints": [
+              "The solution means 'barricade'",
+              "'front of soldier' = S",
+              "line = L",
+              "for example = EG",
+              "'border of emergency' = E"
+            ]
+          }
         },
-        "2d": {
-          "word": "court",
-          "startingCell": "r1c2",
-          "clue": "Apprehended and heard at the tribunal",
-          "hints": [
-            "'and heard' is a homophone indicator",
-            "the solution means 'tribunal'",
-            "find a homophone of 'apprehended'"
-          ]
-        },
-        "4d": {
-          "word": "siege",
-          "startingCell": "r1c4",
-          "clue": "Front of soldier line, for example, sits at border of emergency barricade",
-          "hints": [
-            "The solution means 'barricade'",
-            "'front of soldier' = S",
-            "line = L",
-            "for example = EG",
-            "'border of emergency' = E"
-          ]
-        }
+        "2": {}
       }
     }
 }

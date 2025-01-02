@@ -208,10 +208,20 @@ function showClue()
     var thisClue = thisPuzzle.words[selectedLine];
     document.getElementById("clue").innerHTML = thisClue.clue + ` (${thisClue.word.length})`;
 
-    document.getElementById('hintDisplay').innerHTML = "";
-    document.getElementById('hintNum').innerHTML = `0 / ${thisPuzzle.words[selectedLine].hints.length} revealed`;
+    var used = thisPuzzle.words[selectedLine].hintsUsed % thisPuzzle.words[selectedLine].hints.length;
+
+    if (used > 0)
+    {
+        document.getElementById('hintDisplay').innerHTML = thisPuzzle.words[selectedLine].hints[used];
+        document.getElementById('hintNum').innerHTML = `${Math.min(thisPuzzle.words[selectedLine].hintsUsed, thisPuzzle.words[selectedLine].hints.length)} / ${thisPuzzle.words[selectedLine].hints.length} revealed`;
+    }
+    else
+    {
+        document.getElementById('hintDisplay').innerHTML = "";
+        document.getElementById('hintNum').innerHTML = `0 / ${thisPuzzle.words[selectedLine].hints.length} revealed`;
+    }
     document.getElementById('hintLine').innerHTML = `Hints for ${selectedLine}`;
-    document.getElementById('hiddenReveal').classList.remove('hideHiddenReveal')
+    document.getElementById('hiddenReveal').classList.remove('hideHiddenReveal');
 }
 
 function keyPress(letter)
@@ -270,6 +280,7 @@ function clueArrow(dir, override = false)
     
     updateHighlight();
     showClue();
+
 }
 
 function checkFin()
@@ -402,6 +413,7 @@ function hintDesktop()
 
     if (thisPuzzle.words[selectedLine].hintsUsed < thisPuzzle.words[selectedLine].hints.length) thisPuzzle.hintsUsed++;
     thisPuzzle.words[selectedLine].hintsUsed++;
+
     document.getElementById('hintDisplay').innerHTML = thisPuzzle.words[selectedLine].hints[used];
     document.getElementById('hintNum').innerHTML = `${Math.min(thisPuzzle.words[selectedLine].hintsUsed, thisPuzzle.words[selectedLine].hints.length)} / ${thisPuzzle.words[selectedLine].hints.length} revealed`;
 }
@@ -413,8 +425,8 @@ function hint()
     if (thisPuzzle.words[selectedLine].hintsUsed < thisPuzzle.words[selectedLine].hints.length) thisPuzzle.hintsUsed++;
     thisPuzzle.words[selectedLine].hintsUsed++;
     document.getElementById('hintsCont').innerHTML = thisPuzzle.words[selectedLine].hints[used];
-    document.getElementById('hintOverscreen').classList.add('showOverScreen')
-    document.getElementById('hintWindow').classList.add('winned')
+    document.getElementById('hintOverscreen').classList.add('showOverScreen');
+    document.getElementById('hintWindow').classList.add('winned');
 }
 
 function closeHints()
@@ -515,10 +527,22 @@ function handleResize()
     document.getElementById("gameTable").style.height = tableW +'px';
 }
 
+function noPuzzle() {
+    document.getElementById('noPuzzle').classList.add('showOverScreen');
+    document.getElementById('noPuzz').classList.add('winned');
+}
+
+function closeNoPuzz()
+{
+    document.getElementById('noPuzzle').classList.remove('showOverScreen');
+    document.getElementById('noPuzz').classList.remove('winned');
+    archives();
+}
+
 const initialWidth = window.visualViewport.width;
 
 handleResize();
-var thisPuzzle = new puzzle(returnPuzzle(year, month, day)); 
+var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 
 function initPuzzle()
 {
@@ -560,4 +584,9 @@ function initPuzzle()
 
 document.getElementById("year").innerHTML = year;
 
-initPuzzle();
+if (Object.keys(thisPuzzle.words).length < 1) {
+    noPuzzle();
+}
+else {
+    initPuzzle();
+}
