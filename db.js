@@ -2921,7 +2921,56 @@ const puzzles = {
             ]
           }
         },
-        "2": {}
+        "2": {
+          "1a": {
+            "word": "evoke",
+            "startingCell": "r1c1",
+            "clue": "Awaken the day before feeling fine inside?",
+            "hints": [
+              "The solution means 'awaken'",
+              "the day before = EVE",
+              "fine = OK"
+            ]
+          },
+          "3a": {
+            "word": "lord",
+            "startingCell": "r3c2",
+            "clue": "Aristocrat is terribly cordial but not with the CIA",
+            "hints": [
+              "The solution is synonymous with 'aristocrat'",
+              "'terribly' is an anagram indicator",
+              "'but not with' is a letter-removal indicator"
+            ]
+          },
+          "5a": {
+            "word": "idea",
+            "startingCell": "r5c1",
+            "clue": "Plan to arrange aide",
+            "hints": [
+              "The solution means 'plan'",
+              "'arrange' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "valid",
+            "startingCell": "r1c2",
+            "clue": "Some survival ideas are reasonable",
+            "hints": [
+              "The solution means 'reasonable'",
+              "'some' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "karma",
+            "startingCell": "r1c4",
+            "clue": "Actions bring consequences to mother following the sound of car ",
+            "hints": [
+              "The solution means 'actions bring consequences'",
+              "mother = MA",
+              "'sound of car' = KAR"
+            ]
+          }
+        }
       }
     }
 }
