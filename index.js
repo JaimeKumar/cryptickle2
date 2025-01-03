@@ -299,6 +299,7 @@ function checkSolution()
 
     if (correct >= clickables.length) 
     {
+        localStorage.setItem(puzzleID, true);
         clearInterval(timer);
         var mins = Math.floor(time / 60);
         var secs = time % 60;
@@ -348,6 +349,7 @@ function archiveClick(nodeID)
             break;
         case 2:
             thisPuzzle = new puzzle(returnPuzzle(archiveYear, archiveMonth, nodeID));
+            puzzleID = nodeID + "/" + archiveMonth + "/" + archiveYear;
             initPuzzle();
             closeArchives();
             return;
@@ -365,7 +367,7 @@ function updateArchiveScreen()
             var nodes = returnYears(year);
             break;
         case 1:
-            var nodes = returnMonths(archiveYear, month);
+            var nodes = returnMonths(archiveYear, month, year);
             var disp = months;
             title += " > " + archiveYear;
             break;
@@ -381,8 +383,10 @@ function updateArchiveScreen()
 
     var elements = [];
     nodes.forEach((nodeID, i) => {
+        var id = nodeID + "/" + archiveMonth  + "/" + archiveYear;
+        console.log(localStorage.getItem(id) == "true" ? "archiveNode solved" : "archiveNode");
         if (archivesPos == 0) elements.push(`<div class="archiveNode" onclick="archiveClick(${nodeID})">${nodeID}</div>`)
-            else elements.push(`<div class="archiveNode" onclick="archiveClick(${nodeID})">${disp[nodeID]}</div>`)
+            else elements.push(`<div class="${localStorage.getItem(id) == "true"? "archiveNode solved" : "archiveNode"}" onclick="archiveClick(${nodeID})">${disp[nodeID]}</div>`)
     })
 
     document.getElementById('archivesDisplay').innerHTML = elements.join('');
@@ -543,6 +547,7 @@ const initialWidth = window.visualViewport.width;
 
 handleResize();
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+var puzzleID = day + "/" + month + "/" + year;
 
 function initPuzzle()
 {

@@ -401,9 +401,20 @@ tbody
     background-color: white;
 }
 
+.solved
+{
+    background-color: #289b74;
+    color: white;
+}
+
 .archiveNode:hover
 {
     background-color: rgb(220, 244, 255);
+}
+
+.solved:hover
+{
+    background-color: #114f3a;
 }
 
 .archivesDisplay

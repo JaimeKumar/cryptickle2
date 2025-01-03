@@ -3010,6 +3010,45 @@ const puzzles = {
               "'poorly' is an anagram indicator"
             ]
           }
+        },
+        "4": {
+          "1a": {
+            "word": "wrist",
+            "startingCell": "r1c1",
+            "clue": "Joint first to finish world record?",
+            "hints": [
+              "The solution is a joint",
+              "'world record' = WR",
+              "'first' = IST"
+            ]
+          },
+          "4a": {
+            "word": "today",
+            "startingCell": "r4c1",
+            "clue": "The 4th of January represented as the modern age returning in play?",
+            "hints": [
+              "'the modern age' = AD",
+              "'the modern age returning' = DA",
+              "'play' = TOY",
+              "The solution is the 4th of January, in the context of this puzzle"
+            ]
+          },
+          "2d": {
+            "word": "robot",
+            "startingCell": "r1c2",
+            "clue": "Machine begins to ridicule our bishop over old testament",
+            "hints": []
+          },
+          "4d": {
+            "word": "sugar",
+            "startingCell": "r1c4",
+            "clue": "Taunt us from below, how very sweet",
+            "hints": [
+              "The solution is very sweet",
+              "'from below' is a reversal indicator for a down clue",
+              "'taunt' = RAG"
+            ]
+          }
         }
       }
     }
@@ -3029,9 +3068,13 @@ function returnYears(currentYear)
     return res; 
 }
 
-function returnMonths(year, currentMonth)
+function returnMonths(year, currentMonth, currentYear)
 {
     var res = Object.keys(puzzles[year]).filter(mo => +mo <= currentMonth);
+    if (currentYear > year)
+    {
+      res = Object.keys(puzzles[year]);
+    }
     if (!res) return null;
     return res; 
 }
