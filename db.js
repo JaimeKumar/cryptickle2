@@ -3049,6 +3049,45 @@ const puzzles = {
               "'taunt' = RAG"
             ]
           }
+        },
+        "5": {
+          "2a": {
+            "word": "grown",
+            "startingCell": "r2c1",
+            "clue": "Whimper sounds like it's gotten bigger",
+            "hints": [
+              "The solution is a type of establishment"
+            ]
+          },
+          "4a": {
+            "word": "table",
+            "startingCell": "r4c1",
+            "clue": "Put off by story involving a bit of brutality",
+            "hints": [
+              "The solution means 'put off'",
+              "'a bit of brutality' = B",
+              "'story' = TALE"
+            ]
+          },
+          "2d": {
+            "word": "trial",
+            "startingCell": "r1c2",
+            "clue": "Hearing examination",
+            "hints": [
+              "The solution means both 'hearing' and 'examination'",
+              "'hearing' in the sense of a court hearing"
+            ]
+          },
+          "4d": {
+            "word": "swell",
+            "startingCell": "r1c4",
+            "clue": "Excellent week in trade",
+            "hints": [
+              "The solution means 'excellent'",
+              "'week' = W",
+              "'in trade' = S_ELL"
+            ]
+          }
         }
       }
     }
