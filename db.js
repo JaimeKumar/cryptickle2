@@ -3088,6 +3088,59 @@ const puzzles = {
               "'in trade' = S_ELL"
             ]
           }
+        },
+        "6": {
+          "2a": {
+            "word": "sweat",
+            "startingCell": "r2c1",
+            "clue": "Perspire in glorious weather",
+            "hints": [
+              "The solution means 'perspire'",
+              "'in' is a hidden word indicator"
+            ]
+          },
+          "4a": {
+            "word": "niche",
+            "startingCell": "r4c1",
+            "clue": "Back in Church before start of Easter recess?",
+            "hints": [
+              "The solution means 'recess'",
+              "church = CH",
+              "'start of Easter' = E",
+              "'back in' = NI"
+            ]
+          },
+          "1d": {
+            "word": "sin",
+            "startingCell": "r2c1",
+            "clue": "Casinos harbour evil",
+            "hints": [
+              "'harbour' is a hidden word indicator",
+              "the solution means 'evil'"
+            ]
+          },
+          "3d": {
+            "word": "mercy",
+            "startingCell": "r1c3",
+            "clue": "Frenchman says thankyou for leniency",
+            "hints": [
+              "The solution means 'leniency'",
+              "'says' is a homophone indicator",
+              "merci"
+            ]
+          },
+          "5d": {
+            "word": "tie",
+            "startingCell": "r2c5",
+            "clue": "They're gutted about it, losing the match",
+            "hints": [
+              "the = T",
+              "'IT losing the(T)' = I",
+              "the solution means 'match'",
+              "'they're gutted' = TE",
+              ""
+            ]
+          }
         }
       }
     }
