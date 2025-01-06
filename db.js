@@ -3141,6 +3141,47 @@ const puzzles = {
               ""
             ]
           }
+        },
+        "7": {
+          "2a": {
+            "word": "choke",
+            "startingCell": "r2c1",
+            "clue": "Suffocate when a bit of heat is added to coal",
+            "hints": [
+              "The solution means 'suffocate'",
+              "'a bit of heat' = H",
+              "coal = COKE"
+            ]
+          },
+          "4a": {
+            "word": "bride",
+            "startingCell": "r4c1",
+            "clue": "Newly-wed given exotic bird with decorative tail",
+            "hints": [
+              "'decorative tail' = E",
+              "'exotic' is an anagram indicator",
+              "The solution means 'newly-wed'"
+            ]
+          },
+          "2d": {
+            "word": "share",
+            "startingCell": "r1c2",
+            "clue": "Portion of small rabbit-like animal",
+            "hints": [
+              "The solution means 'portion'",
+              "'small' = S",
+              "'rabbit-like animal' - HARE"
+            ]
+          },
+          "5d": {
+            "word": "yemen",
+            "startingCell": "r1c5",
+            "clue": "Enemy fights for country",
+            "hints": [
+              "The solution is a country",
+              "'fights' is an anagram indicator"
+            ]
+          }
         }
       }
     }
