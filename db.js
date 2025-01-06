@@ -3182,6 +3182,56 @@ const puzzles = {
               "'fights' is an anagram indicator"
             ]
           }
+        },
+        "8": {
+          "1a": {
+            "word": "deal",
+            "startingCell": "r1c1",
+            "clue": "Trade in crude aluminium",
+            "hints": [
+              "The solution means 'trade'",
+              "'in' is a hidden word indicator"
+            ]
+          },
+          "4a": {
+            "word": "amuse",
+            "startingCell": "r4c1",
+            "clue": "A stimulus to entertain",
+            "hints": [
+              "The solution means 'entertain'",
+              "A = A",
+              "'stimulus' = MUSE"
+            ]
+          },
+          "1d": {
+            "word": "decaf",
+            "startingCell": "r1c1",
+            "clue": "Face the day, rising without caffiene",
+            "hints": [
+              "'rising' is a reversal indicator for down clues",
+              "'day' = D ('the' is filler, sorry)",
+              "The solution means 'without caffeine'"
+            ]
+          },
+          "3d": {
+            "word": "album",
+            "startingCell": "r1c3",
+            "clue": "Mix balm with uranium for collection",
+            "hints": [
+              "The solution means 'collection'",
+              "'mix' is an anagram indicator",
+              "uranium = U"
+            ]
+          },
+          "5d": {
+            "word": "diet",
+            "startingCell": "r2c5",
+            "clue": "Tide changes fast?",
+            "hints": [
+              "'changes' is an anagram indicator",
+              "The solution means 'fast'"
+            ]
+          }
         }
       }
     }
