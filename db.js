@@ -3232,6 +3232,49 @@ const puzzles = {
               "The solution means 'fast'"
             ]
           }
+        },
+        "9": {
+          "2a": {
+            "word": "stage",
+            "startingCell": "r2c1",
+            "clue": "Present era after saint?",
+            "hints": [
+              "The solution means 'present'",
+              "saint = ST",
+              "era = AGE"
+            ]
+          },
+          "4a": {
+            "word": "price",
+            "startingCell": "r4c1",
+            "clue": "Value quiet river bank with frozen water ",
+            "hints": [
+              "'quiet' = P",
+              "The solution means 'value'",
+              "'river bank' = R",
+              "'frozen water' = ICE"
+            ]
+          },
+          "1d": {
+            "word": "sap",
+            "startingCell": "r2c1",
+            "clue": "Secretion extracted from sarsaparilla",
+            "hints": [
+              "The solution means 'secretion'",
+              "'extracted from' is a hidden word indicator",
+              "sarsaparilla is the name of a tree, I googled it. not a hint sorry"
+            ]
+          },
+          "3d": {
+            "word": "basic",
+            "startingCell": "r1c3",
+            "clue": "Simple fabrics unravelled, losing finer edges",
+            "hints": [
+              "The solution means 'simple'",
+              "'unravelled' is an anagram indicator",
+              "'finer edges' = FR"
+            ]
+          }
         }
       }
     }
