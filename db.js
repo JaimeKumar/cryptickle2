@@ -3275,6 +3275,47 @@ const puzzles = {
               "'finer edges' = FR"
             ]
           }
+        },
+        "10": {
+          "2a": {
+            "word": "cava",
+            "startingCell": "r2c1",
+            "clue": "Excavate region for sparkling wine",
+            "hints": [
+              "'region' is a hidden word indicator",
+              "The solution is a sparkling wine"
+            ]
+          },
+          "4a": {
+            "word": "crow",
+            "startingCell": "r4c2",
+            "clue": "Almost coronate a bird",
+            "hints": [
+              "The solution is a bird",
+              "'almost' indicates to remove the last letter",
+              "almost CROWN"
+            ]
+          },
+          "3d": {
+            "word": "overt",
+            "startingCell": "r1c3",
+            "clue": "Stealthy mask removed, now undisguised",
+            "hints": [
+              "The solution means 'undisguised'",
+              "'mask removed' indicates to remove the first letter",
+              "stealthy = COVERT"
+            ]
+          },
+          "5d": {
+            "word": "awe",
+            "startingCell": "r3c5",
+            "clue": "We follow first character in reverence",
+            "hints": [
+              "The solution means 'reverence'",
+              "'first character' = A i.e. alphabet",
+              "we = WE"
+            ]
+          }
         }
       }
     }
