@@ -3316,6 +3316,46 @@ const puzzles = {
               "we = WE"
             ]
           }
+        },
+        "11": {
+          "2a": {
+            "word": "drama",
+            "startingCell": "r2c1",
+            "clue": "Theatre held by Dr Amar",
+            "hints": [
+              "The solution means 'theatre'",
+              "'held by' is a hidden-word indicator"
+            ]
+          },
+          "4a": {
+            "word": "stain",
+            "startingCell": "r4c1",
+            "clue": "Blemish ruins satin",
+            "hints": [
+              "The solution means 'blemish'",
+              "'ruins' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "write",
+            "startingCell": "r1c2",
+            "clue": "Communicate at religious ceremony after first sign of winter",
+            "hints": [
+              "The solution means 'communicate'",
+              "'first sign of winter' = W",
+              "religious ceremony = RITE"
+            ]
+          },
+          "4d": {
+            "word": "main",
+            "startingCell": "r2c4",
+            "clue": "US state removes latest chief?",
+            "hints": [
+              "The solution means 'chief'",
+              "'removes latest' indicates to remove the last letter",
+              "US state = maine"
+            ]
+          }
         }
       }
     }
