@@ -3356,6 +3356,85 @@ const puzzles = {
               "US state = maine"
             ]
           }
+        },
+        "12": {
+          "1a": {
+            "word": "brave",
+            "startingCell": "r1c1",
+            "clue": "Endure second class party",
+            "hints": [
+              "The solution means 'endure'",
+              "second class = B",
+              "party = RAVE"
+            ]
+          },
+          "4a": {
+            "word": "jumpy",
+            "startingCell": "r4c1",
+            "clue": "Nervous judge has doubt before perjury case",
+            "hints": [
+              "judge = J",
+              "The solution means 'nervous'",
+              "'doubt' = UM",
+              "perjury case = PY"
+            ]
+          },
+          "2d": {
+            "word": "rogue",
+            "startingCell": "r1c2",
+            "clue": "Urge duck that's wild and unpredictable",
+            "hints": [
+              "The solution means 'unpredictable'",
+              "duck = O (cricket)",
+              "'wild' is an anagram indicator",
+              "urgeo (anagram) = unpredictable"
+            ]
+          },
+          "4d": {
+            "word": "vamps",
+            "startingCell": "r1c4",
+            "clue": "Five units to refurbish",
+            "hints": [
+              "The solution means 'refurbish'",
+              "five = V",
+              "units = AMPS"
+            ]
+          }
+        },
+        "13": {
+          "2a": {
+            "word": "tulip",
+            "startingCell": "r2c1",
+            "clue": "After finishing harvest, you left one quiet flower",
+            "hints": [
+              "The solution is a flower",
+              "'finishing harvest' = T",
+              "you = U, left = L",
+              "one = I",
+              "quiet = P (piano in music notation)\n"
+            ]
+          },
+          "4a": {
+            "word": "burst",
+            "startingCell": "r4c1",
+            "clue": "Head of bolt with bad rust will rupture",
+            "hints": [
+              "The solution means 'rupture'",
+              "'Head of bolt' = B",
+              "'bad' is an anagram indicator"
+            ]
+          },
+          "3d": {
+            "word": "alarm",
+            "startingCell": "r1c3",
+            "clue": "Cold feet and a long arm",
+            "hints": [
+              "The solution means 'cold feet' ... if I'm honest it's a loose synonym",
+              "a = A",
+              "long = L",
+              "arm = ARM"
+            ]
+          }
         }
       }
     }
