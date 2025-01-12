@@ -3393,9 +3393,9 @@ const puzzles = {
           "4d": {
             "word": "vamps",
             "startingCell": "r1c4",
-            "clue": "Five units to refurbish",
+            "clue": "Refurbishes five units",
             "hints": [
-              "The solution means 'refurbish'",
+              "The solution means 'refurbishes'",
               "five = V",
               "units = AMPS"
             ]
