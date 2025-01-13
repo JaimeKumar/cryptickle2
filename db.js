@@ -3435,6 +3435,51 @@ const puzzles = {
               "arm = ARM"
             ]
           }
+        },
+        "14": {
+          "2a": {
+            "word": "solid",
+            "startingCell": "r2c1",
+            "clue": "Stable oil mixed in specialised case",
+            "hints": [
+              "'specialised case' = SD",
+              "The solution means 'stable'",
+              "'mixed' is an anagram indicator"
+            ]
+          },
+          "4a": {
+            "word": "reach",
+            "startingCell": "r4c1",
+            "clue": "Control huge flightless bird that has a bit of chocolate and goes wild",
+            "hints": [
+              "The solution means 'control', although not as a verb as the clue suggests",
+              "'a bit of chocolate' = C",
+              "'goes wild' is an anagram indicator",
+              "'huge flightless bird' = RHEA"
+            ]
+          },
+          "2d": {
+            "word": "money",
+            "startingCell": "r1c2",
+            "clue": "Cash back Yen after a volume unfortunately loses value",
+            "hints": [
+              "'unfortunately' is an anagram indicator",
+              "AVOLUME loses VALUE -> OM",
+              "'back' is a reversal indicator",
+              "The solution means 'cash'",
+              "NEY (yen back) after OM/MO = cash"
+            ]
+          },
+          "4d": {
+            "word": "disco",
+            "startingCell": "r1c4",
+            "clue": "Two discs to make music",
+            "hints": [
+              "The solution is a genre of music",
+              "two discs = disc disc",
+              "disc = O"
+            ]
+          }
         }
       }
     }
