@@ -3480,6 +3480,44 @@ const puzzles = {
               "disc = O"
             ]
           }
+        },
+        "15": {
+          "3a": {
+            "word": "storm",
+            "startingCell": "r3c1",
+            "clue": "Downpour in March?",
+            "hints": [
+              "The solution means both 'march' and 'downpour'"
+            ]
+          },
+          "5a": {
+            "word": "shred",
+            "startingCell": "r5c1",
+            "clue": "Break up boisterous herds",
+            "hints": [
+              "The solution means 'break up'",
+              "'boisterous' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "ditch",
+            "startingCell": "r1c2",
+            "clue": "Get rid of dry face irritation",
+            "hints": [
+              "'dry face' = D (face of Dry)",
+              "The solution means 'get rid of'",
+              "'irritation' = ITCH"
+            ]
+          },
+          "4d": {
+            "word": "curve",
+            "startingCell": "r1c4",
+            "clue": "Turn some vaccine into cure",
+            "hints": [
+              "The solution means 'turn'",
+              "'some vaccine' = V"
+            ]
+          }
         }
       }
     }
