@@ -70,10 +70,10 @@ class puzzle
     }
 }
 
-const today = new Date();
-const year = today.getFullYear();
-const month = today.getMonth() + 1;
-const day = today.getDate();  
+var today = new Date();
+var year = today.getFullYear();
+var month = today.getMonth() + 1;
+var day = today.getDate();  
 
 var dirSwitch = false;
 var selectedLine = null;
@@ -590,8 +590,15 @@ function initPuzzle()
 document.getElementById("year").innerHTML = year;
 
 if (Object.keys(thisPuzzle.words).length < 1) {
-    noPuzzle();
-}
-else {
-    initPuzzle();
+    today = new Date();
+    year = today.getFullYear();
+    month = today.getMonth() + 1;
+    day = today.getDate();      
+    thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+    if (Object.keys(thisPuzzle.words).length < 1) {
+        noPuzzle();
+    }
+    else {
+        initPuzzle();
+    }
 }
