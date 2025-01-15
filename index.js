@@ -589,11 +589,24 @@ function initPuzzle()
 
 document.getElementById("year").innerHTML = year;
 
-// console.log(thisPuzzle);
-initPuzzle();
-// if (Object.keys(thisPuzzle.words).length < 1) {
-//     noPuzzle();
-// }
-// else {
-//     initPuzzle();
-// }
+// console.log("1: " , thisPuzzle, Object.keys(thisPuzzle.words).length);
+// initPuzzle();
+if (Object.keys(thisPuzzle.words).length < 1) {
+    today = new Date();
+    year = today.getFullYear();
+    month = today.getMonth() + 1;
+    day = today.getDate();      
+    thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+    // console.log("2: " , thisPuzzle, Object.keys(thisPuzzle.words).length);
+
+    if (Object.keys(thisPuzzle.words).length < 1) {
+        noPuzzle();
+    }
+    else {
+        initPuzzle();
+    }
+}
+else
+{
+    initPuzzle();
+}
