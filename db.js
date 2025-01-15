@@ -3518,6 +3518,48 @@ const puzzles = {
               "'some vaccine' = V"
             ]
           }
+        },
+        "16": {
+          "1a": {
+            "word": "track",
+            "startingCell": "r1c1",
+            "clue": "In extreme trick, car reverses on racecourse",
+            "hints": [
+              "The solution means 'racecourse'",
+              "'extreme trick' = TK",
+              "'car reverses' = RAC"
+            ]
+          },
+          "3a": {
+            "word": "sweep",
+            "startingCell": "r3c1",
+            "clue": "Clean and cry after initiation to sorority",
+            "hints": [
+              "The solution is a way to 'clean'",
+              "'initiation to sorority' = S",
+              "cry = WEEP"
+            ]
+          },
+          "2d": {
+            "word": "rowdy",
+            "startingCell": "r1c2",
+            "clue": "Row deflated dinghy, it's uncontrollable",
+            "hints": [
+              "The solution means 'uncontrollable'",
+              "'deflated dinghy' = DY",
+              "row = ROW"
+            ]
+          },
+          "4d": {
+            "word": "cheap",
+            "startingCell": "r1c4",
+            "clue": "To hear the sound of a bird is inexpensive",
+            "hints": [
+              "The solution means 'inexpensive'",
+              "'to hear' indicates a homophone",
+              "the sound of a bird = CHEEP"
+            ]
+          }
         }
       }
     }
