@@ -3560,6 +3560,36 @@ const puzzles = {
               "the sound of a bird = CHEEP"
             ]
           }
+        },
+        "17": {
+          "2a": {
+            "word": "sport",
+            "startingCell": "r2c1",
+            "clue": "Don elaborate top with simpler outer wear",
+            "hints": [
+              "The solution means 'don'",
+              "'elaborate' is an anagram indicator",
+              "'simpler outer wear' = SR",
+              "SRTOP -> don (verb)"
+            ]
+          },
+          "4a": {
+            "word": "amber",
+            "startingCell": "r4c1",
+            "clue": "Gem found in bedchambers",
+            "hints": []
+          },
+          "3d": {
+            "word": "lobby",
+            "startingCell": "r1c3",
+            "clue": "Leaderless ploy involving a bit of beguilement and the lead singer from Blondie for influence",
+            "hints": [
+              "The solution means 'influence'",
+              "'leaderless ploy' = LOY",
+              "'bit of beguilement' = B",
+              "'the lead singer from Blondie' = B"
+            ]
+          }
         }
       }
     }
