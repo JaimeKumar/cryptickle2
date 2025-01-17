@@ -3590,6 +3590,47 @@ const puzzles = {
               "'the lead singer from Blondie' = B"
             ]
           }
+        },
+        "18": {
+          "2a": {
+            "word": "serve",
+            "startingCell": "r2c1",
+            "clue": "Obey accuser vetting prisoners",
+            "hints": [
+              "The solution means 'obey'",
+              "'prisoners' is an hidden word indicator"
+            ]
+          },
+          "4a": {
+            "word": "frost",
+            "startingCell": "r4c1",
+            "clue": "Icy layer for winding street",
+            "hints": [
+              "'street' = ST",
+              "'winding' is an anagram indicator",
+              "The solution is an 'icy layer'"
+            ]
+          },
+          "2d": {
+            "word": "beard",
+            "startingCell": "r1c2",
+            "clue": "Animal has defined nose and hairy chin",
+            "hints": [
+              "'defined nose' = D",
+              "The solution means 'hairy chin'",
+              "The animal in question can be brown, black or polar etc."
+            ]
+          },
+          "5d": {
+            "word": "depth",
+            "startingCell": "r1c5",
+            "clue": "A rat does not go into absurd death trap due to wisdom ",
+            "hints": [
+              "The solution means 'wisdom'",
+              "'absurd' is an anagram indicator",
+              "'does not go into' is a letter deletion indicator"
+            ]
+          }
         }
       }
     }
