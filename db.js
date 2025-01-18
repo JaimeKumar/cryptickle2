@@ -205,7 +205,7 @@ const puzzles = {
               "1a": {
                 "word": "asset",
                 "startingCell": "r1c1",
-                "clue": "Bending chairs is a talent",
+                "clue": "Bending seats is a talent",
                 "hints": [
                   "Bending is an anagram indicator",
                   "The solution means 'talent'",
@@ -3629,6 +3629,37 @@ const puzzles = {
               "The solution means 'wisdom'",
               "'absurd' is an anagram indicator",
               "'does not go into' is a letter deletion indicator"
+            ]
+          }
+        },
+        "19": {
+          "3a": {
+            "word": "curse",
+            "startingCell": "r3c1",
+            "clue": "Rescue is cut short at sea by disaster",
+            "hints": [
+              "The solution ... sort of ... means 'disaster'",
+              "'at sea' is an anagram indicator",
+              "'cut short' indicates to remove the last letter"
+            ]
+          },
+          "2d": {
+            "word": "abuse",
+            "startingCell": "r1c2",
+            "clue": "Take advantage of public transport surrounded by evacuated architecture",
+            "hints": [
+              "The solution means 'take advantage of'",
+              "'evacuated architecture' = AE",
+              "public transport = BUS"
+            ]
+          },
+          "4d": {
+            "word": "mason",
+            "startingCell": "r1c4",
+            "clue": "Craftsman has mother and son",
+            "hints": [
+              "The solution means 'craftsman'",
+              "mother = MA"
             ]
           }
         }
