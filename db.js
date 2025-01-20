@@ -3662,7 +3662,51 @@ const puzzles = {
               "mother = MA"
             ]
           }
-        }
+        },
+        "20": {
+          "1a": {
+            "word": "cower",
+            "startingCell": "r1c1",
+            "clue": "Back away from animal with  concerning reflex",
+            "hints": [
+              "'reflex' is a reversal indicator",
+              "'concerning' = RE",
+              "The solution means 'back away'",
+              "animal = COW"
+            ]
+          },
+          "3a": {
+            "word": "mover",
+            "startingCell": "r3c1",
+            "clue": "Almost remove drunk driver?",
+            "hints": [
+              "The solution means 'driver', but in the sense of a driving force",
+              "'almost' indicates to remove the last letter from 'remove'",
+              "'drunk' is an anagram indicator"
+            ]
+          },
+          "5a": {
+            "word": "mural",
+            "startingCell": "r5c1",
+            "clue": "No sir, wild ruralism is represented in this artform",
+            "hints": [
+              "The solution is a type of artform",
+              "'wild' is an anagram indicator",
+              "'No sir' is a letter deletion indicator"
+            ]
+          },
+          "3d": {
+            "word": "waver",
+            "startingCell": "r1c3",
+            "clue": "Indicate right then falter",
+            "hints": [
+              "The solution means 'falter'",
+              "right = R",
+              "'indicate' = WAVE"
+            ]
+          }
+        },
+        "21": {}
       }
     }
 }
