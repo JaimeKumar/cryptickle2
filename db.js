@@ -3706,7 +3706,38 @@ const puzzles = {
             ]
           }
         },
-        "21": {}
+        "21": {
+          "2a": {
+            "word": "raise",
+            "startingCell": "r2c1",
+            "clue": "Without some expertise, it's somehow easier to get a pay increase",
+            "hints": [
+              "'some expertise' = E",
+              "'somehow' is an anagram indicator",
+              "'without' is a letter deletion indicator",
+              "the solution means 'pay increase'"
+            ]
+          },
+          "4a": {
+            "word": "groom",
+            "startingCell": "r4c1",
+            "clue": "Prepare room for first gathering",
+            "hints": [
+              "'first gathering' = G",
+              "The solution means 'prepare'"
+            ]
+          },
+          "3d": {
+            "word": "bison",
+            "startingCell": "r1c3",
+            "clue": "Animal says bye to offspring",
+            "hints": [
+              "The solution is an animal",
+              "'says' is a homophone indicator",
+              "'offspring' = SON"
+            ]
+          }
+        }
       }
     }
 }
