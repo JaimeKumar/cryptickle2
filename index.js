@@ -590,8 +590,8 @@ function initPuzzle()
 document.getElementById("year").innerHTML = year;
 
 if (Object.keys(thisPuzzle.words).length < 1) {
-    location.reload();
-    // noPuzzle();
+    // location.reload();
+    noPuzzle();
 }
 else {
     initPuzzle();
