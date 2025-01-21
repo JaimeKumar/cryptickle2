@@ -3737,7 +3737,49 @@ const puzzles = {
               "'offspring' = SON"
             ]
           }
-        }
+        },
+        "22": {
+          "1a": {
+            "word": "bonds",
+            "startingCell": "r1c1",
+            "clue": "MI5 agent's handcuffs",
+            "hints": [
+              "'handcuffs' are an example of the solution",
+              "The MI5 agent in question has no time to die"
+            ]
+          },
+          "4a": {
+            "word": "testy",
+            "startingCell": "r4c1",
+            "clue": "Irritated by cricket match with dreary finish",
+            "hints": [
+              "'dreary finish' = Y",
+              "The solution means 'irritated'",
+              "cricket match = TEST"
+            ]
+          },
+          "2d": {
+            "word": "offer",
+            "startingCell": "r1c2",
+            "clue": "Submission is not on and concerning, send it back",
+            "hints": [
+              "not on = OFF",
+              "concerning = RE",
+              "send it back - reversal indicator",
+              "The solution means 'submission'"
+            ]
+          },
+          "4d": {
+            "word": "ditto",
+            "startingCell": "r1c4",
+            "clue": "Command it to hide the same thing again",
+            "hints": [
+              "'hide' indicated a hidden word",
+              "The solution means 'the same thing again'"
+            ]
+          }
+        },
+        "23": {"noPuzz": 0}
       }
     }
 }

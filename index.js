@@ -591,7 +591,10 @@ document.getElementById("year").innerHTML = year;
 
 if (Object.keys(thisPuzzle.words).length < 1) {
     location.reload();
-    // noPuzzle();
+}
+else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
+{
+    noPuzzle();
 }
 else {
     initPuzzle();
