@@ -3779,7 +3779,52 @@ const puzzles = {
             ]
           }
         },
-        "23": {"noPuzz": 0}
+        "23": {
+          "2a": {
+            "word": "cramp",
+            "startingCell": "r2c1",
+            "clue": "Onset of rain in camp is a pain",
+            "hints": [
+              "The solution is a pain",
+              "onset of rain = R"
+            ]
+          },
+          "4a": {
+            "word": "sauce",
+            "startingCell": "r4c1",
+            "clue": "Gold in dry mixed condoment",
+            "hints": [
+              "The solution means 'condoment'",
+              "gold = AU",
+              "dry = SEC",
+              "'mixed' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "great",
+            "startingCell": "r1c2",
+            "clue": "Large ogre attacks prisoners",
+            "hints": [
+              "The solution means 'large'",
+              "prisoners indicates a hidden word",
+              "",
+              ""
+            ]
+          },
+          "4d": {
+            "word": "smack",
+            "startingCell": "r1c4",
+            "clue": "Kiss current king who's after manuscript from the east",
+            "hints": [
+              "The solution means 'Kiss'",
+              "'current' = AC",
+              "king = K",
+              "manuscript = MS",
+              "'from the east' is a reversal indicator for across clues"
+            ]
+          }
+        },
+        "24": {"noPuzz": 0}
       }
     }
 }
