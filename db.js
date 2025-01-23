@@ -3824,7 +3824,47 @@ const puzzles = {
             ]
           }
         },
-        "24": {"noPuzz": 0}
+        "24": {
+          "2a": {
+            "word": "group",
+            "startingCell": "r2c1",
+            "clue": "Go up with frontman in rock band",
+            "hints": [
+              "The solution means 'band'",
+              "'frontman in rock' = R",
+              "go up = GOUP"
+            ]
+          },
+          "4a": {
+            "word": "verse",
+            "startingCell": "r4c1",
+            "clue": "Poetry reversed loses tone",
+            "hints": [
+              "'loses tone' indicates to remove a colour (tone)",
+              "The solution means 'poetry'",
+              ""
+            ]
+          },
+          "3d": {
+            "word": "board",
+            "startingCell": "r1c3",
+            "clue": "Council is bad or corrupt ",
+            "hints": [
+              "The solution means 'council'",
+              "'corrupt' is an anagram indicator"
+            ]
+          },
+          "5d": {
+            "word": "opted",
+            "startingCell": "r1c5",
+            "clue": "Part of worktop tediously picked",
+            "hints": [
+              "The solution means 'picked'",
+              "'part of' is a hidden word indicator"
+            ]
+          }
+        },
+        "25": {"noPuzz": 0}
       }
     }
 }
