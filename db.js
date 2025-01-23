@@ -3792,9 +3792,9 @@ const puzzles = {
           "4a": {
             "word": "sauce",
             "startingCell": "r4c1",
-            "clue": "Gold in dry mixed condoment",
+            "clue": "Gold in dry mixed condiment",
             "hints": [
-              "The solution means 'condoment'",
+              "The solution means 'condiment'",
               "gold = AU",
               "dry = SEC",
               "'mixed' is an anagram indicator"
