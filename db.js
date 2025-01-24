@@ -3864,7 +3864,48 @@ const puzzles = {
             ]
           }
         },
-        "25": {"noPuzz": 0}
+        "25": {
+          "2a": {
+            "word": "worth",
+            "startingCell": "r2c1",
+            "clue": "Unconventional throw has value",
+            "hints": [
+              "The solution means 'value'",
+              "'unconventional' is an anagram indicator"
+            ]
+          },
+          "1d": {
+            "word": "swarm",
+            "startingCell": "r1c1",
+            "clue": "Crowd forms for south-western division",
+            "hints": [
+              "The solution means 'crowd'",
+              "'south-western' = SW",
+              "'division' = ARM"
+            ]
+          },
+          "3d": {
+            "word": "treat",
+            "startingCell": "r1c3",
+            "clue": "Serve delicacy",
+            "hints": [
+              "The solution means both 'serve' and 'delicacy'",
+              "could be 'serve dessert' or 'handle sweetie' or 'nurse dog biscuit'"
+            ]
+          },
+          "5d": {
+            "word": "think",
+            "startingCell": "r1c5",
+            "clue": "Expect ink after starting tattoo on hand",
+            "hints": [
+              "'hand' = H (apparently, i didn't make it up)",
+              "'starting tattoo' = T",
+              "The solution means 'expect'",
+              "ink = INK"
+            ]
+          }
+        },
+        "26": {"noPuzz": 0}
       }
     }
 }
