@@ -3905,7 +3905,48 @@ const puzzles = {
             ]
           }
         },
-        "26": {"noPuzz": 0}
+        "26": {
+          "5a": {
+            "word": "strut",
+            "startingCell": "r5c1",
+            "clue": "When trust falters, walk confidently",
+            "hints": [
+              "'falters' is an anagram indicator",
+              "The solution means 'walk confidently'"
+            ]
+          },
+          "1d": {
+            "word": "bliss",
+            "startingCell": "r1c1",
+            "clue": "Establish without hate and misguided ignorance",
+            "hints": [
+              "'without' is a letter-deletion indicator",
+              "'misguided' is an anagram indicator",
+              "The solution, according to proverb, means 'ignorance'"
+            ]
+          },
+          "3d": {
+            "word": "tenor",
+            "startingCell": "r1c3",
+            "clue": "Singer performs right note",
+            "hints": [
+              "'right' = R",
+              "'performs' is an anagram indicator",
+              "The solution is a type of singer"
+            ]
+          },
+          "5d": {
+            "word": "toast",
+            "startingCell": "r1c5",
+            "clue": "Oats and tea could be a breakfast item",
+            "hints": [
+              "The solution is a breakfast item ",
+              "tea = T",
+              "'could be' is an anagram indicator"
+            ]
+          }
+        },
+        "27": {"noPuzz": 0}
       }
     }
 }
