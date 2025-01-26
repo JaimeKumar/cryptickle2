@@ -3946,7 +3946,39 @@ const puzzles = {
             ]
           }
         },
-        "27": {"noPuzz": 0}
+        "27": {
+          "3a": {
+            "word": "fruit",
+            "startingCell": "r3c1",
+            "clue": "Produce introduction to film and almost rue it?",
+            "hints": [
+              "The solution means 'produce' but not as a verb",
+              "'introduction to film' = F",
+              "'almost rue' = RU",
+              "it = IT"
+            ]
+          },
+          "2d": {
+            "word": "worst",
+            "startingCell": "r1c2",
+            "clue": "Awful characters in show or story",
+            "hints": [
+              "The solution means 'awful', the most awful to be precise",
+              "'characters in' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "twine",
+            "startingCell": "r1c4",
+            "clue": "Wind in winter briefly changes",
+            "hints": [
+              "The solution means 'wind' but not as a noun",
+              "'winter briefly' = WINTE",
+              "'changes' is an anagram indicator"
+            ]
+          }
+        },
+        "28": {"noPuzz": 0}
       }
     }
 }
