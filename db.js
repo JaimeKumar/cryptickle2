@@ -3978,7 +3978,39 @@ const puzzles = {
             ]
           }
         },
-        "28": {"noPuzz": 0}
+        "28": {
+          "2a": {
+            "word": "tough",
+            "startingCell": "r2c1",
+            "clue": "You got drunk and got a bit of hiccups, too bad!",
+            "hints": [
+              "You = U",
+              "'drunk' is an anagram indicator",
+              "'and got a bit of hiccups' means add H on the end",
+              "The solution means 'too bad!'"
+            ]
+          },
+          "4a": {
+            "word": "prime",
+            "startingCell": "r4c1",
+            "clue": "Empire loses leader, new chief",
+            "hints": [
+              "The solution means 'chief', but not as a noun",
+              "'empire loses leader' = EMPIR",
+              "'new' is an anagram indicator"
+            ]
+          },
+          "3d": {
+            "word": "tunic",
+            "startingCell": "r1c3",
+            "clue": "Stun iconically sampling piece of clothing",
+            "hints": [
+              "The solution is a piece of clothing",
+              "'sampling' indicates a hidden word"
+            ]
+          }
+        },
+        "29": {"noPuzz": 0}
       }
     }
 }
