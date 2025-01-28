@@ -4010,7 +4010,37 @@ const puzzles = {
             ]
           }
         },
-        "29": {"noPuzz": 0}
+        "29": {
+          "3a": {
+            "word": "biome",
+            "startingCell": "r3c1",
+            "clue": "Headless zombie ruined ecosystem",
+            "hints": [
+              "'headless' indicates to remove the first letter",
+              "'ruined' is an anagram indicator",
+              "The solution means 'ecosystem'"
+            ]
+          },
+          "2d": {
+            "word": "slice",
+            "startingCell": "r1c2",
+            "clue": "Carve and hollow out subcontinental ice",
+            "hints": [
+              "'hollow out subcontinental' = SL",
+              "The solution means 'carve'"
+            ]
+          },
+          "4d": {
+            "word": "limit",
+            "startingCell": "r1c4",
+            "clue": "Restrict part of nostril I'm itching",
+            "hints": [
+              "The solution means 'restrict'",
+              "'part of' indicates a hidden word"
+            ]
+          }
+        },
+        "30": {"noPuzz": 0}
       }
     }
 }
