@@ -4040,7 +4040,49 @@ const puzzles = {
             ]
           }
         },
-        "30": {"noPuzz": 0}
+        "30": {
+          "2a": {
+            "word": "amply",
+            "startingCell": "r2c1",
+            "clue": "First character in musical play performs adequately",
+            "hints": [
+              "The solution means 'adequately'",
+              "'first character in music' = M",
+              "'performs' is an anagram indicator",
+              "play = PLAY"
+            ]
+          },
+          "4a": {
+            "word": "gale",
+            "startingCell": "r4c1",
+            "clue": "A leg gets lost in the wind",
+            "hints": [
+              "The solution means 'wind'",
+              "'gets lost' is a "
+            ]
+          },
+          "1d": {
+            "word": "Tango",
+            "startingCell": "r1c1",
+            "clue": "Sunbathe and proceed to dance",
+            "hints": [
+              "The solution is a dance",
+              "'proceed' = GO",
+              "'sunbathe' = TAN"
+            ]
+          },
+          "3d": {
+            "word": "apple",
+            "startingCell": "r1c3",
+            "clue": "Fruit is slapped, peeled and cooked",
+            "hints": [
+              "The solution is a fruit",
+              "'slapped, peeled' = LAPPE (peeled = remove outer letters)",
+              "'cooked' is an anagram indicator"
+            ]
+          }
+        },
+        "31": {"noPuzz": 0}
       }
     }
 }
