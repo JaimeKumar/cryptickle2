@@ -4082,7 +4082,50 @@ const puzzles = {
             ]
           }
         },
-        "31": {"noPuzz": 0}
+        "31": {
+          "1a": {
+            "word": "blues",
+            "startingCell": "r1c1",
+            "clue": "Melancholy music genre",
+            "hints": [
+              "The solution means both 'melancholy' and is a music genre"
+            ]
+          },
+          "1d": {
+            "word": "bonus",
+            "startingCell": "r1c1",
+            "clue": "Extra body odour caused by rising sun",
+            "hints": [
+              "The solution means 'extra'",
+              "'body odour' = BO",
+              "'rising' is a reversal indicator for down clues",
+              "'rising sun' = NUS"
+            ]
+          },
+          "3d": {
+            "word": "under",
+            "startingCell": "r1c3",
+            "clue": "Endure endless malfunctions below",
+            "hints": [
+              "The solution means 'below'",
+              "'endure endless' = ENDUR",
+              "'malfunctions' is an anagram indicator"
+            ]
+          },
+          "5d": {
+            "word": "spicy",
+            "startingCell": "r1c5",
+            "clue": "Hot spy has delicate core",
+            "hints": [
+              "The solution means 'hot'",
+              "'delicate core' = IC\n(del IC ate)",
+              "'spy has' means place IC in spy to get 'hot'"
+            ]
+          }
+        }
+      },
+      "2": {
+        "1": {"noPuzz": 0}
       }
     }
 }
