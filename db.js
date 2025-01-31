@@ -4125,7 +4125,40 @@ const puzzles = {
         }
       },
       "2": {
-        "1": {"noPuzz": 0}
+        "1": {
+          "3a": {
+            "word": "delay",
+            "startingCell": "r3c1",
+            "clue": "Begin to dread American university returning from waiting period",
+            "hints": [
+              "The solution means 'waiting period'",
+              "'Begin to dread' = D",
+              "the university is Yale",
+              "Yale returning = ELAY"
+            ]
+          },
+          "2d": {
+            "word": "inept",
+            "startingCell": "r1c2",
+            "clue": "It holds pen backwards! It's incompetent!",
+            "hints": [
+              "The solution means 'incompetent'",
+              "'pen backwards' = NEP",
+              "'it holds' = I___T"
+            ]
+          },
+          "4d": {
+            "word": "wrath",
+            "startingCell": "r1c4",
+            "clue": "Rage at ugly wart on top of head",
+            "hints": [
+              "The solution means 'rage'",
+              "'ugly' is an anagram indicator",
+              "'top of head' = H"
+            ]
+          }
+        },
+        "2": {"noPuzz": 0}
       }
     }
 }
