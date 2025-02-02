@@ -599,3 +599,15 @@ else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
 else {
     initPuzzle();
 }
+
+setInterval(() => {
+    const now = new Date();
+    const storedDate = localStorage.getItem("lastDate") || "";
+
+    const today = now.toISOString().split("T")[0]; // "YYYY-MM-DD"
+
+    if (storedDate !== today) {
+        localStorage.setItem("lastDate", today);
+        location.reload(); // Reload page to fetch new puzzle
+    }
+}, 60000); // Check every minute
