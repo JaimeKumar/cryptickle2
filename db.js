@@ -4187,8 +4187,7 @@ const puzzles = {
             "hints": [
               "'Characters in' is a hidden word indicator",
               "The solution 'should be dressed'",
-              "The solution is a food",
-              "test"
+              "The solution is a food"
             ]
           }
         },
