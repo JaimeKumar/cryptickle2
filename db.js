@@ -4158,7 +4158,40 @@ const puzzles = {
             ]
           }
         },
-        "2": {"noPuzz": 0}
+        "2": {
+          "3a": {
+            "word": "realm",
+            "startingCell": "r3c1",
+            "clue": "Land right before bad meal?",
+            "hints": [
+              "The solution means 'land'",
+              "'right' = R",
+              "'bad' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "sleep",
+            "startingCell": "r1c2",
+            "clue": "Elephants less than excited for rest",
+            "hints": [
+              "'less' is a removal indicator",
+              "'ELEPHANTS less THAN' = ELEPS",
+              "'excited' is an anagram indicator",
+              "The solution means 'rest'"
+            ]
+          },
+          "4d": {
+            "word": "salad",
+            "startingCell": "r1c4",
+            "clue": "Characters in proposal advert should be dressed",
+            "hints": [
+              "'Characters in' is a hidden word indicator",
+              "The solution 'should be dressed'",
+              "The solution is a food"
+            ]
+          }
+        },
+        "3": {"noPuzz": 0}
       }
     }
 }
