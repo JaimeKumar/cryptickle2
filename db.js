@@ -4191,6 +4191,48 @@ const puzzles = {
             ]
           }
         },
+        "3": {
+          "2a": {
+            "word": "palau",
+            "startingCell": "r2c1",
+            "clue": "Country central to municipal authority ",
+            "hints": [
+              "The solution is a country",
+              "'central to' is a hidden-word indicator"
+            ]
+          },
+          "5a": {
+            "word": "beret",
+            "startingCell": "r5c1",
+            "clue": "Better without tacky crown and extravagant hat",
+            "hints": [
+              "'tacky crown' = T",
+              "'extravagant' is an anagram indicator",
+              "The solution is a type of hat",
+              "BETER anagram -> hat"
+            ]
+          },
+          "2d": {
+            "word": "cause",
+            "startingCell": "r1c2",
+            "clue": "Randomly accuse without clue, lead or reason ",
+            "hints": [
+              "'clue, lead' = C",
+              "'Randomly' is an anagram indicator",
+              "ACUSE anagram = reason synonym"
+            ]
+          },
+          "4d": {
+            "word": "matte",
+            "startingCell": "r1c4",
+            "clue": "Team has first round in tournament dismantled for dull finish",
+            "hints": [
+              "The solution means 'dull finish'",
+              "'first round in tournament' = T",
+              "'dismantled' is an anagram indicator"
+            ]
+          }
+        },
         "3": {"noPuzz": 0}
       }
     }
