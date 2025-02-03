@@ -4233,7 +4233,37 @@ const puzzles = {
             ]
           }
         },
-        "4": {"noPuzz": 0}
+        "4": {
+          "3a": {
+            "word": "chant",
+            "startingCell": "r3c1",
+            "clue": "Sing part of French anthem",
+            "hints": [
+              "The solution means 'sing'",
+              "'part of' is a hidden word indicator"
+            ]
+          },
+          "2d": {
+            "word": "usher",
+            "startingCell": "r1c2",
+            "clue": "Escort first of entourage in mad rush",
+            "hints": [
+              "The solution means 'escort'",
+              "'first of entourage' = E",
+              "'mad' is an anagram indicator"
+            ]
+          },
+          "4d": {
+            "word": "lance",
+            "startingCell": "r1c4",
+            "clue": "Clean defiled weapon",
+            "hints": [
+              "The solution is a weapon",
+              "'defiled' is an anagram indicator"
+            ]
+          }
+        },
+        "5": {"noPuzz": 0}
       }
     }
 }
