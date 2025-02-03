@@ -546,8 +546,6 @@ function closeNoPuzz()
 const initialWidth = window.visualViewport.width;
 
 handleResize();
-var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
-var puzzleID = day + "/" + month + "/" + year;
 
 function initPuzzle()
 {
@@ -557,20 +555,20 @@ function initPuzzle()
     archivesPos = 0;
     archiveYear = null;
     archiveMonth = null;
-
+    
     for (var cellID in thisPuzzle.cells)
-    {
-        if (!thisPuzzle.cells[cellID].clickable) 
         {
-            document.getElementById(cellID).classList.add("cellBlocked");
-        }
-        else
-        {
-            document.getElementById(cellID).classList.remove("cellBlocked");
-        }
-        
-        document.getElementById(cellID).innerHTML = "";
-    }
+            if (!thisPuzzle.cells[cellID].clickable) 
+                {
+                    document.getElementById(cellID).classList.add("cellBlocked");
+                }
+                else
+                {
+                    document.getElementById(cellID).classList.remove("cellBlocked");
+                }
+                
+                document.getElementById(cellID).innerHTML = "";
+            }
     
     clearInterval(timer);
     time = 0;
@@ -588,7 +586,8 @@ function initPuzzle()
 }
 
 document.getElementById("year").innerHTML = year;
-
+var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+var puzzleID = day + "/" + month + "/" + year;
 if (Object.keys(thisPuzzle.words).length < 1) {
     location.reload();
 }

@@ -4233,7 +4233,7 @@ const puzzles = {
             ]
           }
         },
-        "3": {"noPuzz": 0}
+        "4": {"noPuzz": 0}
       }
     }
 }
