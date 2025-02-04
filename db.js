@@ -4263,7 +4263,49 @@ const puzzles = {
             ]
           }
         },
-        "5": {"noPuzz": 0}
+        "5": {
+          "3a": {
+            "word": "forge",
+            "startingCell": "r3c1",
+            "clue": "Almost forget to build",
+            "hints": [
+              "The solution means 'build'",
+              "'almost' indicates to remove the last letter"
+            ]
+          },
+          "1d": {
+            "word": "fifty",
+            "startingCell": "r1c1",
+            "clue": "Some relief if typing a number",
+            "hints": [
+              "'some' is a hidden word indicator",
+              "The solution is a number"
+            ]
+          },
+          "3d": {
+            "word": "scrub",
+            "startingCell": "r1c3",
+            "clue": "Brush off crumbs without using back of broom",
+            "hints": [
+              "'back of broom' = M",
+              "The solution means 'brush'",
+              "'off' is an anagram indicator",
+              "'without using' is a letter-removal indicator"
+            ]
+          },
+          "5d": {
+            "word": "cheer",
+            "startingCell": "r1c5",
+            "clue": "Ease into empty harbour after sea hail",
+            "hints": [
+              "'ease' = EE",
+              "'empty harbour' = HR",
+              "'sea' = C",
+              "The solution means 'hail'"
+            ]
+          }
+        },
+        "6": {"noPuzz": 0}
       }
     }
 }

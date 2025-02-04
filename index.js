@@ -588,6 +588,7 @@ function initPuzzle()
 document.getElementById("year").innerHTML = year;
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
+console.log(thisPuzzle);
 if (Object.keys(thisPuzzle.words).length < 1) {
     location.reload();
 }
@@ -609,4 +610,4 @@ setInterval(() => {
         localStorage.setItem("lastDate", today);
         location.reload(); // Reload page to fetch new puzzle
     }
-}, 60000); // Check every minute
+}, 1000); // Check every second
