@@ -599,14 +599,16 @@ else {
     initPuzzle();
 }
 
+window.addEventListener("pageshow", (event) => {
+    const today = new Date().toISOString().split("T")[0];
+    const lastLoaded = localStorage.getItem("lastLoadedDate");
 
-document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") {
-        const today = new Date().toISOString().split("T")[0];
-        const lastLoaded = localStorage.getItem("lastLoadedDate");
-
-        if (lastLoaded !== today) {
-            localStorage.setItem("lastLoadedDate", today);
+    if (lastLoaded !== today) {
+        localStorage.setItem("lastLoadedDate", today);
+        
+        if (event.persisted) {
+            location.reload(true);
+        } else {
             location.reload();
         }
     }
