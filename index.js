@@ -601,10 +601,10 @@ else {
 
 window.addEventListener("pageshow", (event) => {
     const today = new Date().toISOString().split("T")[0];
-    const lastLoaded = localStorage.getItem("lastLoadedDate");
+    const lastLoaded = localStorage.getItem("lastLoaded");
 
     if (lastLoaded !== today) {
-        localStorage.setItem("lastLoadedDate", today);
+        localStorage.setItem("lastLoaded", today);
         
         if (event.persisted) {
             location.reload(true);

@@ -4305,7 +4305,48 @@ const puzzles = {
             ]
           }
         },
-        "6": {"noPuzz": 0}
+        "6": {
+          "3a": {
+            "word": "front",
+            "startingCell": "r3c1",
+            "clue": "First character in film, Tron, changes facade",
+            "hints": [
+              "The solution means 'facade'",
+              "'first character in film' = F",
+              "'Tron, changes' indicates an anagram of TRON"
+            ]
+          },
+          "5a": {
+            "word": "kenya",
+            "startingCell": "r5c1",
+            "clue": "Country fails to start sneaky play",
+            "hints": [
+              "The solution is a country",
+              "'fails to start' indicates to remove the first letter",
+              "'play' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "verge",
+            "startingCell": "r1c2",
+            "clue": "Border concealed by cover generally",
+            "hints": [
+              "The solution means 'border'",
+              "'concealed by' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "honey",
+            "startingCell": "r1c4",
+            "clue": "Hey! No brewing sweet substance!",
+            "hints": [
+              "The solution is a sweet substance",
+              "'brewing' is an anagram indicator",
+              "This one's so silly lol"
+            ]
+          }
+        },
+        "7": {"noPuzz": 0}
       }
     }
 }
