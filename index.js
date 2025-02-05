@@ -585,7 +585,6 @@ function initPuzzle()
     document.getElementById('pseudo').focus();
 }
 
-document.getElementById("year").innerHTML = year;
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
 console.log(thisPuzzle);
@@ -600,14 +599,17 @@ else {
     initPuzzle();
 }
 
-setInterval(() => {
-    const now = new Date();
-    const storedDate = localStorage.getItem("lastDate") || "";
 
-    const today = now.toISOString().split("T")[0]; // "YYYY-MM-DD"
+document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") {
+        const today = new Date().toISOString().split("T")[0];
+        const lastLoaded = localStorage.getItem("lastLoadedDate");
 
-    if (storedDate !== today) {
-        localStorage.setItem("lastDate", today);
-        location.reload(); // Reload page to fetch new puzzle
+        if (lastLoaded !== today) {
+            localStorage.setItem("lastLoadedDate", today);
+            location.reload();
+        }
     }
-}, 1000); // Check every second
+});
+
+document.getElementById("year").innerHTML = year;
