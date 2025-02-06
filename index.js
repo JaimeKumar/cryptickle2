@@ -601,8 +601,8 @@ else {
 }
 
 setInterval(() => {
-    const loaded = localStorage.getItem("lastPuzzle");
-    const current = new Date();
+    var loaded = localStorage.getItem("lastPuzzle");
+    var current = new Date();
     var y = current.getFullYear();
     var m = current.getMonth() + 1;
     var d = current.getDate();
