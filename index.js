@@ -75,7 +75,7 @@ var year = today.getFullYear();
 var month = today.getMonth() + 1;
 var day = today.getDate();
 
-localStorage.setItem("lastPuzzle", `${year}.${month}.${day}`);
+localStorage.setItem("lastPuzz", `${year}.${month}.${day}`);
 
 var dirSwitch = false;
 var selectedLine = null;
@@ -601,7 +601,7 @@ else {
 }
 
 setInterval(() => {
-    var loaded = localStorage.getItem("lastPuzzle");
+    var loaded = localStorage.getItem("lastPuzz");
     var current = new Date();
     var y = current.getFullYear();
     var m = current.getMonth() + 1;
