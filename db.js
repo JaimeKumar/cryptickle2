@@ -4313,7 +4313,8 @@ const puzzles = {
             "hints": [
               "The solution means 'facade'",
               "'first character in film' = F",
-              "'Tron, changes' indicates an anagram of TRON"
+              "'Tron, changes' indicates an anagram of TRON",
+              "test"
             ]
           },
           "5a": {
@@ -4346,7 +4347,46 @@ const puzzles = {
             ]
           }
         },
-        "7": {"noPuzz": 0}
+        "7": {
+          "1a": {
+            "word": "stalk",
+            "startingCell": "r1c1",
+            "clue": "Follow the sound of a bird",
+            "hints": [
+              "The solution means 'follow'",
+              "The solution is a homonym of a bird "
+            ]
+          },
+          "3a": {
+            "word": "fewer",
+            "startingCell": "r3c1",
+            "clue": "Giraffe we ran from hides less",
+            "hints": [
+              "The solution means 'less'",
+              "'hides' indicates a hidden word. Who would've thought!"
+            ]
+          },
+          "1d": {
+            "word": "safer",
+            "startingCell": "r1c1",
+            "clue": "Fears change, be more careful",
+            "hints": [
+              "The solution means 'more careful'",
+              "'change' is an anagram indicator"
+            ]
+          },
+          "5d": {
+            "word": "korma",
+            "startingCell": "r1c5",
+            "clue": "Mark starts oven cooking dish",
+            "hints": [
+              "The solution is a dish",
+              "'cooking' is an anagram indicator",
+              "'starts oven' = O"
+            ]
+          }
+        },
+        "8": {"noPuzz": 0}
       }
     }
 }

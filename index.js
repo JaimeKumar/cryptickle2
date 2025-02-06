@@ -70,10 +70,15 @@ class puzzle
     }
 }
 
-var today = new Date();
+const today = new Date();
 var year = today.getFullYear();
 var month = today.getMonth() + 1;
 var day = today.getDate();  
+
+const version = `${year}.${month}.${day}`;
+const script = document.createElement("script");
+script.src = `db.js?v=${version}`;
+document.head.appendChild(script);
 
 var dirSwitch = false;
 var selectedLine = null;
@@ -587,7 +592,6 @@ function initPuzzle()
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
-console.log(thisPuzzle);
 if (Object.keys(thisPuzzle.words).length < 1) {
     location.reload();
 }
@@ -599,19 +603,22 @@ else {
     initPuzzle();
 }
 
-window.addEventListener("pageshow", (event) => {
-    const today = new Date().toISOString().split("T")[0];
-    const lastLoaded = localStorage.getItem("lastLoaded");
+// window.addEventListener("pageshow", (event) => {
+//     const today = new Date().toISOString().split("T")[0];
+//     const lastLoaded = localStorage.getItem("lastLoaded2");
 
-    if (lastLoaded !== today) {
-        localStorage.setItem("lastLoaded", today);
+//     console.log(lastLoaded);
+
+//     if (lastLoaded !== today) {
+//         console.log(object)
+//         localStorage.setItem("lastLoaded2", today);
         
-        if (event.persisted) {
-            location.reload(true);
-        } else {
-            location.reload();
-        }
-    }
-});
+//         if (event.persisted) {
+//             location.reload(true);
+//         } else {
+//             location.reload();
+//         }
+//     }
+// });
 
 document.getElementById("year").innerHTML = year;
