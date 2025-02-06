@@ -73,7 +73,9 @@ class puzzle
 const today = new Date();
 var year = today.getFullYear();
 var month = today.getMonth() + 1;
-var day = today.getDate();  
+var day = today.getDate();
+
+localStorage.setItem("lastPuzzle", `${year}.${month}.${day}`);
 
 var dirSwitch = false;
 var selectedLine = null;
@@ -598,22 +600,14 @@ else {
     initPuzzle();
 }
 
-// window.addEventListener("pageshow", (event) => {
-//     const today = new Date().toISOString().split("T")[0];
-//     const lastLoaded = localStorage.getItem("lastLoaded2");
+setInterval(() => {
+    const loaded = localStorage.getItem("lastPuzzle");
+    const current = new Date();
+    var y = current.getFullYear();
+    var m = current.getMonth() + 1;
+    var d = current.getDate();
 
-//     console.log(lastLoaded);
-
-//     if (lastLoaded !== today) {
-//         console.log(object)
-//         localStorage.setItem("lastLoaded2", today);
-        
-//         if (event.persisted) {
-//             location.reload(true);
-//         } else {
-//             location.reload();
-//         }
-//     }
-// });
+    if (loaded != `${y}.${m}.${d}`) location.reload();
+}, 500);
 
 document.getElementById("year").innerHTML = year;

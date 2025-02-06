@@ -4313,8 +4313,7 @@ const puzzles = {
             "hints": [
               "The solution means 'facade'",
               "'first character in film' = F",
-              "'Tron, changes' indicates an anagram of TRON",
-              "test"
+              "'Tron, changes' indicates an anagram of TRON"
             ]
           },
           "5a": {
@@ -4333,7 +4332,8 @@ const puzzles = {
             "clue": "Border concealed by cover generally",
             "hints": [
               "The solution means 'border'",
-              "'concealed by' is a hidden word indicator"
+              "'concealed by' is a hidden word indicator",
+              "test"
             ]
           },
           "4d": {
