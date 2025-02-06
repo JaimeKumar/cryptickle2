@@ -75,11 +75,6 @@ var year = today.getFullYear();
 var month = today.getMonth() + 1;
 var day = today.getDate();  
 
-const version = `${year}.${month}.${day}`;
-const script = document.createElement("script");
-script.src = `db.js?v=${version}`;
-document.head.appendChild(script);
-
 var dirSwitch = false;
 var selectedLine = null;
 var selectedCell = null;
