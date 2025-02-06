@@ -4332,8 +4332,7 @@ const puzzles = {
             "clue": "Border concealed by cover generally",
             "hints": [
               "The solution means 'border'",
-              "'concealed by' is a hidden word indicator",
-              "test"
+              "'concealed by' is a hidden word indicator"
             ]
           },
           "4d": {
