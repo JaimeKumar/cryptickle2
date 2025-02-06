@@ -607,7 +607,7 @@ setInterval(() => {
     var m = current.getMonth() + 1;
     var d = current.getDate();
 
-    if (loaded != `${y}.${m}.${d}`) location.reload();
-}, 500);
+    if ("25.2.5" != `${y}.${m}.${d}`) location.reload();
+}, 5000);
 
 document.getElementById("year").innerHTML = year;
