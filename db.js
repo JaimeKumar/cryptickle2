@@ -4385,7 +4385,38 @@ const puzzles = {
             ]
           }
         },
-        "8": {"noPuzz": 0}
+        "8": {
+          "3a": {
+            "word": "crave",
+            "startingCell": "r3c1",
+            "clue": "Seek secretly magic ravens",
+            "hints": [
+              "The solution means 'seek'",
+              "'secretly' is a hidden word indicator"
+            ]
+          },
+          "2d": {
+            "word": "serve",
+            "startingCell": "r1c2",
+            "clue": "Start a rally for undeserved prisoners",
+            "hints": [
+              "'prisoners' is a hidden word indicator",
+              "The solution means 'start a rally'",
+              "tennis"
+            ]
+          },
+          "4d": {
+            "word": "never",
+            "startingCell": "r1c4",
+            "clue": "No way to untangle nerve",
+            "hints": [
+              "The solution means 'no way'",
+              "'untangle' is an anagram indicator",
+              ""
+            ]
+          }
+        },
+        "9": {"noPuzz": 0}
       }
     }
 }
