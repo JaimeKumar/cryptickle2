@@ -4416,7 +4416,38 @@ const puzzles = {
             ]
           }
         },
-        "9": {"noPuzz": 0}
+        "9": {
+          "3a": {
+            "word": "grunt",
+            "startingCell": "r3c1",
+            "clue": "Note smallest of the litter makes guttural noise",
+            "hints": [
+              "The solution means 'guttural noise'",
+              "'smallest of the litter' = RUNT",
+              "note = G (as in music)"
+            ]
+          },
+          "2d": {
+            "word": "parry",
+            "startingCell": "r1c2",
+            "clue": "Ward off rowdy outsiders by usual amount",
+            "hints": [
+              "The solution means 'ward off'",
+              "'rowdy outsiders' = RY",
+              "'usual amount' = PAR"
+            ]
+          },
+          "4d": {
+            "word": "diner",
+            "startingCell": "r1c4",
+            "clue": "Cooking in red restuarant",
+            "hints": [
+              "'cooking' is an anagram indicator",
+              "The solution is a type of 'restaurant'"
+            ]
+          }
+        },
+        "10": {"noPuzz": 0}
       }
     }
 }
