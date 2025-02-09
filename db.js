@@ -4447,7 +4447,47 @@ const puzzles = {
             ]
           }
         },
-        "10": {"noPuzz": 0}
+        "10": {
+          "1a": {
+            "word": "rupee",
+            "startingCell": "r1c1",
+            "clue": "Money and change, pure ecstasy",
+            "hints": [
+              "The solution is a currency aka money",
+              "'change' is an anagram indicator",
+              "ecstasy = E"
+            ]
+          },
+          "3a": {
+            "word": "banks",
+            "startingCell": "r3c1",
+            "clue": "Finance companies block thousands",
+            "hints": [
+              "'thousands' = KS",
+              "The solution(s) are finance companies",
+              "'block' = BAN"
+            ]
+          },
+          "5a": {
+            "word": "aches",
+            "startingCell": "r5c1",
+            "clue": "Pains during a chess match",
+            "hints": [
+              "The solution means 'pains'",
+              "'during' is a hidden word indicator"
+            ]
+          },
+          "3d": {
+            "word": "punch",
+            "startingCell": "r1c3",
+            "clue": "Drink from tap unchivalrously",
+            "hints": [
+              "The solution is a drink",
+              "'from' can be a hidden word indicator"
+            ]
+          }
+        },
+        "11": {"noPuzz": 0}
       }
     }
 }
