@@ -588,30 +588,47 @@ function initPuzzle()
 }
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
-var puzzleID = day + "/" + month + "/" + year;
-console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${JSON.stringify(thisPuzzle.words)}`);
-if (Object.keys(thisPuzzle.words).length < 1) {
-    console.log("no words, reload")
-    location.reload();
-}
-else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
+
+if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
 {
-    console.log("no puzz, msg")
     noPuzzle();
 }
-else {
-    console.log("init puzz")
+else
+{
     initPuzzle();
 }
 
 setInterval(() => {
-    var loaded = localStorage.getItem("lastPuzz");
-    var current = new Date();
-    var y = current.getFullYear();
-    var m = current.getMonth() + 1;
-    var d = current.getDate();
+    if (thisPuzzle == null)
+    {
+        location.reload();
+    }
+}, 1000);
 
-    if (loaded != `${y}.${m}.${d}`) location.reload();
-}, 500);
+// var puzzleID = day + "/" + month + "/" + year;
+// console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${JSON.stringify(thisPuzzle.words)}`);
+// if (Object.keys(thisPuzzle.words).length < 1) {
+//     console.log("no words, reload")
+//     location.reload();
+// }
+// else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
+// {
+//     console.log("no puzz, msg")
+//     noPuzzle();
+// }
+// else {
+//     console.log("init puzz")
+//     initPuzzle();
+// }
+
+// setInterval(() => {
+//     var loaded = localStorage.getItem("lastPuzz");
+//     var current = new Date();
+//     var y = current.getFullYear();
+//     var m = current.getMonth() + 1;
+//     var d = current.getDate();
+
+//     if (loaded != `${y}.${m}.${d}`) location.reload();
+// }, 500);
 
 document.getElementById("year").innerHTML = year;
