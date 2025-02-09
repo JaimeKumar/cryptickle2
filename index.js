@@ -589,14 +589,18 @@ function initPuzzle()
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
+console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${thisPuzzle}`);
 if (Object.keys(thisPuzzle.words).length < 1) {
+    console.log("no words, reload")
     location.reload();
 }
 else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
 {
+    console.log("no puzz, msg")
     noPuzzle();
 }
 else {
+    console.log("init puzz")
     initPuzzle();
 }
 
