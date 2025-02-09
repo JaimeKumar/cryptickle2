@@ -589,7 +589,7 @@ function initPuzzle()
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
-console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${JOSN.strinfigy(thisPuzzle)}`);
+console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${JSON.strinfigy(thisPuzzle)}`);
 if (Object.keys(thisPuzzle.words).length < 1) {
     console.log("no words, reload")
     location.reload();
