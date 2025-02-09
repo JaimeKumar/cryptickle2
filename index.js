@@ -70,7 +70,7 @@ class puzzle
     }
 }
 
-const today = new Date();
+var today = new Date();
 var year = today.getFullYear();
 var month = today.getMonth() + 1;
 var day = today.getDate();
@@ -589,7 +589,7 @@ function initPuzzle()
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
-console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${JSON.stringify(thisPuzzle)}`);
+console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${JSON.stringify(thisPuzzle.words)}`);
 if (Object.keys(thisPuzzle.words).length < 1) {
     console.log("no words, reload")
     location.reload();
