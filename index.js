@@ -592,7 +592,7 @@ if (thisPuzzle == null)
 {
     location.reload();
 }
-else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
+else if (Object.keys(thisPuzzle)[0] == "noPuzz")
 {
     noPuzzle();
 }
@@ -606,7 +606,7 @@ setInterval(() => {
     {
         location.reload();
     }
-    else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
+    else if (Object.keys(thisPuzzle)[0] == "noPuzz")
     {
         noPuzzle();
     }
