@@ -589,19 +589,18 @@ function initPuzzle()
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 
-if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
-{
-    noPuzzle();
-}
-else
-{
-    initPuzzle();
-}
-
 setInterval(() => {
     if (thisPuzzle == null)
     {
         location.reload();
+    }
+    else if (Object.keys(thisPuzzle.words)[0] == "noPuzz")
+    {
+        noPuzzle();
+    }
+    else
+    {
+        initPuzzle();
     }
 }, 1000);
 
