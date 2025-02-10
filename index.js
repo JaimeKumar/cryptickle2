@@ -70,13 +70,6 @@ class puzzle
     }
 }
 
-var today = new Date();
-var year = today.getFullYear();
-var month = today.getMonth() + 1;
-var day = today.getDate();
-
-localStorage.setItem("lastPuzz", `${year}.${month}.${day}`);
-
 var dirSwitch = false;
 var selectedLine = null;
 var selectedCell = null;
@@ -587,8 +580,43 @@ function initPuzzle()
     document.getElementById('pseudo').focus();
 }
 
-// var puzzleGet = returnPuzzle(year, month, day);
+var today = new Date();
+var year = today.getFullYear();
+var month = today.getMonth() + 1;
+var day = today.getDate();
+localStorage.setItem('lastTime', today.getTime());
+document.getElementById("year").innerHTML = year;
+
+// localStorage.setItem("lastPuzz", `${year}.${month}.${day}`);
+
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+if (returnPuzzle(year, month, day) == null) {
+    location.reload();
+}
+else if (Object.keys(returnPuzzle(year, month, day))[0] == "noPuzz")
+{
+    noPuzzle();
+}
+else {
+    initPuzzle();
+}
+
+setInterval(() => {
+    var current = new Date();
+    var time = current.getTime();
+    var lastTime = localStorage.getItem('lastTime');
+    localStorage.setItem('lastTime', time);
+    if (lastTime && time - lastTime > 300000)
+    {
+        location.reload();
+    }
+}, 500);
+
+
+// var puzzleID = day + "/" + month + "/" + year;
+
+
+// var puzzleGet = returnPuzzle(year, month, day);
 // if (puzzleGet == null)
 // {
 //     location.reload();
@@ -617,37 +645,21 @@ var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 //     }
 // }, 1000);
 
-var puzzleID = day + "/" + month + "/" + year;
-console.log(`date: ${day}.${month}.${year}, thisPuzzle: ${JSON.stringify(thisPuzzle.words)}`);
-if (returnPuzzle(year, month, day) == null) {
-    console.log("no words, reload")
-    location.reload();
-}
-else if (Object.keys(returnPuzzle(year, month, day))[0] == "noPuzz")
-{
-    console.log("no puzz, msg")
-    noPuzzle();
-}
-else {
-    console.log("init puzz")
-    initPuzzle();
-}
+// 
+// setInterval(() => {
+//     var loaded = localStorage.getItem("lastPuzz");
+//     var current = new Date();
+//     var y = current.getFullYear();
+//     var m = current.getMonth() + 1;
+//     var d = current.getDate();
 
-setInterval(() => {
-    var loaded = localStorage.getItem("lastPuzz");
-    var current = new Date();
-    var y = current.getFullYear();
-    var m = current.getMonth() + 1;
-    var d = current.getDate();
-
-    if (loaded != `${y}.${m}.${d}`) location.reload();
-}, 500);
-
-document.getElementById("year").innerHTML = year;
+//     if (loaded != `${y}.${m}.${d}`) location.reload();
+// }, 500);
 
 
-document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) {
-        console.log('vis change')
-    }
-});
+
+// document.addEventListener("visibilitychange", () => {
+//     if (!document.hidden) {
+//         console.log('vis change')
+//     }
+// });
