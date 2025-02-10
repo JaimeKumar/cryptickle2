@@ -644,3 +644,10 @@ setInterval(() => {
 }, 500);
 
 document.getElementById("year").innerHTML = year;
+
+
+document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+        console.log('vis change')
+    }
+});
