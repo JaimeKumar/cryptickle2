@@ -606,7 +606,7 @@ setInterval(() => {
     var time = current.getTime();
     var lastTime = localStorage.getItem('lastTime');
     localStorage.setItem('lastTime', time);
-    if (lastTime && time - lastTime > 300000)
+    if (lastTime && time - lastTime > 3600000)
     {
         location.reload();
     }

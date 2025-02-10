@@ -4487,7 +4487,52 @@ const puzzles = {
             ]
           }
         },
-        "11": {"noPuzz": 0}
+        "11": {
+          "2a": {
+            "word": "offal",
+            "startingCell": "r2c1",
+            "clue": "Baby horse has loud and convulsive entrails",
+            "hints": [
+              "The solution means 'entrails'",
+              "baby horse = foal",
+              "loud = f",
+              "convulsive is an anagram indicator"
+            ]
+          },
+          "5a": {
+            "word": "meter",
+            "startingCell": "r5c1",
+            "clue": "Share a bit of sublime teriyaki",
+            "hints": [
+              "The solution means 'share'",
+              "'a bit of' is a hidden word indicator",
+              ""
+            ]
+          },
+          "2d": {
+            "word": "fade",
+            "startingCell": "r2c2",
+            "clue": "Journalist returns after starting to feel a decline",
+            "hints": [
+              "journalist = ED",
+              "'returns' is a reversal indicator",
+              "'starting to feel' = F",
+              "The solution means 'decline'",
+              "a = A"
+            ]
+          },
+          "4d": {
+            "word": "taste",
+            "startingCell": "r1c4",
+            "clue": "Tennis beginner plays a set for experience",
+            "hints": [
+              "Tennis beginner = T",
+              "'plays' is an anagram indicator",
+              "The solution means 'experience' (noun)"
+            ]
+          }
+        },
+        "12": {"noPuzz": 0}
       }
     }
 }
