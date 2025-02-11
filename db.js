@@ -4532,7 +4532,58 @@ const puzzles = {
             ]
           }
         },
-        "12": {"noPuzz": 0}
+        "12": {
+          "3a": {
+            "word": "exist",
+            "startingCell": "r3c1",
+            "clue": "Former saint needs one to live",
+            "hints": [
+              "The solution means 'live'",
+              "Former = EX",
+              "saint = ST",
+              "one = I"
+            ]
+          },
+          "5a": {
+            "word": "fin",
+            "startingCell": "r5c3",
+            "clue": "Almost find body part of fish ",
+            "hints": [
+              "The solution is a body part of fish",
+              "'almost' indicates to remove the last letter"
+            ]
+          },
+          "1d": {
+            "word": "ideal",
+            "startingCell": "r1c1",
+            "clue": "Timeless detail redesigned to perfection",
+            "hints": [
+              "The solution means 'perfection'",
+              "'Timeless' indicates to remove T",
+              "'redesigned' is an anagram indicator"
+            ]
+          },
+          "3d": {
+            "word": "stiff",
+            "startingCell": "r1c3",
+            "clue": "Small argument is hard",
+            "hints": [
+              "The solution means 'hard'",
+              "small = S",
+              "argument = TIFF"
+            ]
+          },
+          "5d": {
+            "word": "often",
+            "startingCell": "r1c5",
+            "clue": "Frequently shelters in waterproof tent",
+            "hints": [
+              "'shelters in' is a hidden word indicator",
+              "The solution mean 'frequently'"
+            ]
+          }
+        },
+        "13": {"noPuzz": 0}
       }
     }
 }
