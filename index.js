@@ -590,6 +590,7 @@ document.getElementById("year").innerHTML = year;
 // localStorage.setItem("lastPuzz", `${year}.${month}.${day}`);
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+var puzzleID = day + "/" + month + "/" + year;
 if (returnPuzzle(year, month, day) == null) {
     location.reload();
 }
