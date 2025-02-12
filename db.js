@@ -4583,7 +4583,47 @@ const puzzles = {
             ]
           }
         },
-        "13": {"noPuzz": 0}
+        "13": {
+          "3a": {
+            "word": "cameo",
+            "startingCell": "r3c1",
+            "clue": "Brief appearance came around",
+            "hints": [
+              "'around' = O",
+              "The solution means 'brief appearance', like in a film"
+            ]
+          },
+          "1d": {
+            "word": "cocoa",
+            "startingCell": "r1c1",
+            "clue": "Ingredient made by two companies is first class",
+            "hints": [
+              "'first class' = A",
+              "'company' = CO",
+              "The solution is an ingredient"
+            ]
+          },
+          "3d": {
+            "word": "ramps",
+            "startingCell": "r1c3",
+            "clue": "Politician in crash not taking sides for banks?",
+            "hints": [
+              "Politician = MP",
+              "'crash not taking sides' = RAS",
+              "The solution means 'banks', but not as in finance companies"
+            ]
+          },
+          "5d": {
+            "word": "flood",
+            "startingCell": "r1c5",
+            "clue": "Rush of old dances",
+            "hints": [
+              "'dances' is an anagram indicator",
+              "The solution means 'rush'"
+            ]
+          }
+        },
+        "14": {"noPuzz": 0}
       }
     }
 }
