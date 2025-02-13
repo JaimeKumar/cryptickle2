@@ -4623,7 +4623,48 @@ const puzzles = {
             ]
           }
         },
-        "14": {"noPuzz": 0}
+        "14": {
+          "2a": {
+            "word": "rose",
+            "startingCell": "r2c1",
+            "clue": "Extremely serene after our love grew",
+            "hints": [
+              "'Extremely' indicates to select the first and last letters",
+              "'our' = R",
+              "'love' = O (like 0 in tennis)",
+              "The solution means 'grew'"
+            ]
+          },
+          "4a": {
+            "word": "heart",
+            "startingCell": "r4c1",
+            "clue": "Reeling at her card?",
+            "hints": [
+              "'Reeling' is an anagram indicator",
+              "The solution is a 'card'... a playing card."
+            ]
+          },
+          "2d": {
+            "word": "lover",
+            "startingCell": "r1c2",
+            "clue": "Opening five letters revolving around companion",
+            "hints": [
+              "The solution means 'companion'",
+              "'around' is a reversal indicator",
+              "'opening five letters' indicates to select the first five letters"
+            ]
+          },
+          "4d": {
+            "word": "yearn",
+            "startingCell": "r1c4",
+            "clue": "Desire a bit of intimacy earnestly  ",
+            "hints": [
+              "The solution means 'Desire'",
+              "'a bit of' is a hidden word indicator"
+            ]
+          }
+        },
+        "15": {"noPuzz": 0}
       }
     }
 }
