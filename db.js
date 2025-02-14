@@ -4664,7 +4664,49 @@ const puzzles = {
             ]
           }
         },
-        "15": {"noPuzz": 0}
+        "15": {
+          "2a": {
+            "word": "trust",
+            "startingCell": "r2c1",
+            "clue": "Faith will tarnish after time",
+            "hints": [
+              "The solution means 'faith'",
+              "'time' = T",
+              "'tarnish' = RUST"
+            ]
+          },
+          "4a": {
+            "word": "recur",
+            "startingCell": "r4c1",
+            "clue": "Brewing our cure will happen again",
+            "hints": [
+              "brewing is an anagram indicator",
+              "our = R",
+              "The solution means 'happen again'"
+            ]
+          },
+          "2d": {
+            "word": "erred",
+            "startingCell": "r1c2",
+            "clue": "Miscalculated part of her rediagnosis",
+            "hints": [
+              "The solution means 'miscalulated'",
+              "'part of' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "issue",
+            "startingCell": "r1c4",
+            "clue": "Busiest centre poses problem",
+            "hints": [
+              "'poses' is an anagram indicator",
+              "'centre' indicates to select all middle letters",
+              "The solution means 'problem'",
+              "anagram of USIES = problem"
+            ]
+          }
+        },
+        "16": {"noPuzz": 0}
       }
     }
 }
