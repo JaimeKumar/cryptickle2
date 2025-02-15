@@ -4706,7 +4706,51 @@ const puzzles = {
             ]
           }
         },
-        "16": {"noPuzz": 0}
+        "16": {
+          "3a": {
+            "word": "annex",
+            "startingCell": "r3c1",
+            "clue": "Take over grandmother who's confused and old",
+            "hints": [
+              "'old' = EX",
+              "'confused' is an anagram indicator",
+              "'grandmother' = NAN",
+              "The solution means 'take over'"
+            ]
+          },
+          "1d": {
+            "word": "stang",
+            "startingCell": "r1c1",
+            "clue": "Sunbathe inside, sides starting to get burnt",
+            "hints": [
+              "'sides starting' = SG\nsorry, not perfect",
+              "'sunbathe' = tan",
+              "The solution means burnt",
+              "'inside' means put TAN in SG"
+            ]
+          },
+          "3d": {
+            "word": "minor",
+            "startingCell": "r1c3",
+            "clue": "Insignificant bit of steel drum in orchestra",
+            "hints": [
+              "The solution means 'insignificant'",
+              "'bit of' is a hidden word indicator"
+            ]
+          },
+          "5d": {
+            "word": "toxic",
+            "startingCell": "r1c5",
+            "clue": "Dangerous to cross one sea",
+            "hints": [
+              "The solution means 'dangerous'",
+              "'cross' = X",
+              "'one' = I",
+              "'sea' = C"
+            ]
+          }
+        },
+        "17": {"noPuzz": 0}
       }
     }
 }
