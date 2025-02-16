@@ -4750,7 +4750,37 @@ const puzzles = {
             ]
           }
         },
-        "17": {"noPuzz": 0}
+        "17": {
+          "3a": {
+            "word": "roman",
+            "startingCell": "r3c1",
+            "clue": "Abandoned manor from ancient empire",
+            "hints": [
+              "The solution is an ancient empire",
+              "'abandoned' is a anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "stone",
+            "startingCell": "r1c2",
+            "clue": "Rock buried in the last one",
+            "hints": [
+              "The solution means 'rock'",
+              "'buried in' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "exact",
+            "startingCell": "r1c4",
+            "clue": "Demand one time gesture",
+            "hints": [
+              "The solution means 'demand'",
+              "'one time' = EX",
+              "'gesture' = ACT"
+            ]
+          }
+        },
+        "18": {"noPuzz": 0}
       }
     }
 }
