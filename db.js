@@ -4780,7 +4780,52 @@ const puzzles = {
             ]
           }
         },
-        "18": {"noPuzz": 0}
+        "18": {
+          "2a": {
+            "word": "spade",
+            "startingCell": "r2c1",
+            "clue": "Shovel a mixture of pea and pitted dates",
+            "hints": [
+              "'pitted dates' = DS",
+              "'mixture' is an anagram indicator",
+              "The solution means 'shovel'",
+              "'pea' = PEA, bit of a red herring as it can often = P"
+            ]
+          },
+          "4a": {
+            "word": "argue",
+            "startingCell": "r4c1",
+            "clue": "You rage wildly and bicker",
+            "hints": [
+              "'you' = U",
+              "'rage' = RAGE",
+              "'wildly' is an anagram indicator",
+              "The solution means 'bicker'"
+            ]
+          },
+          "2d": {
+            "word": "apart",
+            "startingCell": "r1c2",
+            "clue": "Separate assistant returns painting",
+            "hints": [
+              "'painting' = ART",
+              "'assistant' = PA",
+              "'returns' is a reversal indicator",
+              "The solution means 'separate'"
+            ]
+          },
+          "4d": {
+            "word": "odour",
+            "startingCell": "r1c4",
+            "clue": "Elements of wood, our identifying scent ",
+            "hints": [
+              "'elements of' is a hidden word indicator",
+              "The solution means 'scent'",
+              "'identifying' is just a linking word, i.e. [clue] identifying [solution] "
+            ]
+          }
+        },
+        "19": {"noPuzz": 0}
       }
     }
 }
