@@ -4825,7 +4825,38 @@ const puzzles = {
             ]
           }
         },
-        "19": {"noPuzz": 0}
+        "19": {
+          "2a": {
+            "word": "vowel",
+            "startingCell": "r2c1",
+            "clue": "Opening word in desperate love letter",
+            "hints": [
+              "'desperate' is an anagram indicator",
+              "'opening word' = W",
+              "The solution is a kind of letter / character"
+            ]
+          },
+          "4a": {
+            "word": "cargo",
+            "startingCell": "r4c1",
+            "clue": "Leave after vehicle brings delivery",
+            "hints": [
+              "'leave' = GO",
+              "The solution means 'delivery'",
+              "'vehicle' = CAR"
+            ]
+          },
+          "3d": {
+            "word": "swore",
+            "startingCell": "r1c3",
+            "clue": "Worse dancing is promised",
+            "hints": [
+              "'dancing' is an anagram indicator",
+              "The solution means 'promised'"
+            ]
+          }
+        },
+        "20": {"noPuzz": 0}
       }
     }
 }
