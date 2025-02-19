@@ -4856,7 +4856,40 @@ const puzzles = {
             ]
           }
         },
-        "20": {"noPuzz": 0}
+        "20": {
+          "2a": {
+            "word": "scare",
+            "startingCell": "r2c1",
+            "clue": "Dreadful scream nearly gives a fright",
+            "hints": [
+              "'dreadful' is an anagram indicator",
+              "'scream nearly' = SCREA",
+              "The solution means 'fright'"
+            ]
+          },
+          "4a": {
+            "word": "nylon",
+            "startingCell": "r4c1",
+            "clue": "Only a bit of nickel mixed into material",
+            "hints": [
+              "The solution is a material",
+              "'mixed' is of course an anagram indicator",
+              "'only a bit of nickel' = N",
+              "only = ONLY"
+            ]
+          },
+          "3d": {
+            "word": "eagle",
+            "startingCell": "r1c3",
+            "clue": "Bird found by dog off lead",
+            "hints": [
+              "'dog off lead' indicates to remove the first letter of a dog breed",
+              "The solution is a bird",
+              "The dog is a beagle"
+            ]
+          }
+        },
+        "21": {"noPuzz": 0}
       }
     }
 }
