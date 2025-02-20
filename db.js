@@ -4889,7 +4889,40 @@ const puzzles = {
             ]
           }
         },
-        "21": {"noPuzz": 0}
+        "21": {
+          "3a": {
+            "word": "stoic",
+            "startingCell": "r3c1",
+            "clue": "Enduring ridiculous costs, I lose direction",
+            "hints": [
+              "'lose direction' means remove one of N, E, S or W",
+              "'ridiculous' is an anagram indicator",
+              "The solution means 'enduring' but as an adjective"
+            ]
+          },
+          "2d": {
+            "word": "astir",
+            "startingCell": "r1c2",
+            "clue": "Barista without degree is busy stirring",
+            "hints": [
+              "'degree' = BA",
+              "'busy' is an anagram indicator",
+              "The solution means 'stirring'... maybe a little too literally"
+            ]
+          },
+          "4d": {
+            "word": "prior",
+            "startingCell": "r1c4",
+            "clue": "Professional has one right before",
+            "hints": [
+              "'professional' = PRO",
+              "'has one' = add an I",
+              "right = R",
+              "The solution means before"
+            ]
+          }
+        },
+        "22": {"noPuzz": 0}
       }
     }
 }
