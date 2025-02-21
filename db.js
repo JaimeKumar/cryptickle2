@@ -4922,7 +4922,41 @@ const puzzles = {
             ]
           }
         },
-        "22": {"noPuzz": 0}
+        "22": {
+          "2a": {
+            "word": "quote",
+            "startingCell": "r2c1",
+            "clue": "Question you wrote without   heading is not right, repeat",
+            "hints": [
+              "question = Q, you = U",
+              "'without heading' indicates to remove the first letter",
+              "'not right' indicates to remove an R",
+              "The solution means 'repeat'"
+            ]
+          },
+          "4a": {
+            "word": "bugle",
+            "startingCell": "r4c1",
+            "clue": "The French follow listening device to find an instrument",
+            "hints": [
+              "The french = LE",
+              "'listening device' = BUG",
+              "The solution is an instrument"
+            ]
+          },
+          "3d": {
+            "word": "dodge",
+            "startingCell": "r1c3",
+            "clue": "Avoid odd poses, for example, back to front",
+            "hints": [
+              "'poses' is an anagram indicator",
+              "'for example' = EG",
+              "'back to front' is a reversal indicator",
+              "The solution means 'avoid'"
+            ]
+          }
+        },
+        "23": {"noPuzz": 0}
       }
     }
 }
