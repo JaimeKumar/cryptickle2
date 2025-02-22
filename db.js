@@ -4956,7 +4956,48 @@ const puzzles = {
             ]
           }
         },
-        "23": {"noPuzz": 0}
+        "23": {
+          "3a": {
+            "word": "stamp",
+            "startingCell": "r3c1",
+            "clue": "Bit of witness tampering is necessary to send a message",
+            "hints": [
+              "'bit of' is a hidden word indicator",
+              "The solution is something that is necessary to send a message (via post)"
+            ]
+          },
+          "5a": {
+            "word": "lathe",
+            "startingCell": "r5c1",
+            "clue": "Heat large cooking machine",
+            "hints": [
+              "'cooking' is an anagram indicator",
+              "'large' = L",
+              "The solution is a machine"
+            ]
+          },
+          "3d": {
+            "word": "slant",
+            "startingCell": "r1c3",
+            "clue": "Trim plants vigorously to an angle",
+            "hints": [
+              "'Trim plants' = LANTS",
+              "'vigorously' is an anagram indicator",
+              "The solution means 'angle'"
+            ]
+          },
+          "5d": {
+            "word": "lapse",
+            "startingCell": "r1c5",
+            "clue": "Listening to loops deteriorate",
+            "hints": [
+              "The solution means 'deteriorate'",
+              "loops = laps",
+              "'listening to' is a homophone indicator"
+            ]
+          }
+        },
+        "24": {"noPuzz": 0}
       }
     }
 }
