@@ -4997,7 +4997,49 @@ const puzzles = {
             ]
           }
         },
-        "24": {"noPuzz": 0}
+        "24": {
+          "3a": {
+            "word": "towel",
+            "startingCell": "r3c1",
+            "clue": "Remove sulphur from lowest rocks, it helps drying",
+            "hints": [
+              "sulphur = S",
+              "'rocks' is an anagram indicator",
+              "The solution is used for drying",
+              "LOWET anagram -> used for drying"
+            ]
+          },
+          "5a": {
+            "word": "realm",
+            "startingCell": "r5c1",
+            "clue": "True leader of monarchy for kingdom ",
+            "hints": [
+              "'leader of monarchy' = M",
+              "The solution means 'kingdom'",
+              "True = REAL"
+            ]
+          },
+          "2d": {
+            "word": "phone",
+            "startingCell": "r1c2",
+            "clue": "Skin of peach has one ring",
+            "hints": [
+              "skin of peach = PH",
+              "The solution means 'ring' as a verb",
+              "one = ONE"
+            ]
+          },
+          "4d": {
+            "word": "swell",
+            "startingCell": "r1c4",
+            "clue": "All's well, some excellent",
+            "hints": [
+              "The solution means 'excellent'",
+              "'some' is a hidden word indicator"
+            ]
+          }
+        },
+        "25": {"noPuzz": 0}
       }
     }
 }
