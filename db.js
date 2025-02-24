@@ -5039,7 +5039,62 @@ const puzzles = {
             ]
           }
         },
-        "25": {"noPuzz": 0}
+        "25": {
+          "1a": {
+            "word": "feuds",
+            "startingCell": "r1c1",
+            "clue": "France and EU begin to deescalate small disputes",
+            "hints": [
+              "The solution means 'disputes'",
+              "France = F",
+              "'begin to deescalate' = D",
+              "small = S",
+              "EU = EU"
+            ]
+          },
+          "3a": {
+            "word": "patio",
+            "startingCell": "r3c1",
+            "clue": "Terrace is quiet at ten",
+            "hints": [
+              "The solution means 'terrace'",
+              "quiet = P",
+              "ten = IO",
+              "at = AT"
+            ]
+          },
+          "5a": {
+            "word": "sieve",
+            "startingCell": "r5c1",
+            "clue": "Slice oddly with extremely versatile kitchen utensil",
+            "hints": [
+              "The solution is a kitchen utensil",
+              "'oddly' indicates to select odd letters",
+              "'extremely versatile' = VE, i.e. the extremes of (v)ersatil(e)"
+            ]
+          },
+          "3d": {
+            "word": "untie",
+            "startingCell": "r1c3",
+            "clue": "Release one tune carelessly",
+            "hints": [
+              "'carelessly' is an anagram indicator",
+              "one = I",
+              "The solution means 'release'"
+            ]
+          },
+          "5d": {
+            "word": "spoke",
+            "startingCell": "r1c5",
+            "clue": "Small jab uttered",
+            "hints": [
+              "small = S",
+              "The solution means 'uttered'",
+              "jab = POKE"
+            ]
+          }
+        },
+        "26": {"noPuzz": 0}
       }
     }
 }
