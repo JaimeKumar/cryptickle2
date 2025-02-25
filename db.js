@@ -5094,7 +5094,48 @@ const puzzles = {
             ]
           }
         },
-        "26": {"noPuzz": 0}
+        "26": {
+          "3a": {
+            "word": "noose",
+            "startingCell": "r3c1",
+            "clue": "Loop back soon before first sign of evening",
+            "hints": [
+              "'back' is a reversal indicator",
+              "'first sign of evening' = E",
+              "The solution is synonymous with 'loop'"
+            ]
+          },
+          "1d": {
+            "word": "mania",
+            "startingCell": "r1c1",
+            "clue": "Animal briefly resolves to madness",
+            "hints": [
+              "'animal briefly' = ANIMA",
+              "'resolves' is a anagram indicator",
+              "The solution means 'madness'"
+            ]
+          },
+          "3d": {
+            "word": "scowl",
+            "startingCell": "r1c3",
+            "clue": "Frown at extremely stoic bird",
+            "hints": [
+              "The solution means 'frown'",
+              "'extremely stoic' = SC",
+              "bird = OWL"
+            ]
+          },
+          "5d": {
+            "word": "clear",
+            "startingCell": "r1c5",
+            "clue": "Remove, by some miracle, arthritis",
+            "hints": [
+              "The solution means 'remove'",
+              "'some' is a hidden word indicator"
+            ]
+          }
+        },
+        "27": {"noPuzz": 0}
       }
     }
 }
