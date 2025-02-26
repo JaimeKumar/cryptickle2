@@ -5135,7 +5135,41 @@ const puzzles = {
             ]
           }
         },
-        "27": {"noPuzz": 0}
+        "27": {
+          "3a": {
+            "word": "wager",
+            "startingCell": "r3c1",
+            "clue": "Risk, for example, retreating in war",
+            "hints": [
+              "The solution means 'risk' (v)",
+              "'retreating' is a reversal indicator",
+              "'for example, retreating' = GE (EG reversed)",
+              "'in war' indicates to put GE in WAR"
+            ]
+          },
+          "2d": {
+            "word": "guard",
+            "startingCell": "r1c2",
+            "clue": "Argued about removing eastern lookout",
+            "hints": [
+              "'about' is an anagram indicator",
+              "'removing eastern' indicates to remove E",
+              "The solution is synonymous with 'lookout'"
+            ]
+          },
+          "4d": {
+            "word": "suede",
+            "startingCell": "r1c4",
+            "clue": "Take legal action against journalist withdrawing material",
+            "hints": [
+              "The solution is a material",
+              "'withdrawing' is a reversal indicator",
+              "journalist = ED",
+              "'take legal action against' = SUE"
+            ]
+          }
+        },
+        "28": {"noPuzz": 0}
       }
     }
 }
