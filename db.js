@@ -5169,7 +5169,48 @@ const puzzles = {
             ]
           }
         },
-        "28": {"noPuzz": 0}
+        "28": {
+          "3a": {
+            "word": "wound",
+            "startingCell": "r3c1",
+            "clue": "Injury is wrapped",
+            "hints": [
+              "The solution means both 'injury' and 'wrapped'"
+            ]
+          },
+          "1d": {
+            "word": "dowel",
+            "startingCell": "r1c1",
+            "clue": "Peg held by pseudo weld",
+            "hints": [
+              "'held by' is a hidden word indicator",
+              "The solution means 'peg' (n). A peg/rod used in construction to hold parts together."
+            ]
+          },
+          "3d": {
+            "word": "prune",
+            "startingCell": "r1c3",
+            "clue": "Jog in gym to get trim",
+            "hints": [
+              "'gym' = PE",
+              "'jog' = RUN",
+              "The solution means 'trim' (v)"
+            ]
+          },
+          "5d": {
+            "word": "godly",
+            "startingCell": "r1c5",
+            "clue": "A bit of yellow gold could become religious",
+            "hints": [
+              "The solution means 'religious'",
+              "'a bit of yellow' = Y",
+              "'could become' is an anagram indicator"
+            ]
+          }
+        }        
+      },
+      "3": {
+        "1": {"noPuzz": 0}
       }
     }
 }
