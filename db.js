@@ -5210,7 +5210,50 @@ const puzzles = {
         }        
       },
       "3": {
-        "1": {"noPuzz": 0}
+        "1": {
+          "2a": {
+            "word": "quest",
+            "startingCell": "r2c1",
+            "clue": "Search for some cheque stubs",
+            "hints": [
+              "The solution means 'search'",
+              "'some' is a hidden word indicator"
+            ]
+          },
+          "4a": {
+            "word": "magic",
+            "startingCell": "r4c1",
+            "clue": "Unopened big mac, terribly enchanting",
+            "hints": [
+              "'terribly ' is an anagram indicator",
+              "'unopened' indicated to remove the first letter",
+              "The solution means 'enchanting'"
+            ]
+          },
+          "2d": {
+            "word": "sudan",
+            "startingCell": "r1c2",
+            "clue": "Soviet Union lawyer takes North African country",
+            "hints": [
+              "soviet union = SU",
+              "lawyer = DA (district attorney)",
+              "north = N",
+              "The solution is an African country, it happens to be a north African country"
+            ]
+          },
+          "4d": {
+            "word": "spin",
+            "startingCell": "r2c4",
+            "clue": "Turn in after second thoughts come up",
+            "hints": [
+              "'second thoughts' = PS",
+              "'come up' is a reversal indicator",
+              "The solution means 'turn'",
+              "in = IN"
+            ]
+          }
+        },
+        "2": {"noPuzz": 0}
       }
     }
 }
