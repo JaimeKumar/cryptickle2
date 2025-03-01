@@ -5253,7 +5253,47 @@ const puzzles = {
             ]
           }
         },
-        "2": {"noPuzz": 0}
+        "2": {
+          "3a": {
+            "word": "joint",
+            "startingCell": "r3c1",
+            "clue": "Shared job incomplete at home time",
+            "hints": [
+              "The solution means 'shared'",
+              "'job incomplete' = JO",
+              "'at home' = IN",
+              "time = T"
+            ]
+          },
+          "1d": {
+            "word": "major",
+            "startingCell": "r1c1",
+            "clue": "Return jam or this gets serious",
+            "hints": [
+              "'return' is a reversal indicator",
+              "The solution means 'serious'"
+            ]
+          },
+          "3d": {
+            "word": "glide",
+            "startingCell": "r1c3",
+            "clue": "Leg I'd dressed to skate",
+            "hints": [
+              "The solution means 'skate'",
+              "'dressed' is an anagram indicator"
+            ]
+          },
+          "5d": {
+            "word": "retro",
+            "startingCell": "r1c5",
+            "clue": "Old fashioned gems in the offshore tropics",
+            "hints": [
+              "The solution means 'old fashioned'",
+              "'gems in' is a hidden word indicator"
+            ]
+          }
+        },
+        "3": {"noPuzz": 0}
       }
     }
 }
