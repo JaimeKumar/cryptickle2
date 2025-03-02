@@ -5293,7 +5293,41 @@ const puzzles = {
             ]
           }
         },
-        "3": {"noPuzz": 0}
+        "3": {
+          "3a": {
+            "word": "stump",
+            "startingCell": "r3c1",
+            "clue": "Baffle politician after failing to start cuts and reshuffle",
+            "hints": [
+              "The solution means 'baffle'",
+              "'failing to start cuts' = UTS",
+              "'reshuffle' is an anagram indicator (for UTS)",
+              "'politician' = MP"
+            ]
+          },
+          "2d": {
+            "word": "batch",
+            "startingCell": "r1c2",
+            "clue": "Bishop at church delivers collection",
+            "hints": [
+              "The solution means 'collection'",
+              "bishop = B",
+              "at = AT",
+              "church = CH"
+            ]
+          },
+          "4d": {
+            "word": "mumps",
+            "startingCell": "r1c4",
+            "clue": "Mother needs peas for swollen glands",
+            "hints": [
+              "'mother' = MUM",
+              "'peas' = PS",
+              "The solution is related to swollen glands"
+            ]
+          }
+        },
+        "4": {"noPuzz": 0}
       }
     }
 }
