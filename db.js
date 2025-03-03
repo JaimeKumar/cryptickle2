@@ -5327,7 +5327,48 @@ const puzzles = {
             ]
           }
         },
-        "4": {"noPuzz": 0}
+        "4": {
+          "3a": {
+            "word": "craft",
+            "startingCell": "r3c1",
+            "clue": "Build pontoon on sea",
+            "hints": [
+              "The solution means 'build'",
+              "'pontoon' = RAFT",
+              "sea = C"
+            ]
+          },
+          "1d": {
+            "word": "focus",
+            "startingCell": "r1c1",
+            "clue": "Info customarily contains subject matter",
+            "hints": [
+              "'contains' is a hidden word indicator",
+              "The solution means 'subject matter'"
+            ]
+          },
+          "3d": {
+            "word": "whale",
+            "startingCell": "r1c3",
+            "clue": "Play awhile without opening inhaler, the blue one is the biggest!",
+            "hints": [
+              "'play' is an anagram indicator",
+              "'opening inhaler' = I",
+              "The solution is an animal, of which the blue one is the largest"
+            ]
+          },
+          "5d": {
+            "word": "motor",
+            "startingCell": "r1c5",
+            "clue": "Back room contains tesla engine",
+            "hints": [
+              "tesla = T",
+              "'back room' = MOOR",
+              "The solution means 'engine'"
+            ]
+          }
+        },
+        "5": {"noPuzz": 0}
       }
     }
 }
