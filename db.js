@@ -5368,7 +5368,39 @@ const puzzles = {
             ]
           }
         },
-        "5": {"noPuzz": 0}
+        "5": {
+          "3a": {
+            "word": "hoist",
+            "startingCell": "r3c1",
+            "clue": "Restless theorists breaking lift",
+            "hints": [
+              "The solution means 'lift'",
+              "'restless' indicates to remove REST",
+              "'breaking' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "clown",
+            "startingCell": "r1c2",
+            "clue": "Fool takes win and loss in scam",
+            "hints": [
+              "win = W, loss = L",
+              "The solution means 'fool'",
+              "scam = CON"
+            ]
+          },
+          "4d": {
+            "word": "nasty",
+            "startingCell": "r1c4",
+            "clue": "Stay confused after no introduction, rude!",
+            "hints": [
+              "The solution means 'rude'",
+              "'confused' is an anagram indicator",
+              "'no introduction' = N"
+            ]
+          }
+        },
+        "6": {"noPuzz": 0}
       }
     }
 }
