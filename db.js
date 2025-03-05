@@ -5436,7 +5436,47 @@ const puzzles = {
             ]
           }
         },
-        "7": {"noPuzz": 0}
+        "7": {
+          "3a": {
+            "word": "verse",
+            "startingCell": "r3c1",
+            "clue": "Part of song veers off",
+            "hints": [
+              "'off' is an anagram indicator",
+              "The solution is traditionally a part of a song"
+            ]
+          },
+          "5a": {
+            "word": "wedge",
+            "startingCell": "r5c1",
+            "clue": "We aged horribly without high grade jam?",
+            "hints": [
+              "The solution means 'jam' (v)",
+              "'horribly' is an anagram indicator",
+              "'high grade' = A"
+            ]
+          },
+          "3d": {
+            "word": "world",
+            "startingCell": "r1c3",
+            "clue": "Welsh lord falsely represents Earth",
+            "hints": [
+              "'Welsh' = W",
+              "'falsely' is an anagram indicator",
+              "The solution is synonymous with 'Earth'"
+            ]
+          },
+          "5d": {
+            "word": "piece",
+            "startingCell": "r1c5",
+            "clue": "A bit of pie before church",
+            "hints": [
+              "church = CE",
+              "The solution means 'a bit'"
+            ]
+          }
+        },
+        "8": {"noPuzz": 0}
       }
     }
 }
