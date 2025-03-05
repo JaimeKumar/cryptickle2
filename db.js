@@ -5400,7 +5400,43 @@ const puzzles = {
             ]
           }
         },
-        "6": {"noPuzz": 0}
+        "6": {
+          "2a": {
+            "word": "inbox",
+            "startingCell": "r2c1",
+            "clue": "Fashionable trunk becomes where new mail goes",
+            "hints": [
+              "fashionable = IN",
+              "trunk = BOX",
+              "The solution is where new mail goes"
+            ]
+          },
+          "4a": {
+            "word": "swing",
+            "startingCell": "r4c1",
+            "clue": "Chant with western rhythm",
+            "hints": []
+          },
+          "2d": {
+            "word": "known",
+            "startingCell": "r1c2",
+            "clue": "Now in empty kitchen, getting familiar",
+            "hints": [
+              "'empty kitchen' = KN",
+              "The solution means 'familiar'"
+            ]
+          },
+          "4d": {
+            "word": "sound",
+            "startingCell": "r1c4",
+            "clue": "Noise from virtuoso underperforming",
+            "hints": [
+              "'from' is a hidden word indicator",
+              "The solution means 'noise'"
+            ]
+          }
+        },
+        "7": {"noPuzz": 0}
       }
     }
 }
