@@ -5476,7 +5476,125 @@ const puzzles = {
             ]
           }
         },
-        "8": {"noPuzz": 0}
+        "8": {
+          "3a": {
+            "word": "lemur",
+            "startingCell": "r3c1",
+            "clue": "Removing a piece of birch from rotten lumber reveals animal",
+            "hints": [
+              "The solution is an animal",
+              "'a piece of birch' = B ",
+              "rotten is an anagram indicator"
+            ]
+          },
+          "1d": {
+            "word": "pulse",
+            "startingCell": "r1c1",
+            "clue": "Heartrate climbing up, legs losing weight and becoming wobbly",
+            "hints": [
+              "'climbing up' = PU",
+              "'legs losing weight' = LES",
+              "'becoming wobbly' is an anagram indicator",
+              "The solution means 'heartrate'"
+            ]
+          },
+          "3d": {
+            "word": "remit",
+            "startingCell": "r1c3",
+            "clue": "Set aside timer that goes the wrong way ",
+            "hints": [
+              "The solution means 'set aside'",
+              "'goes the wrong way' is a reversal indicator"
+            ]
+          },
+          "5d": {
+            "word": "forgo",
+            "startingCell": "r1c5",
+            "clue": "Do without broken roof letting in some gales",
+            "hints": [
+              "The solution means 'do without'",
+              "'some gales' = G",
+              "'broken' is an anagram indicator"
+            ]
+          }
+        },
+        "9": {
+          "3a": {
+            "word": "vouch",
+            "startingCell": "r3c1",
+            "clue": "Attest to very painful sound",
+            "hints": [
+              "very = V",
+              "The solution means 'attest to'",
+              "painful sound = OUCH"
+            ]
+          },
+          "2d": {
+            "word": "snout",
+            "startingCell": "r1c2",
+            "clue": "Nose you covered with snot",
+            "hints": [
+              "'you' = U",
+              "The solution means 'nose'",
+              ""
+            ]
+          },
+          "4d": {
+            "word": "vocal",
+            "startingCell": "r1c4",
+            "clue": "Outspoken in conclave about losing national church",
+            "hints": [
+              "'about' is an anagram indicator",
+              "church = CE",
+              "national = N",
+              "The solution means 'outspoken'"
+            ]
+          }
+        },
+        "10": {
+          "3a": {
+            "word": "glove",
+            "startingCell": "r3c1",
+            "clue": "Tenderness after a bit of gangrene covers your hand ",
+            "hints": [
+              "'a bit of gangrene' = G",
+              "tenderness = LOVE",
+              "The solution covers your hand"
+            ]
+          },
+          "5a": {
+            "word": "yeast",
+            "startingCell": "r5c1",
+            "clue": "Case of salty tea possibly used to make bread",
+            "hints": [
+              "'case of salty' = SY",
+              "'possibly' is an anagram indicator",
+              "The solution is used to make bread"
+            ]
+          },
+          "1d": {
+            "word": "cagey",
+            "startingCell": "r1c1",
+            "clue": "Start to cut silver extremely, extremely careful",
+            "hints": [
+              "The solution means 'careful'",
+              "'extremely, extremely' = EY",
+              "'start to cut' - C",
+              "silver = AG"
+            ]
+          },
+          "3d": {
+            "word": "quota",
+            "startingCell": "r1c3",
+            "clue": "Listen to one who repeats assignment",
+            "hints": [
+              "'one who repeats' = quoter",
+              "The solution means 'assignment'",
+              "'listen to' is a homophone indicator"
+            ]
+          }
+        },
+        "11": {"noPuzz": 0}
       }
     }
 }
