@@ -5594,7 +5594,57 @@ const puzzles = {
             ]
           }
         },
-        "11": {"noPuzz": 0}
+        "11": {
+          "1a": {
+            "word": "rough",
+            "startingCell": "r1c1",
+            "clue": "Aggressive wrestling or hug ",
+            "hints": [
+              "'wrestling' is an anagram indicator",
+              "The solution means 'aggressive'"
+            ]
+          },
+          "3a": {
+            "word": "tweak",
+            "startingCell": "r3c1",
+            "clue": "Improve week, it's said, by starting it with Tuesday",
+            "hints": [
+              "'Tuesday' = T",
+              "'it's said' is a homophone indicator",
+              "The solution means 'improve'"
+            ]
+          },
+          "1d": {
+            "word": "rite",
+            "startingCell": "r1c1",
+            "clue": "One cross found in concerning ceremony",
+            "hints": [
+              "The solution means 'ceremony'",
+              "'one' = I",
+              "'cross' = T",
+              "'concerning' = RE"
+            ]
+          },
+          "3d": {
+            "word": "upend",
+            "startingCell": "r1c3",
+            "clue": "Abolish part of group endorsement",
+            "hints": [
+              "The solution means 'abolish'",
+              "'part of' is a hidden word indicator"
+            ]
+          },
+          "5d": {
+            "word": "hike",
+            "startingCell": "r1c5",
+            "clue": "Horselike loser out for walk ",
+            "hints": [
+              "The solution means 'walk'",
+              "'loser out' indicates to remove the letters LOSER"
+            ]
+          }
+        },
+        "12": {"noPuzz": 0}
       }
     }
 }
