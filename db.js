@@ -5644,7 +5644,49 @@ const puzzles = {
             ]
           }
         },
-        "12": {"noPuzz": 0}
+        "12": {
+          "2a": {
+            "word": "cite",
+            "startingCell": "r2c2",
+            "clue": "Mention it in church",
+            "hints": [
+              "church = CE",
+              "The solution means 'mention'"
+            ]
+          },
+          "4a": {
+            "word": "trail",
+            "startingCell": "r4c1",
+            "clue": "Follow tale told with riveting introduction",
+            "hints": [
+              "'told' is a homophone indicator",
+              "'riveting introduction' = R",
+              "The solution means 'follow'",
+              "'tale told' = TAIL"
+            ]
+          },
+          "2d": {
+            "word": "core",
+            "startingCell": "r2c2",
+            "clue": "Ferocious return, in part, shows heart",
+            "hints": [
+              "'return' is a reversal indicator",
+              "'in part' is a hidden word indicator",
+              "The solution means 'heart'"
+            ]
+          },
+          "4d": {
+            "word": "stair",
+            "startingCell": "r1c4",
+            "clue": "Celebrity takes one step",
+            "hints": [
+              "one = I",
+              "The solution means 'step'",
+              "celebrity = STAR"
+            ]
+          }
+        },
+        "13": {"noPuzz": 0}
       }
     }
 }
