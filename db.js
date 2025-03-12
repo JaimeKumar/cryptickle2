@@ -5686,7 +5686,48 @@ const puzzles = {
             ]
           }
         },
-        "13": {"noPuzz": 0}
+        "13": {
+          "1a": {
+            "word": "abate",
+            "startingCell": "r1c1",
+            "clue": "Diminish a degree with empty tirade ",
+            "hints": [
+              "The solution means 'diminish'",
+              "'degree' = BA",
+              "'empty tirade' = TE"
+            ]
+          },
+          "3a": {
+            "word": "panic",
+            "startingCell": "r3c1",
+            "clue": "Suffering pain, a bit of confusion and anxiety",
+            "hints": [
+              "'suffering' is an anagram indicator",
+              "'a bit of confusion' = C",
+              "The solution means 'anxiety'"
+            ]
+          },
+          "2d": {
+            "word": "bland",
+            "startingCell": "r1c2",
+            "clue": "Dry and basically barren land",
+            "hints": [
+              "'basically' indicates to select the first letter",
+              "The solution means 'dry'",
+              "basically barren = B"
+            ]
+          },
+          "4d": {
+            "word": "think",
+            "startingCell": "r1c4",
+            "clue": "Believe in truth in knowledge",
+            "hints": [
+              "The solution means 'believe'",
+              "'in' is a hidden word indicator"
+            ]
+          }
+        },
+        "14": {"noPuzz": 0}
       }
     }
 }
