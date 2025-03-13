@@ -5727,7 +5727,50 @@ const puzzles = {
             ]
           }
         },
-        "14": {"noPuzz": 0}
+        "14": {
+          "1a": {
+            "word": "spout",
+            "startingCell": "r1c1",
+            "clue": "Start to scowl and pout lip",
+            "hints": [
+              "The solution means 'lip'",
+              "'start to scowl' = S",
+              "pout = POUT"
+            ]
+          },
+          "4a": {
+            "word": "plate",
+            "startingCell": "r4c1",
+            "clue": "Helping misplaced petal",
+            "hints": [
+              "The solution means 'helping' (noun)",
+              "'misplaced' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "psalm",
+            "startingCell": "r1c2",
+            "clue": "Quiet service starts with a long mass and hymn",
+            "hints": [
+              "'quiet' = P",
+              "'service starts' = S",
+              "'long' = L",
+              "'mass' = M",
+              "The solution means 'hymn'"
+            ]
+          },
+          "4d": {
+            "word": "unite",
+            "startingCell": "r1c4",
+            "clue": "Find it in one French bond",
+            "hints": [
+              "The solution means 'bond'",
+              "'one french' = UNE",
+              "it = IT"
+            ]
+          }
+        },
+        "15": {"noPuzz": 0}
       }
     }
 }
