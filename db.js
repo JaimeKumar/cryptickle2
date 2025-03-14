@@ -5770,7 +5770,52 @@ const puzzles = {
             ]
           }
         },
-        "15": {"noPuzz": 0}
+        "15": {
+          "2a": {
+            "word": "naive",
+            "startingCell": "r2c1",
+            "clue": "Innocent one in reversing vehicle, free at last",
+            "hints": [
+              "The solution means 'innocent'",
+              "'one' = I",
+              "'reversing vehicle' = NAV (van reversed)",
+              "'free at last' = E"
+            ]
+          },
+          "4a": {
+            "word": "learn",
+            "startingCell": "r4c1",
+            "clue": "Study French article and an introduction to reflexives before noon",
+            "hints": [
+              "'noon' = N",
+              "'introduction to reflexives' = R",
+              "'French article' = LE",
+              "'an' = A",
+              "The solution means 'study'"
+            ]
+          },
+          "2d": {
+            "word": "label",
+            "startingCell": "r1c2",
+            "clue": "Able to dance after novice class",
+            "hints": [
+              "The solution means 'class'",
+              "'to dance' is an anagram indicator",
+              "'novice' = L"
+            ]
+          },
+          "4d": {
+            "word": "avert",
+            "startingCell": "r1c4",
+            "clue": "Turn away from art about end of war",
+            "hints": [
+              "The solution means 'turn away'",
+              "'end of war' = VE (VE Day)",
+              "'art about' indicates that ART surrounds VE"
+            ]
+          }
+        },
+        "16": {"noPuzz": 0}
       }
     }
 }
