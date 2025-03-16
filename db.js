@@ -5846,7 +5846,49 @@ const puzzles = {
             ]
           }
         },
-        "17": {"noPuzz": 0}
+        "17": {
+          "2a": {
+            "word": "flute",
+            "startingCell": "r2c1",
+            "clue": "Instrument to sample flu temperatures",
+            "hints": [
+              "'sample' is a hidden word indicator",
+              "The solution is an instrument"
+            ]
+          },
+          "5a": {
+            "word": "map",
+            "startingCell": "r5c2",
+            "clue": "Politician has a plan",
+            "hints": [
+              "The solution means 'plan'",
+              "'politician' = MP",
+              "a = A"
+            ]
+          },
+          "2d": {
+            "word": "claim",
+            "startingCell": "r1c2",
+            "clue": "Maintain straight line in calm waves",
+            "hints": [
+              "'waves' is an anagram indicator",
+              "'straight line' = I",
+              "The solution means 'maintain'"
+            ]
+          },
+          "4d": {
+            "word": "stoop",
+            "startingCell": "r1c4",
+            "clue": "Kneel, ending is too quiet ",
+            "hints": [
+              "The solution means 'kneel'",
+              "'ending is' = S",
+              "'quiet' = P",
+              "too = TOO"
+            ]
+          }
+        },
+        "18": {"noPuzz": 0}
       }
     }
 }
