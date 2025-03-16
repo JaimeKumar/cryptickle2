@@ -5815,7 +5815,38 @@ const puzzles = {
             ]
           }
         },
-        "16": {"noPuzz": 0}
+        "16": {
+          "2a": {
+            "word": "delay",
+            "startingCell": "r2c1",
+            "clue": "Shuffle, deal, why wait?",
+            "hints": [
+              "The solution means 'wait'",
+              "'shuffle' is an anagram indicator",
+              "'why' = Y"
+            ]
+          },
+          "4a": {
+            "word": "bunch",
+            "startingCell": "r4c1",
+            "clue": "Gathering held in club uncharacteristically",
+            "hints": [
+              "The solution means 'gathering'",
+              "'held in' is a hidden word indicator"
+            ]
+          },
+          "3d": {
+            "word": "blind",
+            "startingCell": "r1c3",
+            "clue": "Visually impaired learner in predicament",
+            "hints": [
+              "learner = L",
+              "The solution means 'visually impaired'",
+              "predicament = BIND"
+            ]
+          }
+        },
+        "17": {"noPuzz": 0}
       }
     }
 }
