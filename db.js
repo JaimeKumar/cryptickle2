@@ -5888,7 +5888,48 @@ const puzzles = {
             ]
           }
         },
-        "18": {"noPuzz": 0}
+        "18": {
+          "3a": {
+            "word": "purge",
+            "startingCell": "r3c1",
+            "clue": "Quietly recommend to cleanse",
+            "hints": [
+              "'quietly' = P",
+              "The solution means 'cleanse'",
+              "'recommend' = URGE"
+            ]
+          },
+          "5a": {
+            "word": "great",
+            "startingCell": "r5c1",
+            "clue": "Headless ogre at large",
+            "hints": [
+              "The solution means 'large'",
+              "'headless ogre' = GRE",
+              "at = AT"
+            ]
+          },
+          "3d": {
+            "word": "horse",
+            "startingCell": "r1c3",
+            "clue": "Animal held in hutch or section",
+            "hints": [
+              "The solution is an animal",
+              "'held in' is a hidden word indicator"
+            ]
+          },
+          "5d": {
+            "word": "crest",
+            "startingCell": "r1c5",
+            "clue": "Emblem represents others under sea",
+            "hints": [
+              "The solution means 'emblem'",
+              "'under sea' indicates the word starts with C",
+              "'others' = REST"
+            ]
+          }
+        },
+        "19": {"noPuzz": 0}
       }
     }
 }
