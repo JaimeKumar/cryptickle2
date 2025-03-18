@@ -5929,7 +5929,50 @@ const puzzles = {
             ]
           }
         },
-        "19": {"noPuzz": 0}
+        "19": {
+          "2a": {
+            "word": "yacht",
+            "startingCell": "r2c1",
+            "clue": "Boat, yes a hollow houseboat, takes on sea",
+            "hints": [
+              "yes = Y, a = A",
+              "'hollow houseboat' = HT",
+              "'takes on sea' means add C",
+              "The solution means 'boat'"
+            ]
+          },
+          "4a": {
+            "word": "event",
+            "startingCell": "r4c1",
+            "clue": "Party wasn't odd, but had offbeat ending",
+            "hints": [
+              "'offbeat ending' = T",
+              "The solution means 'party'",
+              "'wasn't odd' = EVEN"
+            ]
+          },
+          "2d": {
+            "word": "salve",
+            "startingCell": "r1c2",
+            "clue": "Ointment made by removing centre of stems from a mixture of leaves",
+            "hints": [
+              "The solution means 'ointment'",
+              "'mixture' is an anagram indicator",
+              "'removing centre of stems' indicates to remove E"
+            ]
+          },
+          "4d": {
+            "word": "shine",
+            "startingCell": "r1c4",
+            "clue": "Body part starts emitting glow",
+            "hints": [
+              "The solution means 'glow'",
+              "'starts emitting' = E",
+              "body part = SHIN"
+            ]
+          }
+        },
+        "20": {"noPuzz": 0}
       }
     }
 }
