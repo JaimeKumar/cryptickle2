@@ -5972,7 +5972,59 @@ const puzzles = {
             ]
           }
         },
-        "20": {"noPuzz": 0}
+        "20": {
+          "1a": {
+            "word": "scope",
+            "startingCell": "r1c1",
+            "clue": "Company with position opening in south-east gives opportunity  ",
+            "hints": [
+              "company = CO",
+              "position opening = P",
+              "south-east - SE",
+              "The solution means 'oppurtunity'"
+            ]
+          },
+          "4a": {
+            "word": "alert",
+            "startingCell": "r4c1",
+            "clue": "Drink our tea to become wide awake",
+            "hints": [
+              "The solution means 'wide awake'",
+              "'our' = R, 'tea' = T",
+              "drink = ALE"
+            ]
+          },
+          "1d": {
+            "word": "steam",
+            "startingCell": "r1c1",
+            "clue": "Drunken mates get worked up",
+            "hints": [
+              "The solution means 'get worked up'",
+              "'drunken' is an anagram indicator"
+            ]
+          },
+          "3d": {
+            "word": "order",
+            "startingCell": "r1c3",
+            "clue": "Redo working out with right sequence",
+            "hints": [
+              "'working out' is an anagram indicator",
+              "right = R",
+              "The solution means 'sequence'"
+            ]
+          },
+          "5d": {
+            "word": "elite",
+            "startingCell": "r1c5",
+            "clue": "After tile breaks, closure of structure is best",
+            "hints": [
+              "The solution means 'best'",
+              "'breaks' is an anagram indicator",
+              "'closure of structure' = E"
+            ]
+          }
+        },
+        "21": {"noPuzz": 0}
       }
     }
 }
