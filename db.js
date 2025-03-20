@@ -6024,7 +6024,50 @@ const puzzles = {
             ]
           }
         },
-        "21": {"noPuzz": 0}
+        "21": {
+          "2a": {
+            "word": "abide",
+            "startingCell": "r2c1",
+            "clue": "Observe proposal in empty arena",
+            "hints": [
+              "The solution means 'observe'",
+              "empty arena = AE",
+              "proposal = BID"
+            ]
+          },
+          "4a": {
+            "word": "entry",
+            "startingCell": "r4c1",
+            "clue": "Submission attempt after any counter",
+            "hints": [
+              "'counter' is a reversal indicator",
+              "any = NE",
+              "The solution means 'submission'",
+              "attempt = TRY"
+            ]
+          },
+          "2d": {
+            "word": "ebony",
+            "startingCell": "r1c2",
+            "clue": "Spiderweb on yacht hides dark wood",
+            "hints": [
+              "The solution means 'dark wood'",
+              "'hides' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "adorn",
+            "startingCell": "r1c4",
+            "clue": "Embellish a party with sailors ",
+            "hints": [
+              "sailors = RN (royal navy)",
+              "The solution means 'embellish'",
+              "party = DO",
+              "a = A"
+            ]
+          }
+        },
+        "22": {"noPuzz": 0}
       }
     }
 }
