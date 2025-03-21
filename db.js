@@ -6067,7 +6067,59 @@ const puzzles = {
             ]
           }
         },
-        "22": {"noPuzz": 0}
+        "22": {
+          "1a": {
+            "word": "light",
+            "startingCell": "r1c1",
+            "clue": "Burning with tips of greenish glow",
+            "hints": [
+              "burning = LIT",
+              "tips of greenish = GH",
+              "The solution means 'glow' (noun)"
+            ]
+          },
+          "3a": {
+            "word": "dread",
+            "startingCell": "r3c1",
+            "clue": "Dared to be let loose from fear",
+            "hints": [
+              "'let loose' is an anagram indicator",
+              "The solution means 'fear'"
+            ]
+          },
+          "1d": {
+            "word": "lodge",
+            "startingCell": "r1c1",
+            "clue": "Old cooks, for example, come back to cottage",
+            "hints": [
+              "The solution means 'cottage'",
+              "'cooks' is an anagram indicator",
+              "'for example' = EG",
+              "'come back' is a reversal indicator"
+            ]
+          },
+          "3d": {
+            "word": "greed",
+            "startingCell": "r1c3",
+            "clue": "Finish eating venison, put up with hunger",
+            "hints": [
+              "'finish eating' = G",
+              "venison = DEER",
+              "'put up' is an reversal indicator (on a down clue)",
+              "The solution means 'hunger'"
+            ]
+          },
+          "5d": {
+            "word": "tidal",
+            "startingCell": "r1c5",
+            "clue": "Tied all sounds to the movement of the sea",
+            "hints": [
+              "The solution means 'the movement of the sea' ",
+              "'sounds' is a homophone indicator"
+            ]
+          }
+        },
+        "23": {"noPuzz": 0}
       }
     }
 }
