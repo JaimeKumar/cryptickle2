@@ -6119,7 +6119,48 @@ const puzzles = {
             ]
           }
         },
-        "23": {"noPuzz": 0}
+        "23": {
+          "2a": {
+            "word": "allin",
+            "startingCell": "r2c1",
+            "clue": "Casually nail novice with poker bet",
+            "hints": [
+              "The length is really (3, 2), sorry I need to fix that soon",
+              "'casually' is an anagram indicator",
+              "'novice' = L (learner)"
+            ]
+          },
+          "4a": {
+            "word": "scat",
+            "startingCell": "r4c1",
+            "clue": "Sample from disc, a terrible singing style",
+            "hints": [
+              "The solution is a singing style",
+              "'sample from' is a hidden word indicator"
+            ]
+          },
+          "2d": {
+            "word": "flock",
+            "startingCell": "r1c2",
+            "clue": "Female seal causing crowd",
+            "hints": [
+              "The solution means 'crowd'",
+              "'Female ' = F",
+              "seal = LOCK"
+            ]
+          },
+          "4d": {
+            "word": "tint",
+            "startingCell": "r1c4",
+            "clue": "Complexion of metal cross",
+            "hints": [
+              "The solution means 'complexion'",
+              "cross = T",
+              "metal = TIN"
+            ]
+          }
+        },
+        "24": {"noPuzz": 0}
       }
     }
 }
