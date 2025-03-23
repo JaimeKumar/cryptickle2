@@ -6160,7 +6160,52 @@ const puzzles = {
             ]
           }
         },
-        "24": {"noPuzz": 0}
+        "24": {
+          "2a": {
+            "word": "flex",
+            "startingCell": "r2c1",
+            "clue": "Bend with force fifty times taking a bit of effort",
+            "hints": [
+              "The solution means 'bend'",
+              "force = F",
+              "fifty = L",
+              "times = X",
+              "a bit of effort = E"
+            ]
+          },
+          "4a": {
+            "word": "short",
+            "startingCell": "r4c1",
+            "clue": "Brief hint of rosemary in small drink",
+            "hints": [
+              "hint of rosemary = R",
+              "The solution means 'breif'",
+              "'small drink' = SHOT"
+            ]
+          },
+          "2d": {
+            "word": "alpha",
+            "startingCell": "r1c2",
+            "clue": "Laugh after pal butchered Greek letter",
+            "hints": [
+              "'butchered' is an anagram indicator",
+              "laugh = HA",
+              "The solution is a Greek letter"
+            ]
+          },
+          "4d": {
+            "word": "exert",
+            "startingCell": "r1c4",
+            "clue": "Former monarch, tired at first, getting work",
+            "hints": [
+              "The solution means 'work'",
+              "'former' = EX",
+              "'monarch' = ER",
+              "tired at first = T"
+            ]
+          }
+        },
+        "25": {"noPuzz": 0}
       }
     }
 }
