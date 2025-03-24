@@ -6205,7 +6205,49 @@ const puzzles = {
             ]
           }
         },
-        "25": {"noPuzz": 0}
+        "25": {
+          "2a": {
+            "word": "braid",
+            "startingCell": "r2c1",
+            "clue": "Confuse a bird with twist",
+            "hints": [
+              "Confuse is an anagram indicator",
+              "the solution means 'twist' kind of"
+            ]
+          },
+          "4a": {
+            "word": "soil",
+            "startingCell": "r4c2",
+            "clue": "Espresso I like contains dirt",
+            "hints": [
+              "The solution means dirt",
+              "'contains' is a hidden word indicator"
+            ]
+          },
+          "2d": {
+            "word": "brass",
+            "startingCell": "r1c2",
+            "clue": "Horns playing bars in front of spectators",
+            "hints": [
+              "The solution means horns",
+              "playing is an anagram indicator",
+              "in front of spectators = S"
+            ]
+          },
+          "4d": {
+            "word": "mimic",
+            "startingCell": "r1c4",
+            "clue": "See, I'm single - principal of marriage, in retrospect, is artificial",
+            "hints": [
+              "see = C, I'm = IM",
+              "crude at first = C",
+              "solution means artificial",
+              "in retrospect is a reversal indicator",
+              "principal of marriage = M"
+            ]
+          }
+        },
+        "26": {"noPuzz": 0}
       }
     }
 }
