@@ -6247,7 +6247,56 @@ const puzzles = {
             ]
           }
         },
-        "26": {"noPuzz": 0}
+        "26": {
+          "3a": {
+            "word": "boast",
+            "startingCell": "r3c1",
+            "clue": "Bat so terribly, seems like exaggeration",
+            "hints": [
+              "The solution means 'exaggeration'",
+              "'terribly' is an anagram indicator"
+            ]
+          },
+          "5a": {
+            "word": "ridge",
+            "startingCell": "r5c1",
+            "clue": "Glider loses latitude, needing repair to produce elevation",
+            "hints": [
+              "latitude = L",
+              "'needing repair' is an anagram indicator",
+              "The solution means 'elevation'...sort of...according to thesaurus.com"
+            ]
+          },
+          "1d": {
+            "word": "saber",
+            "startingCell": "r1c1",
+            "clue": "Some miss a beret and sword",
+            "hints": [
+              "The solution is a sword",
+              "'Some' is a hidden word indicator"
+            ]
+          },
+          "3d": {
+            "word": "stand",
+            "startingCell": "r1c3",
+            "clue": "Determination to sunbathe in South Dakota ",
+            "hints": [
+              "The solution means 'determination' but as a noun i.e. position/opinion",
+              "sunbathe = TAN",
+              "South Dakota = SD"
+            ]
+          },
+          "5d": {
+            "word": "matte",
+            "startingCell": "r1c5",
+            "clue": "Cross with mate being dull",
+            "hints": [
+              "The solution means dull",
+              "cross = T"
+            ]
+          }
+        },
+        "27": {"noPuzz": 0}
       }
     }
 }
