@@ -6270,7 +6270,7 @@ const puzzles = {
           "1d": {
             "word": "saber",
             "startingCell": "r1c1",
-            "clue": "Some miss a beret and sword",
+            "clue": "Some miss a breastplate and sword",
             "hints": [
               "The solution is a sword",
               "'Some' is a hidden word indicator"
@@ -6296,7 +6296,51 @@ const puzzles = {
             ]
           }
         },
-        "27": {"noPuzz": 0}
+        "27": {
+          "1a": {
+            "word": "spill",
+            "startingCell": "r1c1",
+            "clue": "Fall unwell after shrimp on vacation",
+            "hints": [
+              "'on vacation' indicates to 'vacate' the middle letters",
+              "The solution means 'fall'",
+              "unwell = ILL",
+              "shrimp on vacation = SP"
+            ]
+          },
+          "3a": {
+            "word": "tract",
+            "startingCell": "r3c1",
+            "clue": "See latest of sought after art from the east region ",
+            "hints": [
+              "see = C",
+              "last of sought = T",
+              "art from the east = TRA",
+              "The solution means 'region'"
+            ]
+          },
+          "2d": {
+            "word": "parse",
+            "startingCell": "r1c2",
+            "clue": "Review doctor spared missing early sign of dementia",
+            "hints": [
+              "'doctor' is an anagram indicator",
+              "'early sign of dementia' = D",
+              "The solution means 'review'"
+            ]
+          },
+          "4d": {
+            "word": "lucid",
+            "startingCell": "r1c4",
+            "clue": "Coherent one day after hallucination without inhalation",
+            "hints": [
+              "The solution means 'coherent'",
+              "one day = ID",
+              "hallucination without inhalation = LUC (letter removal)"
+            ]
+          }
+        },
+        "28": {"noPuzz": 0}
       }
     }
 }
