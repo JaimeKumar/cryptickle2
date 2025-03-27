@@ -6340,7 +6340,48 @@ const puzzles = {
             ]
           }
         },
-        "28": {"noPuzz": 0}
+        "28": {
+          "3a": {
+            "word": "solve",
+            "startingCell": "r3c1",
+            "clue": "Doctor loves to work out",
+            "hints": [
+              "'Doctor' is an anagram indicator (i.e. to doctor)",
+              "The solution means 'work out'"
+            ]
+          },
+          "1d": {
+            "word": "easel",
+            "startingCell": "r1c1",
+            "clue": "Choppy sea, the Spanish make a stand",
+            "hints": [
+              "Choppy is an anagram indicator",
+              "the Spanish = EL",
+              "The solution is a stand, a type of stand that is"
+            ]
+          },
+          "3d": {
+            "word": "igloo",
+            "startingCell": "r1c3",
+            "clue": "Cold hut with one toilet has a bit of grime",
+            "hints": [
+              "one = I",
+              "a bit of grime = G",
+              "toilet = LOO",
+              "The solution means 'cold hut'"
+            ]
+          },
+          "5d": {
+            "word": "amend",
+            "startingCell": "r1c5",
+            "clue": "Confuse me and rephrase",
+            "hints": [
+              "The solution means 'rephrase'",
+              "'confuse' is an anagram indicator"
+            ]
+          }
+        },
+        "29": {"noPuzz": 0}
       }
     }
 }
