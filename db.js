@@ -6381,7 +6381,41 @@ const puzzles = {
             ]
           }
         },
-        "29": {"noPuzz": 0}
+        "29": {
+          "2a": {
+            "word": "quiff",
+            "startingCell": "r2c1",
+            "clue": "I question you about very loud hairstyle",
+            "hints": [
+              "I question you = I Q U",
+              "'about' is an anagram indicator",
+              "The solution is a hairstyle",
+              "very loud = FF"
+            ]
+          },
+          "4a": {
+            "word": "gland",
+            "startingCell": "r4c1",
+            "clue": "Happy with musician finally synthesising organ",
+            "hints": [
+              "'musician finally' = N",
+              "The solution means 'synthesising organ', as in a organ of the body that synthesises",
+              "happy = GLAD"
+            ]
+          },
+          "3d": {
+            "word": "pilau",
+            "startingCell": "r1c3",
+            "clue": "Rice dish is plain, cooked without a pinch of nutmeg, ew!\n\n",
+            "hints": [
+              "'ew!' = U ... not sure this is acceptable",
+              "'cooked' is an anagram indicator",
+              "'a pinch of nutmeg' = N",
+              "The solution is a rice dish"
+            ]
+          }
+        },
+        "30": {"noPuzz": 0}
       }
     }
 }
