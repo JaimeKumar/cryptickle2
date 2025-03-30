@@ -6415,7 +6415,42 @@ const puzzles = {
             ]
           }
         },
-        "30": {"noPuzz": 0}
+        "30": {
+          "2a": {
+            "word": "tulip",
+            "startingCell": "r2c1",
+            "clue": "After finishing harvest, you left one quiet flower",
+            "hints": [
+              "The solution is a flower",
+              "'finishing harvest' = T",
+              "you = U, left = L",
+              "one = I",
+              "quiet = P (piano in music notation)\n"
+            ]
+          },
+          "4a": {
+            "word": "burst",
+            "startingCell": "r4c1",
+            "clue": "Head of bolt with bad rust will rupture",
+            "hints": [
+              "The solution means 'rupture'",
+              "'Head of bolt' = B",
+              "'bad' is an anagram indicator"
+            ]
+          },
+          "3d": {
+            "word": "alarm",
+            "startingCell": "r1c3",
+            "clue": "Cold feet and a long arm",
+            "hints": [
+              "The solution means 'cold feet' ... if I'm honest it's a loose synonym",
+              "a = A",
+              "long = L",
+              "arm = ARM"
+            ]
+          }
+        },
+        "31": {"noPuzz": 0}
       }
     }
 }
