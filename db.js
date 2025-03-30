@@ -6450,7 +6450,50 @@ const puzzles = {
             ]
           }
         },
-        "31": {"noPuzz": 0}
+        "31": {
+          "3a": {
+            "word": "grant",
+            "startingCell": "r3c1",
+            "clue": "Concede to sports car having raced",
+            "hints": [
+              "The solution means 'concede'",
+              "sports car = GT",
+              "raced = RAN"
+            ]
+          },
+          "1d": {
+            "word": "wager",
+            "startingCell": "r1c1",
+            "clue": "Scallywag errantly hides bet",
+            "hints": [
+              "The solution means 'bet'",
+              "'hides' is a hidden word indicator"
+            ]
+          },
+          "3d": {
+            "word": "blast",
+            "startingCell": "r1c3",
+            "clue": "Survive after first of bombs' shockwave",
+            "hints": [
+              "The solution means 'shockwave'",
+              "'survive' = LAST",
+              "first of bombs' = B"
+            ]
+          },
+          "5d": {
+            "word": "fated",
+            "startingCell": "r1c5",
+            "clue": "Doomed to start fretting before awkward date",
+            "hints": [
+              "The solution means 'doomed'",
+              "'start fretting' = F",
+              "'awkward' is an anagram indicator"
+            ]
+          }
+        }
+      },
+      "4": {
+        "1": {"noPuzz": 0}
       }
     }
 }
