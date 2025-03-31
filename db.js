@@ -6493,7 +6493,48 @@ const puzzles = {
         }
       },
       "4": {
-        "1": {"noPuzz": 0}
+        "1": {
+          "3a": {
+            "word": "above",
+            "startingCell": "r3c1",
+            "clue": "Greater than a second class oven without gas",
+            "hints": [
+              "gas = N",
+              "second class = B",
+              "The solution means 'greater than'"
+            ]
+          },
+          "5a": {
+            "word": "stunt",
+            "startingCell": "r5c1",
+            "clue": "Exploit some trust - untrustworthy!",
+            "hints": [
+              "'some' is a hidden word indicator",
+              "The solution means 'exploit' but as a noun"
+            ]
+          },
+          "2d": {
+            "word": "debut",
+            "startingCell": "r1c2",
+            "clue": "Introduction to you being in debt",
+            "hints": [
+              "The solution means 'introduction'",
+              "you = U",
+              "debt = DEBT"
+            ]
+          },
+          "4d": {
+            "word": "given",
+            "startingCell": "r1c4",
+            "clue": "Strange evening without any certainty",
+            "hints": [
+              "The solution means 'certainty'",
+              "'strange' is an anagram indicator",
+              "any = NE"
+            ]
+          }
+        },
+        "2": {"noPuzz": 0}
       }
     }
 }
