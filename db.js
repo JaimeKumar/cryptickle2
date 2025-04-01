@@ -6534,7 +6534,48 @@ const puzzles = {
             ]
           }
         },
-        "2": {"noPuzz": 0}
+        "2": {
+          "3a": {
+            "word": "taboo",
+            "startingCell": "r3c1",
+            "clue": "Restricted section at a bookshop",
+            "hints": [
+              "The solution means 'restricted'",
+              "'section' is a hidden word indicator"
+            ]
+          },
+          "5a": {
+            "word": "atone",
+            "startingCell": "r5c1",
+            "clue": "Make amends for a wrong note",
+            "hints": [
+              "The solution means 'make amends'",
+              "'wrong' is an anagram indicator",
+              "a = A"
+            ]
+          },
+          "2d": {
+            "word": "chart",
+            "startingCell": "r1c2",
+            "clue": "Map out design beneath church",
+            "hints": [
+              "The solution means 'map out'",
+              "church = CH",
+              "design = ART"
+            ]
+          },
+          "4d": {
+            "word": "sworn",
+            "startingCell": "r1c4",
+            "clue": "Oath-bound knight rows from the south",
+            "hints": [
+              "The solution means 'oath-bound'",
+              "knight = N (chess notation)",
+              "'from the south' is a reversal indicator"
+            ]
+          }
+        },
+        "3": {"noPuzz": 0}
       }
     }
 }
