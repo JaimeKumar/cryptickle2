@@ -6575,7 +6575,39 @@ const puzzles = {
             ]
           }
         },
-        "3": {"noPuzz": 0}
+        "3": {
+          "3a": {
+            "word": "group",
+            "startingCell": "r3c1",
+            "clue": "Collect a bit of gin, pour all over the place",
+            "hints": [
+              "The solution means 'collect'",
+              "a bit of gin = G",
+              "'all over the place' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "merge",
+            "startingCell": "r1c2",
+            "clue": "Mingle amid summer getaway",
+            "hints": [
+              "The solution means 'mingle'",
+              "'amid' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "gauge",
+            "startingCell": "r1c4",
+            "clue": "Calculate gold weight in Earth ",
+            "hints": [
+              "Earth = GE",
+              "The solution means 'calculate'",
+              "gold = AU",
+              "weight = G"
+            ]
+          }
+        },
+        "4": {"noPuzz": 0}
       }
     }
 }
