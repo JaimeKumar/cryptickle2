@@ -6607,7 +6607,50 @@ const puzzles = {
             ]
           }
         },
-        "4": {"noPuzz": 0}
+        "4": {
+          "1a": {
+            "word": "spawn",
+            "startingCell": "r1c1",
+            "clue": "Bad prawns lose right to breed",
+            "hints": [
+              "The solution means 'breed'",
+              "'bad' is an anagram indicator",
+              "'lose right' indicates to remove R"
+            ]
+          },
+          "3a": {
+            "word": "villa",
+            "startingCell": "r3c1",
+            "clue": "Sick in Virginia mansion",
+            "hints": [
+              "Virginia = VA",
+              "The solution means 'mansion'",
+              "Sick = ILL"
+            ]
+          },
+          "2d": {
+            "word": "poise",
+            "startingCell": "r1c2",
+            "clue": "Post Office is opening eager and ready",
+            "hints": [
+              "The solution means 'ready' (verb)",
+              "post office = PO",
+              "opening eager = E",
+              "is = E"
+            ]
+          },
+          "4d": {
+            "word": "waltz",
+            "startingCell": "r1c4",
+            "clue": "Dance with Walter, the last character",
+            "hints": [
+              "The solution means 'dance'",
+              "the last character = Z",
+              "wlater = walt"
+            ]
+          }
+        },
+        "5": {"noPuzz": 0}
       }
     }
 }
