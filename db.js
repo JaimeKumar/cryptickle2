@@ -6650,7 +6650,233 @@ const puzzles = {
             ]
           }
         },
-        "5": {"noPuzz": 0}
+        "5": {
+          "2a": {
+            "word": "grown",
+            "startingCell": "r2c1",
+            "clue": "Whimper sounds like it's gotten bigger",
+            "hints": [
+              "The solution is a type of establishment"
+            ]
+          },
+          "4a": {
+            "word": "table",
+            "startingCell": "r4c1",
+            "clue": "Put off by story involving a bit of brutality",
+            "hints": [
+              "The solution means 'put off'",
+              "'a bit of brutality' = B",
+              "'story' = TALE"
+            ]
+          },
+          "2d": {
+            "word": "trial",
+            "startingCell": "r1c2",
+            "clue": "Hearing examination",
+            "hints": [
+              "The solution means both 'hearing' and 'examination'",
+              "'hearing' in the sense of a court hearing"
+            ]
+          },
+          "4d": {
+            "word": "swell",
+            "startingCell": "r1c4",
+            "clue": "Excellent week in trade",
+            "hints": [
+              "The solution means 'excellent'",
+              "'week' = W",
+              "'in trade' = S_ELL"
+            ]
+          }
+        },
+        "6": {
+          "2a": {
+            "word": "sweat",
+            "startingCell": "r2c1",
+            "clue": "Perspire in glorious weather",
+            "hints": [
+              "The solution means 'perspire'",
+              "'in' is a hidden word indicator"
+            ]
+          },
+          "4a": {
+            "word": "niche",
+            "startingCell": "r4c1",
+            "clue": "Back in Church before start of Easter recess?",
+            "hints": [
+              "The solution means 'recess'",
+              "church = CH",
+              "'start of Easter' = E",
+              "'back in' = NI"
+            ]
+          },
+          "1d": {
+            "word": "sin",
+            "startingCell": "r2c1",
+            "clue": "Casinos harbour evil",
+            "hints": [
+              "'harbour' is a hidden word indicator",
+              "the solution means 'evil'"
+            ]
+          },
+          "3d": {
+            "word": "mercy",
+            "startingCell": "r1c3",
+            "clue": "Frenchman says thankyou for leniency",
+            "hints": [
+              "The solution means 'leniency'",
+              "'says' is a homophone indicator",
+              "merci"
+            ]
+          },
+          "5d": {
+            "word": "tie",
+            "startingCell": "r2c5",
+            "clue": "They're gutted about it, losing the match",
+            "hints": [
+              "the = T",
+              "'IT losing the(T)' = I",
+              "the solution means 'match'",
+              "'they're gutted' = TE",
+              ""
+            ]
+          }
+        },
+        "7": {
+          "2a": {
+            "word": "choke",
+            "startingCell": "r2c1",
+            "clue": "Suffocate when a bit of heat is added to coal",
+            "hints": [
+              "The solution means 'suffocate'",
+              "'a bit of heat' = H",
+              "coal = COKE"
+            ]
+          },
+          "4a": {
+            "word": "bride",
+            "startingCell": "r4c1",
+            "clue": "Newly-wed given exotic bird with decorative tail",
+            "hints": [
+              "'decorative tail' = E",
+              "'exotic' is an anagram indicator",
+              "The solution means 'newly-wed'"
+            ]
+          },
+          "2d": {
+            "word": "share",
+            "startingCell": "r1c2",
+            "clue": "Portion of small rabbit-like animal",
+            "hints": [
+              "The solution means 'portion'",
+              "'small' = S",
+              "'rabbit-like animal' - HARE"
+            ]
+          },
+          "5d": {
+            "word": "yemen",
+            "startingCell": "r1c5",
+            "clue": "Enemy fights for country",
+            "hints": [
+              "The solution is a country",
+              "'fights' is an anagram indicator"
+            ]
+          }
+        },
+        "8": {
+          "1a": {
+            "word": "deal",
+            "startingCell": "r1c1",
+            "clue": "Trade in crude aluminium",
+            "hints": [
+              "The solution means 'trade'",
+              "'in' is a hidden word indicator"
+            ]
+          },
+          "4a": {
+            "word": "amuse",
+            "startingCell": "r4c1",
+            "clue": "A stimulus to entertain",
+            "hints": [
+              "The solution means 'entertain'",
+              "A = A",
+              "'stimulus' = MUSE"
+            ]
+          },
+          "1d": {
+            "word": "decaf",
+            "startingCell": "r1c1",
+            "clue": "Face the day, rising without caffiene",
+            "hints": [
+              "'rising' is a reversal indicator for down clues",
+              "'day' = D ('the' is filler, sorry)",
+              "The solution means 'without caffeine'"
+            ]
+          },
+          "3d": {
+            "word": "album",
+            "startingCell": "r1c3",
+            "clue": "Mix balm with uranium for collection",
+            "hints": [
+              "The solution means 'collection'",
+              "'mix' is an anagram indicator",
+              "uranium = U"
+            ]
+          },
+          "5d": {
+            "word": "diet",
+            "startingCell": "r2c5",
+            "clue": "Tide changes fast?",
+            "hints": [
+              "'changes' is an anagram indicator",
+              "The solution means 'fast'"
+            ]
+          }
+        },
+        "9": {
+          "2a": {
+            "word": "stage",
+            "startingCell": "r2c1",
+            "clue": "Present era after saint?",
+            "hints": [
+              "The solution means 'present'",
+              "saint = ST",
+              "era = AGE"
+            ]
+          },
+          "4a": {
+            "word": "price",
+            "startingCell": "r4c1",
+            "clue": "Value quiet river bank with frozen water ",
+            "hints": [
+              "'quiet' = P",
+              "The solution means 'value'",
+              "'river bank' = R",
+              "'frozen water' = ICE"
+            ]
+          },
+          "1d": {
+            "word": "sap",
+            "startingCell": "r2c1",
+            "clue": "Secretion extracted from sarsaparilla",
+            "hints": [
+              "The solution means 'secretion'",
+              "'extracted from' is a hidden word indicator",
+              "sarsaparilla is the name of a tree, I googled it. not a hint sorry"
+            ]
+          },
+          "3d": {
+            "word": "basic",
+            "startingCell": "r1c3",
+            "clue": "Simple fabrics unravelled, losing finer edges",
+            "hints": [
+              "The solution means 'simple'",
+              "'unravelled' is an anagram indicator",
+              "'finer edges' = FR"
+            ]
+          }
+        },
+        "10": {"noPuzz": 0}
       }
     }
 }
