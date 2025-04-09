@@ -6876,7 +6876,56 @@ const puzzles = {
             ]
           }
         },
-        "10": {"noPuzz": 0}
+        "10": {
+          "1a": {
+            "word": "warp",
+            "startingCell": "r1c1",
+            "clue": "Misrepresent battle before start of peacetime",
+            "hints": [
+              "The solution means 'misrepresent'",
+              "start of peacetime = P",
+              "battle = WAR"
+            ]
+          },
+          "3a": {
+            "word": "delve",
+            "startingCell": "r3c1",
+            "clue": "Examine part of model vehicle",
+            "hints": [
+              "The solution means 'examine'",
+              "'part of' is a hidden word indicator"
+            ]
+          },
+          "5a": {
+            "word": "raita",
+            "startingCell": "r5c1",
+            "clue": "Yogurt dish in Agra, it amazes",
+            "hints": [
+              "another hidden word indicator",
+              "The solution is a yogurt dish"
+            ]
+          },
+          "1d": {
+            "word": "wider",
+            "startingCell": "r1c1",
+            "clue": "Weird redesign seems more spacious",
+            "hints": [
+              "'redesign' is an anagram indicator",
+              "The solution means 'more spacious'"
+            ]
+          },
+          "4d": {
+            "word": "pivot",
+            "startingCell": "r1c4",
+            "clue": "Hang pot housing ivy",
+            "hints": [
+              "The solution means 'hang' i.e. 'depend on'",
+              "ivy = IV",
+              "pot = POT"
+            ]
+          }
+        },
+        "11": {"noPuzz": 0}
       }
     }
 }
