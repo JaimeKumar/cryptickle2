@@ -6925,7 +6925,60 @@ const puzzles = {
             ]
           }
         },
-        "11": {"noPuzz": 0}
+        "11": {
+          "1a": {
+            "word": "cute",
+            "startingCell": "r1c2",
+            "clue": "Subtle hint contains final bit of support ",
+            "hints": [
+              "The solution means 'subtle'",
+              "final bit of support = T",
+              "hint = CUE"
+            ]
+          },
+          "3a": {
+            "word": "nobly",
+            "startingCell": "r3c1",
+            "clue": "Boy and heartless lion fight courageously",
+            "hints": [
+              "The solution means 'courageously'",
+              "heartless lion = LN",
+              "'fight' is an anagram indicator"
+            ]
+          },
+          "5a": {
+            "word": "hemp",
+            "startingCell": "r5c1",
+            "clue": "Material made from helium put before politician",
+            "hints": [
+              "The solution is a material",
+              "helium = HE",
+              "politician = MP"
+            ]
+          },
+          "2d": {
+            "word": "clone",
+            "startingCell": "r1c2",
+            "clue": "Version hundred and fifty one",
+            "hints": [
+              "The solution means 'clone'",
+              "hundred and fifty = CL",
+              "one = ONE"
+            ]
+          },
+          "4d": {
+            "word": "tulip",
+            "startingCell": "r1c4",
+            "clue": "University student in landfill finds flower",
+            "hints": [
+              "The solution is a flower",
+              "university = U",
+              "student = L",
+              "landfill = TIP"
+            ]
+          }
+        },
+        "12": {"noPuzz": 0}
       }
     }
 }
