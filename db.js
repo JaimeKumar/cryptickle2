@@ -6978,7 +6978,38 @@ const puzzles = {
             ]
           }
         },
-        "12": {"noPuzz": 0}
+        "12": {
+          "2a": {
+            "word": "scuba",
+            "startingCell": "r2c1",
+            "clue": "Westbound bus carries beginner in class and a breathing kit",
+            "hints": [
+              "'westbound' is a reversal indicator for across clues",
+              "beginner in class = C",
+              "The solution means 'breathing kit'"
+            ]
+          },
+          "4a": {
+            "word": "pylon",
+            "startingCell": "r4c1",
+            "clue": "Pile on broadcast from transmission tower",
+            "hints": [
+              "'broadcast' is a homophone indicator",
+              "The solution means 'transmission tower'"
+            ]
+          },
+          "3d": {
+            "word": "bugle",
+            "startingCell": "r1c3",
+            "clue": "French article following insect with horn",
+            "hints": [
+              "The solution is a horn",
+              "french article = LE",
+              "insect = BUG"
+            ]
+          }
+        },
+        "13": {"noPuzz": 0}
       }
     }
 }
