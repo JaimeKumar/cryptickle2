@@ -7009,7 +7009,48 @@ const puzzles = {
             ]
           }
         },
-        "13": {"noPuzz": 0}
+        "13": {
+          "2a": {
+            "word": "owner",
+            "startingCell": "r2c1",
+            "clue": "Landlord to remove cladding of town's emergency room",
+            "hints": [
+              "emergency room = ER",
+              "'remove cladding' indicates to remove first and last letter",
+              "The solution means 'landlord'"
+            ]
+          },
+          "1d": {
+            "word": "hover",
+            "startingCell": "r1c1",
+            "clue": "Float in vacuum without oxygen",
+            "hints": [
+              "The solution means 'float'",
+              "'without oxygen' indicates to remove an O",
+              "vacuum = HOOVER"
+            ]
+          },
+          "3d": {
+            "word": "snoop",
+            "startingCell": "r1c3",
+            "clue": "There's no operation to keep nose ",
+            "hints": [
+              "The solution means 'nose' (v)",
+              "'to keep' is a hidden word indicator"
+            ]
+          },
+          "5d": {
+            "word": "crash",
+            "startingCell": "r1c5",
+            "clue": "Collision is what gets rascal going when in money",
+            "hints": [
+              "The solution means 'collision'",
+              "'what gets rascal going' = R",
+              "money = CASH"
+            ]
+          }
+        },
+        "14": {"noPuzz": 0}
       }
     }
 }
