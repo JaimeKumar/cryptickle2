@@ -7050,7 +7050,69 @@ const puzzles = {
             ]
           }
         },
-        "14": {"noPuzz": 0}
+        "14": {
+          "1a": {
+            "word": "least",
+            "startingCell": "r1c1",
+            "clue": "Lowest part of bicycle, a stabiliser",
+            "hints": [
+              "The solution means 'lowest'",
+              "'part of' is a hidden word indicator"
+            ]
+          },
+          "3a": {
+            "word": "trope",
+            "startingCell": "r3c1",
+            "clue": "Retrospective report without original motif",
+            "hints": [
+              "'without original' indicates to remove the first letter",
+              "'retrospective' is a reversal indicator",
+              "The solution means motif"
+            ]
+          },
+          "5a": {
+            "word": "elder",
+            "startingCell": "r5c1",
+            "clue": "Senior dealer confused having lost ace",
+            "hints": [
+              "ace = A",
+              "The solution means 'senior'",
+              "'confused' is an anagram indicator",
+              "'having lost' is a letter removal indicator"
+            ]
+          },
+          "1d": {
+            "word": "litre",
+            "startingCell": "r1c1",
+            "clue": "Unit on fire again",
+            "hints": [
+              "The solution is a unit",
+              "again = RE",
+              "on fire = LIT"
+            ]
+          },
+          "3d": {
+            "word": "aloud",
+            "startingCell": "r1c3",
+            "clue": "Admitted audibly",
+            "hints": [
+              "This is a funny one where 'audibly' is the definition and a homophone indicator",
+              "admitted = allowed"
+            ]
+          },
+          "5d": {
+            "word": "their",
+            "startingCell": "r1c5",
+            "clue": "The one grain of rice belong to them",
+            "hints": [
+              "'grain of rice' = R",
+              "one = I",
+              "The solution means 'belonging to them'",
+              "the = THE"
+            ]
+          }
+        },
+        "15": {"noPuzz": 0}
       }
     }
 }
