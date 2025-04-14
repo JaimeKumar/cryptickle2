@@ -7112,7 +7112,61 @@ const puzzles = {
             ]
           }
         },
-        "15": {"noPuzz": 0}
+        "15": {
+          "1a": {
+            "word": "camel",
+            "startingCell": "r1c1",
+            "clue": "See lame, injured animal",
+            "hints": [
+              "The solution is an animal",
+              "'injured' is an anagram indicator",
+              "see = C"
+            ]
+          },
+          "3a": {
+            "word": "clump",
+            "startingCell": "r3c1",
+            "clue": "Bunch of roughly rotten fruit",
+            "hints": [
+              "roughly = C (circa)",
+              "The solution means 'bunch'",
+              "'rotten' is an anagram indicator",
+              "fruit = plum"
+            ]
+          },
+          "5a": {
+            "word": "ashen",
+            "startingCell": "r5c1",
+            "clue": "Pale tree, stripped evergreen",
+            "hints": [
+              "'stripped' indicates to select the first and last letters",
+              "The solution means 'Pale'",
+              "tree = ASH"
+            ]
+          },
+          "1d": {
+            "word": "cocoa",
+            "startingCell": "r1c1",
+            "clue": "Company cloned a bean",
+            "hints": [
+              "The solution is a bean",
+              "company = CO",
+              "a = A",
+              "'cloned' means repeat something"
+            ]
+          },
+          "3d": {
+            "word": "mouth",
+            "startingCell": "r1c3",
+            "clue": "Insect with bend in jaws",
+            "hints": [
+              "The solution means 'jaws'",
+              "'bend' = U",
+              "insect = MOTH"
+            ]
+          }
+        },
+        "16": {"noPuzz": 0}
       }
     }
 }
