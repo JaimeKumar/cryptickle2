@@ -7166,7 +7166,53 @@ const puzzles = {
             ]
           }
         },
-        "16": {"noPuzz": 0}
+        "16": {
+          "2a": {
+            "word": "dozen",
+            "startingCell": "r2c1",
+            "clue": "Sleep before noon/12",
+            "hints": [
+              "noon = N",
+              "sleep = doze",
+              "The solution means 12"
+            ]
+          },
+          "4a": {
+            "word": "bread",
+            "startingCell": "r4c1",
+            "clue": "Again slicing inadequate baguette",
+            "hints": [
+              "again = RE",
+              "'slicing' is an insertion indicator",
+              "inadequate = BAD",
+              "'baguette' is an example of the solution "
+            ]
+          },
+          "2d": {
+            "word": "cobra",
+            "startingCell": "r1c2",
+            "clue": "See wild boar and snake",
+            "hints": [
+              "see = C",
+              "wild is an anagram indicator",
+              "The solution is a snake",
+              ""
+            ]
+          },
+          "4d": {
+            "word": "texas",
+            "startingCell": "r1c4",
+            "clue": "State almost ten times a suspicion of sabotage",
+            "hints": [
+              "'suspicion of sabotage' = S",
+              "times = X (mutiply)",
+              "almost ten = TE",
+              "The solution is a state",
+              "a = A"
+            ]
+          }
+        },
+        "17": {"noPuzz": 0}
       }
     }
 }
