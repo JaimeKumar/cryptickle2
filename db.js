@@ -7212,7 +7212,50 @@ const puzzles = {
             ]
           }
         },
-        "17": {"noPuzz": 0}
+        "17": {
+          "1a": {
+            "word": "hotel",
+            "startingCell": "r1c1",
+            "clue": "Resort to stripping clothes frantically",
+            "hints": [
+              "'stripping' indicates to remove the outer letters",
+              "'frantically' is an anagram indicator",
+              "The solution means 'resort'"
+            ]
+          },
+          "3a": {
+            "word": "grain",
+            "startingCell": "r3c1",
+            "clue": "Bit of good rain yields corn",
+            "hints": [
+              "bit of good = G",
+              "Corn is an example of the solution"
+            ]
+          },
+          "5a": {
+            "word": "niece",
+            "startingCell": "r5c1",
+            "clue": "Relative noun that is introduction to common English",
+            "hints": [
+              "number = N",
+              "that is = IE",
+              "'introduction to common' = C",
+              "English = E",
+              "The solution is an example of a 'relative'"
+            ]
+          },
+          "3d": {
+            "word": "trade",
+            "startingCell": "r1c3",
+            "clue": "Revolutionary art from French exchange",
+            "hints": [
+              "The solution means 'exchange'",
+              "'revolutionary' is a reversal indicator",
+              "'from French' = DE"
+            ]
+          }
+        },
+        "18": {"noPuzz": 0}
       }
     }
 }
