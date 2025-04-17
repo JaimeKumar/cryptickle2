@@ -7255,7 +7255,48 @@ const puzzles = {
             ]
           }
         },
-        "18": {"noPuzz": 0}
+        "18": {
+          "2a": {
+            "word": "usurp",
+            "startingCell": "r2c1",
+            "clue": "Losing it from active pursuit to seize power",
+            "hints": [
+              "'active' is an anagram indicator",
+              "'losing it' indicates to remove IT",
+              "The solution means 'seize power'"
+            ]
+          },
+          "4a": {
+            "word": "pitch",
+            "startingCell": "r4c1",
+            "clue": "Put up with soft tingling",
+            "hints": [
+              "The solution means 'put up' as in to raise/erect",
+              "soft = P",
+              "tingling = ITCH"
+            ]
+          },
+          "1d": {
+            "word": "dump",
+            "startingCell": "r1c1",
+            "clue": "Tip mud over park",
+            "hints": [
+              "The solution means 'tip'",
+              "mud over = DUM",
+              "park = P"
+            ]
+          },
+          "4d": {
+            "word": "tract",
+            "startingCell": "r1c4",
+            "clue": "Characters in distracting plot",
+            "hints": [
+              "'Characters in' is a hidden word indicator",
+              "The solution means 'plot' as in a plot of land"
+            ]
+          }
+        },
+        "19": {"noPuzz": 0}
       }
     }
 }
