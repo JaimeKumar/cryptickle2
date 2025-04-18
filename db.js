@@ -7296,7 +7296,50 @@ const puzzles = {
             ]
           }
         },
-        "19": {"noPuzz": 0}
+        "19": {
+          "3a": {
+            "word": "cynic",
+            "startingCell": "r3c1",
+            "clue": "Pessimist cycling, somehow without depleted lung",
+            "hints": [
+              "depleted lung = LG",
+              "'somehow ' is an anagram indicator",
+              "The solution means 'pessimist'",
+              ""
+            ]
+          },
+          "1d": {
+            "word": "vicar",
+            "startingCell": "r1c1",
+            "clue": "Clergyman held by Slavic army",
+            "hints": [
+              "'held by' is a hidden word indicator",
+              "The solution means clergyman"
+            ]
+          },
+          "3d": {
+            "word": "canoe",
+            "startingCell": "r1c3",
+            "clue": "See an old English boat",
+            "hints": [
+              "see = C",
+              "old = O",
+              "English = E",
+              "The solution is a boat"
+            ]
+          },
+          "5d": {
+            "word": "diced",
+            "startingCell": "r1c5",
+            "clue": "Cubed ice in two degrees",
+            "hints": [
+              "degree = D",
+              "The solution means 'cubed'",
+              "ice = ICE"
+            ]
+          }
+        },
+        "20": {"noPuzz": 0}
       }
     }
 }
