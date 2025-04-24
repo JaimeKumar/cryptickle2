@@ -7338,6 +7338,37 @@ const puzzles = {
               "ice = ICE"
             ]
           }
+        },
+        "25": {
+          "3a": {
+            "word": "judge",
+            "startingCell": "r3c1",
+            "clue": "I, being French, having dug frantically to hear",
+            "hints": [
+              "The solution means 'hear'",
+              "I, being French = JE",
+              "'frantically' is an anagram indicator",
+              "'having' is an insertion indicator, i.e. J___E"
+            ]
+          },
+          "2d": {
+            "word": "trump",
+            "startingCell": "r1c2",
+            "clue": "Empty teacup, fill with rum to be a cut above",
+            "hints": [
+              "The solution means 'to be a cut above'",
+              "'empty teacup' = TP"
+            ]
+          },
+          "4d": {
+            "word": "bagel",
+            "startingCell": "r1c4",
+            "clue": "Punctured bread with portion of cabbage leaves ",
+            "hints": [
+              "'portion of' is a hidden word indicator",
+              "The solution means 'punctured bread'"
+            ]
+          }
         }
       }
     }
