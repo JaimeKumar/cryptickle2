@@ -7338,8 +7338,7 @@ const puzzles = {
               "ice = ICE"
             ]
           }
-        },
-        "20": {"noPuzz": 0}
+        }
       }
     }
 }
