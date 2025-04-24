@@ -602,16 +602,16 @@ else {
     initPuzzle();
 }
 
-setInterval(() => {
-    var current = new Date();
-    var time = current.getTime();
-    var lastTime = localStorage.getItem('lastTime');
-    localStorage.setItem('lastTime', time);
-    if (lastTime && time - lastTime > 3600000)
-    {
-        location.reload();
-    }
-}, 500);
+// setInterval(() => {
+//     var current = new Date();
+//     var time = current.getTime();
+//     var lastTime = localStorage.getItem('lastTime');
+//     localStorage.setItem('lastTime', time);
+//     if (lastTime && time - lastTime > 3600000)
+//     {
+//         location.reload();
+//     }
+// }, 500);
 
 
 // var puzzleID = day + "/" + month + "/" + year;
