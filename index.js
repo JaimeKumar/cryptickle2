@@ -592,12 +592,13 @@ document.getElementById("year").innerHTML = year;
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
 if (returnPuzzle(year, month, day) == null) {
-    location.reload();
-}
-else if (Object.keys(returnPuzzle(year, month, day))[0] == "noPuzz")
-{
+    // location.reload();
     noPuzzle();
 }
+// else if (Object.keys(returnPuzzle(year, month, day))[0] == "noPuzz")
+// {
+//     noPuzzle();
+// }
 else {
     initPuzzle();
 }
