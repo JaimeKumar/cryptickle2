@@ -7369,6 +7369,47 @@ const puzzles = {
               "The solution means 'punctured bread'"
             ]
           }
+        },
+        "26": {
+          "2a": {
+            "word": "paste",
+            "startingCell": "r2c1",
+            "clue": "Patch of quiet as theatre emptied",
+            "hints": [
+              "quiet = P",
+              "theatre emptied = TE",
+              "The solution means 'patch' (v)"
+            ]
+          },
+          "4a": {
+            "word": "train",
+            "startingCell": "r4c1",
+            "clue": "I rant about tutor",
+            "hints": [
+              "The solution means 'tutor' (v)",
+              "'about' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "parry",
+            "startingCell": "r1c2",
+            "clue": "Pray frantically to suppress road block",
+            "hints": [
+              "road = R",
+              "'to supress' is a containment indicator",
+              "'frantically' is an anagram indicator",
+              "The solution means 'block'"
+            ]
+          },
+          "4d": {
+            "word": "stain",
+            "startingCell": "r1c4",
+            "clue": "Satin ruined by blemish",
+            "hints": [
+              "The solution means 'blemish'",
+              "'ruined' is an anagram indicator"
+            ]
+          }
         }
       }
     }
