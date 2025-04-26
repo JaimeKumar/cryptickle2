@@ -7410,6 +7410,58 @@ const puzzles = {
               "'ruined' is an anagram indicator"
             ]
           }
+        },
+        "27": {
+          "1a": {
+            "word": "fishy",
+            "startingCell": "r1c1",
+            "clue": "Questionable if coming back timid",
+            "hints": [
+              "The solution means 'questionable'",
+              "'coming back' is a reversal indicator",
+              "timid = SHY"
+            ]
+          },
+          "4a": {
+            "word": "doubt",
+            "startingCell": "r4c1",
+            "clue": "Act, but confused with uncertainty",
+            "hints": [
+              "The solution means 'uncertainty'",
+              "'act' = DO",
+              "'confused' is an anagram indicator"
+            ]
+          },
+          "1d": {
+            "word": "feuds",
+            "startingCell": "r1c1",
+            "clue": "Head of family sued bizarrely creating arguments ",
+            "hints": [
+              "head of family = F",
+              "'bizarrely' is an anagram indicator",
+              "The solution means 'arguments'"
+            ]
+          },
+          "3d": {
+            "word": "shrub",
+            "startingCell": "r1c3",
+            "clue": "Hush, massage ungergrowth",
+            "hints": [
+              "The solution means 'undergrowth'",
+              "'massage' = RUB",
+              "'hush' = SH"
+            ]
+          },
+          "5d": {
+            "word": "youth",
+            "startingCell": "r1c5",
+            "clue": "Teens out in unknown hour",
+            "hints": [
+              "unknown = Y (like algebra)",
+              "hour = H",
+              "The solution means 'teens'"
+            ]
+          }
         }
       }
     }
