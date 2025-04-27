@@ -7462,6 +7462,41 @@ const puzzles = {
               "The solution means 'teens'"
             ]
           }
+        },
+        "28": {
+          "3a": {
+            "word": "exile",
+            "startingCell": "r3c1",
+            "clue": "The French come after former leader of India for extradition",
+            "hints": [
+              "the French = LE",
+              "leader of India = I",
+              "Former = EX",
+              "The solution means 'extradition'"
+            ]
+          },
+          "2d": {
+            "word": "boxer",
+            "startingCell": "r1c2",
+            "clue": "Fighter with extravagant robe catches cross",
+            "hints": [
+              "The solution means 'fighter'",
+              "'extravagant' is an anagram indictor",
+              "'cross' = X"
+            ]
+          },
+          "4d": {
+            "word": "palau",
+            "startingCell": "r1c4",
+            "clue": "Power in the style of unionist country",
+            "hints": [
+              "Power = P",
+              "unionist = U",
+              "in the style of = ALA",
+              "The solution is a country",
+              ""
+            ]
+          }
         }
       }
     }
