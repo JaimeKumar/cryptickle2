@@ -7497,6 +7497,60 @@ const puzzles = {
               ""
             ]
           }
+        },
+        "29": {
+          "2a": {
+            "word": "genus",
+            "startingCell": "r2c1",
+            "clue": "First person to be banned from mastermind category",
+            "hints": [
+              "first person = I",
+              "The solution means 'catergory'",
+              "'banned' is a removal indicator",
+              "mastermind = GENIUS"
+            ]
+          },
+          "4a": {
+            "word": "ahead",
+            "startingCell": "r4c1",
+            "clue": "Winning a heat, hampered by drag",
+            "hints": [
+              "'heat, hampered' = HEA (hampered is a reduction indicator)",
+              "drag = D",
+              "The solution means 'winning'"
+            ]
+          },
+          "1d": {
+            "word": "glad",
+            "startingCell": "r2c1",
+            "clue": "Delighted boy follows girl",
+            "hints": [
+              "The solution means 'delighted'",
+              "girl = G",
+              "boy = LAD"
+            ]
+          },
+          "3d": {
+            "word": "infer",
+            "startingCell": "r1c3",
+            "clue": "Work out at home with iron and resistance",
+            "hints": [
+              "resistance = R",
+              "The solution means 'work out'",
+              "at home = IN",
+              "iron = FE"
+            ]
+          },
+          "5d": {
+            "word": "used",
+            "startingCell": "r1c5",
+            "clue": "Amount of focus education made use of",
+            "hints": [
+              "'amount of' is a hidden word indicator",
+              "The solution means 'made us of'",
+              ""
+            ]
+          }
         }
       }
     }
