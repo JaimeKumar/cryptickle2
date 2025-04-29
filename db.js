@@ -7551,6 +7551,48 @@ const puzzles = {
               ""
             ]
           }
+        },
+        "30": {
+          "3a": {
+            "word": "cater",
+            "startingCell": "r3c1",
+            "clue": "Serve cold, unopened water ",
+            "hints": [
+              "The solution means 'serve'",
+              "cold = C",
+              "unopened water = ATER"
+            ]
+          },
+          "1d": {
+            "word": "emcee",
+            "startingCell": "r1c1",
+            "clue": "Host them with ease, accommodating many",
+            "hints": [
+              "many = C (100 in roman numerals, weak but common apparently)",
+              "ease = EE",
+              "The solution means 'host'",
+              "them = EM"
+            ]
+          },
+          "3d": {
+            "word": "vital",
+            "startingCell": "r1c3",
+            "clue": "Affidavit also includes something important",
+            "hints": [
+              "'includes' is a hidden word indicator",
+              "The solution means 'important'"
+            ]
+          },
+          "5d": {
+            "word": "nurse",
+            "startingCell": "r1c5",
+            "clue": "Tend to knight, sure to be injured",
+            "hints": [
+              "'to be injured' is an anagram indicator",
+              "knight = N (chess notation)",
+              "The solution means 'tend to'"
+            ]
+          }
         }
       }
     }
