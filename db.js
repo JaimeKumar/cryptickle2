@@ -7594,6 +7594,50 @@ const puzzles = {
             ]
           }
         }
+      },
+      "5": {
+        "1": {
+          "3a": {
+            "word": "catch",
+            "startingCell": "r3c1",
+            "clue": "Grab stray cat in church",
+            "hints": [
+              "The solution means 'grab'",
+              "'stray' is an anagram indicator",
+              "church = CH"
+            ]
+          },
+          "5a": {
+            "word": "never",
+            "startingCell": "r5c1",
+            "clue": "Reinvent wheels without tin? Certainly not",
+            "hints": [
+              "'wheels' is a reversal indicator",
+              "'without tin' indicates to remove 'TIN'",
+              "The solution means 'Certainly not'"
+            ]
+          },
+          "2d": {
+            "word": "stave",
+            "startingCell": "r1c2",
+            "clue": "Beam to save smouldering stern of boat",
+            "hints": [
+              "The solution means 'beam'",
+              "'stern of boat' = T",
+              "'smouldering' is a containment indicator: SAVE contains T"
+            ]
+          },
+          "4d": {
+            "word": "niche",
+            "startingCell": "r1c4",
+            "clue": "Opening graze at last after injuring chin",
+            "hints": [
+              "graze at last = E",
+              "'injuring' is an anagram indicator",
+              "The solution means 'opening'"
+            ]
+          }
+        }
       }
     }
 }
