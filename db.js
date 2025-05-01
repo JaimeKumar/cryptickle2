@@ -7637,6 +7637,40 @@ const puzzles = {
               "The solution means 'opening'"
             ]
           }
+        },
+        "2": {
+          "3a": {
+            "word": "grift",
+            "startingCell": "r3c1",
+            "clue": "A bit of racketeering included in talent for deception",
+            "hints": [
+              "A bit of racketeering = R",
+              "The solution means 'deception'",
+              "talent = GIFT"
+            ]
+          },
+          "2d": {
+            "word": "shrug",
+            "startingCell": "r1c2",
+            "clue": "Rush frantically to gain weight, something you do when you're not interested",
+            "hints": [
+              "weight = G",
+              "'frantically' is an anagram indicator",
+              "The solution is \"something you do when you're not interested\""
+            ]
+          },
+          "4d": {
+            "word": "mafia",
+            "startingCell": "r1c4",
+            "clue": "Gang from Italy beginning to assemble after half of family comes back",
+            "hints": [
+              "'beginning to assemble' = A",
+              "'half of family' = FAM",
+              "'comes back' is a reversal indicator",
+              "Italy = I",
+              "The solution is synonymous with 'Gang' but even more so with 'Gang from Italy'"
+            ]
+          }
         }
       }
     }
