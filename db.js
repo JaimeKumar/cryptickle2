@@ -7671,6 +7671,49 @@ const puzzles = {
               "The solution is synonymous with 'Gang' but even more so with 'Gang from Italy'"
             ]
           }
+        },
+        "3": {
+          "3a": {
+            "word": "sharp",
+            "startingCell": "r3c1",
+            "clue": "Small instrument is out of tune",
+            "hints": [
+              "small = S",
+              "The solution means out of tune",
+              "instrument = HARP"
+            ]
+          },
+          "1d": {
+            "word": "taste",
+            "startingCell": "r1c1",
+            "clue": "Eats vigorously after finishing packet of flavour",
+            "hints": [
+              "'vigorously' is an anagram indicator",
+              "finishing packet = T",
+              "The solution means flavour"
+            ]
+          },
+          "3d": {
+            "word": "brave",
+            "startingCell": "r1c3",
+            "clue": "Fearless against cutting wild bear",
+            "hints": [
+              "The solution means 'fearless'",
+              "'wild' is an anagram indicator",
+              "against = V",
+              "cutting is an insertion indicator"
+            ]
+          },
+          "5d": {
+            "word": "ample",
+            "startingCell": "r1c5",
+            "clue": "Strange map leads the French enough",
+            "hints": [
+              "the French = LE",
+              "'strange' is an anagram indicator",
+              "The solution means enough"
+            ]
+          }
         }
       }
     }
