@@ -7714,6 +7714,38 @@ const puzzles = {
               "The solution means enough"
             ]
           }
+        },
+        "4": {
+          "3a": {
+            "word": "blunt",
+            "startingCell": "r3c1",
+            "clue": "Turntablist mixed without artist's letters, that's undiplomatic",
+            "hints": [
+              "The solution means undiplomatic",
+              "''without artist's letters'' indicates to remove the letters in ARTIST",
+              "'mixed' is an anagram indicator"
+            ]
+          },
+          "2d": {
+            "word": "rules",
+            "startingCell": "r1c2",
+            "clue": "School sure about student regulations",
+            "hints": [
+              "'School' is an anagram indicator",
+              "student = L",
+              "The solution means 'regulations'",
+              "'about' is a containment indicator i.e. ~SURE~ contains L"
+            ]
+          },
+          "4d": {
+            "word": "dingo",
+            "startingCell": "r1c4",
+            "clue": "Australian dog hides in building often",
+            "hints": [
+              "'hides in' is a hidden word indicator",
+              "The solution is an Australian dog"
+            ]
+          }
         }
       }
     }
