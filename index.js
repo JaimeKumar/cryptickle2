@@ -99,6 +99,38 @@ fetch('https://cryptickle.com/db.json')
         // thisPuzzle = new puzzle(returnPuzzle(year, month, day));
     })
 
+function returnPuzzle(year, month, day)
+{
+    var res = db[year][month][day];
+    if (!res) return null;
+    return res;    
+}
+
+function returnYears(currentYear)
+{
+    var res = Object.keys(db).filter(yr => +yr <= currentYear);
+    if (!res) return null;
+    return res; 
+}
+
+function returnMonths(year, currentMonth, currentYear)
+{
+    var res = Object.keys(db[year]).filter(mo => +mo <= currentMonth);
+    if (currentYear > year)
+    {
+        res = Object.keys(db[year]);
+    }
+    if (!res) return null;
+    return res; 
+}
+
+function returnDays(year, month, currentDay)
+{
+    var res = (currentDay < 0) ? Object.keys(db[year][month]) : Object.keys(db[year][month]).filter(da => +da <= currentDay);
+    if (!res) return null;
+    return res;
+}
+
 var dirSwitch = false;
 var selectedLine = null;
 var selectedCell = null;
@@ -607,6 +639,7 @@ function initPuzzle()
         // handleResize();
     }, 1000)
     
+    console.log("puzzle: " + thisPuzzle)
     console.log("selecting " + Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     selectCell(Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     document.getElementById('pseudo').focus();
