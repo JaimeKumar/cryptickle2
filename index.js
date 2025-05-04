@@ -639,7 +639,7 @@ function initPuzzle()
         // handleResize();
     }, 1000)
     
-    console.log("puzzle: " + thisPuzzle)
+    console.log("puzzle: " + JSON.stringify(thisPuzzle))
     console.log("selecting " + Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     selectCell(Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     document.getElementById('pseudo').focus();
