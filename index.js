@@ -111,6 +111,7 @@ function selectCell(cell)
 
 function calcLine()
 {
+    console.log(thisPuzzle)
     if (thisPuzzle.cells[selectedCell].lineID.length < 2)
     {
         selectedLine = thisPuzzle.cells[selectedCell].lineID[0];
@@ -381,7 +382,7 @@ function updateArchiveScreen()
     var elements = [];
     nodes.forEach((nodeID, i) => {
         var id = nodeID + "/" + archiveMonth  + "/" + archiveYear;
-        console.log(localStorage.getItem(id) == "true" ? "archiveNode solved" : "archiveNode");
+        // console.log(localStorage.getItem(id) == "true" ? "archiveNode solved" : "archiveNode");
         if (archivesPos == 0) elements.push(`<div class="archiveNode" onclick="archiveClick(${nodeID})">${nodeID}</div>`)
             else elements.push(`<div class="${localStorage.getItem(id) == "true"? "archiveNode solved" : "archiveNode"}" onclick="archiveClick(${nodeID})">${disp[nodeID]}</div>`)
     })
