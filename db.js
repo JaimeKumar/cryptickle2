@@ -7746,6 +7746,38 @@ const puzzles = {
               "The solution is an Australian dog"
             ]
           }
+        },
+        "5": {
+          "3a": {
+            "word": "daisy",
+            "startingCell": "r3c1",
+            "clue": "Flower is welcomed by day",
+            "hints": [
+              "'welcomed' is a containment indicator",
+              "The solution is a flower",
+              "IS is welcomed by DAY"
+            ]
+          },
+          "2d": {
+            "word": "diary",
+            "startingCell": "r1c2",
+            "clue": "Painter reflects in do-it-yourself journal",
+            "hints": [
+              "Painter = RA",
+              "'reflects' is a reversal indicator",
+              "The solution means 'journal'",
+              "do-it-yourself = DIY"
+            ]
+          },
+          "4d": {
+            "word": "pasta",
+            "startingCell": "r1c4",
+            "clue": "Portion of Grandpa's tasty spaghetti",
+            "hints": [
+              "'portion of' is a hidden word indicator",
+              "'spaghetti' is an example of the solution"
+            ]
+          }
         }
       }
     }
