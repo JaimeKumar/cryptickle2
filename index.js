@@ -84,7 +84,6 @@ fetch('https://cryptickle.com/db.json')
     .then(res => res.json())
     .then(data => {
         db = data;
-        console.log(db);
         if (data[year][month][day] == null) {
             noPuzzle();
         } else {
@@ -171,7 +170,6 @@ function selectCell(cell)
 
 function calcLine()
 {
-    console.log(thisPuzzle.cells, selectedCell)
     if (thisPuzzle.cells[selectedCell].lineID.length < 2)
     {
         selectedLine = thisPuzzle.cells[selectedCell].lineID[0];
@@ -406,7 +404,6 @@ function archiveClick(nodeID)
             break;
         case 2:
             thisPuzzle = new puzzle(db[archiveYear][archiveMonth][nodeID]);
-            // thisPuzzle = new puzzle(returnPuzzle(archiveYear, archiveMonth, nodeID));
             puzzleID = nodeID + "/" + archiveMonth + "/" + archiveYear;
             initPuzzle();
             closeArchives();
@@ -442,7 +439,6 @@ function updateArchiveScreen()
     var elements = [];
     nodes.forEach((nodeID, i) => {
         var id = nodeID + "/" + archiveMonth  + "/" + archiveYear;
-        // console.log(localStorage.getItem(id) == "true" ? "archiveNode solved" : "archiveNode");
         if (archivesPos == 0) elements.push(`<div class="archiveNode" onclick="archiveClick(${nodeID})">${nodeID}</div>`)
             else elements.push(`<div class="${localStorage.getItem(id) == "true"? "archiveNode solved" : "archiveNode"}" onclick="archiveClick(${nodeID})">${disp[nodeID]}</div>`)
     })
@@ -639,8 +635,6 @@ function initPuzzle()
         // handleResize();
     }, 1000)
     
-    console.log("puzzle: " + JSON.stringify(thisPuzzle))
-    console.log("selecting " + Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     selectCell(Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     document.getElementById('pseudo').focus();
 }
