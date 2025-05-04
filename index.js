@@ -597,6 +597,7 @@ fetch('https://cryptickle.com/db.json')
     .then(res => res.json())
     .then(data => {
         db = data;
+        console.log(db);
         if (data[year][month][day] == null) {
             noPuzzle();
         } else {
