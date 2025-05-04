@@ -405,7 +405,7 @@ function archiveClick(nodeID)
             archiveMonth = nodeID;
             break;
         case 2:
-            thisPuzzle = new puzzle(db[archiveYear][archiveMonth[nodeID]]);
+            thisPuzzle = new puzzle(db[archiveYear][archiveMonth][nodeID]);
             // thisPuzzle = new puzzle(returnPuzzle(archiveYear, archiveMonth, nodeID));
             puzzleID = nodeID + "/" + archiveMonth + "/" + archiveYear;
             initPuzzle();
