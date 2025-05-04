@@ -70,7 +70,35 @@ class puzzle
     }
 }
 
+var today = new Date();
+var year = today.getFullYear();
+var month = today.getMonth() + 1;
+var day = today.getDate();
+document.getElementById("year").innerHTML = year;
+
 var db = {};
+var thisPuzzle;
+var puzzleID = day + "/" + month + "/" + year;
+
+fetch('https://cryptickle.com/db.json')
+    .then(res => res.json())
+    .then(data => {
+        db = data;
+        console.log(db);
+        if (data[year][month][day] == null) {
+            noPuzzle();
+        } else {
+            thisPuzzle = new puzzle(data[year][month][day]);
+            initPuzzle();
+        }
+    })
+    .catch(err => {
+        console.log(JSON.stringify(err));
+        console.log("caught no puzzle in fetch")
+        noPuzzle();
+        // thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+    })
+
 var dirSwitch = false;
 var selectedLine = null;
 var selectedCell = null;
@@ -579,41 +607,7 @@ function initPuzzle()
         // handleResize();
     }, 1000)
     
+    console.log("selecting " + Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     selectCell(Object.keys(thisPuzzle.cells).filter(cID => thisPuzzle.cells[cID].clickable)[0]);
     document.getElementById('pseudo').focus();
 }
-
-var today = new Date();
-var year = today.getFullYear();
-var month = today.getMonth() + 1;
-var day = today.getDate();
-document.getElementById("year").innerHTML = year;
-
-// localStorage.setItem('lastTime', today.getTime());
-// localStorage.setItem("lastPuzz", `${year}.${month}.${day}`);
-var thisPuzzle;
-var puzzleID = day + "/" + month + "/" + year;
-
-fetch('https://cryptickle.com/db.json')
-    .then(res => res.json())
-    .then(data => {
-        db = data;
-        console.log(db);
-        if (data[year][month][day] == null) {
-            noPuzzle();
-        } else {
-            thisPuzzle = new puzzle(data[year][month][day]);
-            initPuzzle();
-        }
-    })
-    .catch(err => {
-        console.log(JSON.stringify(err));
-        thisPuzzle = new puzzle(returnPuzzle(year, month, day));
-    })
-
-// if (returnPuzzle(year, month, day) == null) {
-    // noPuzzle();
-// }
-// else {
-    // initPuzzle();
-// }
