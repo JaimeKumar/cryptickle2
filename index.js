@@ -591,6 +591,13 @@ document.getElementById("year").innerHTML = year;
 
 var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
+
+fetch('https://cryptickle.com/db.json')
+    .then(data => {
+        console.log(data);
+    })
+
+
 if (returnPuzzle(year, month, day) == null) {
     // location.reload();
     noPuzzle();
