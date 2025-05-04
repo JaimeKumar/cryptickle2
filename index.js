@@ -593,8 +593,8 @@ var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
 var puzzleID = day + "/" + month + "/" + year;
 
 fetch('https://cryptickle.com/db.json')
-    .then(data => {
-        console.log(data);
+    .then(res => {
+        console.log(res.json());
     })
 
 
