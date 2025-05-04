@@ -70,6 +70,7 @@ class puzzle
     }
 }
 
+var db = {};
 var dirSwitch = false;
 var selectedLine = null;
 var selectedCell = null;
@@ -343,7 +344,8 @@ function archiveClick(nodeID)
             archiveMonth = nodeID;
             break;
         case 2:
-            thisPuzzle = new puzzle(returnPuzzle(archiveYear, archiveMonth, nodeID));
+            thisPuzzle = new puzzle(db[archiveYear][archiveMonth[nodeID]]);
+            // thisPuzzle = new puzzle(returnPuzzle(archiveYear, archiveMonth, nodeID));
             puzzleID = nodeID + "/" + archiveMonth + "/" + archiveYear;
             initPuzzle();
             closeArchives();
@@ -584,92 +586,32 @@ var today = new Date();
 var year = today.getFullYear();
 var month = today.getMonth() + 1;
 var day = today.getDate();
-localStorage.setItem('lastTime', today.getTime());
 document.getElementById("year").innerHTML = year;
 
+// localStorage.setItem('lastTime', today.getTime());
 // localStorage.setItem("lastPuzz", `${year}.${month}.${day}`);
-
-var thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+var thisPuzzle;
 var puzzleID = day + "/" + month + "/" + year;
 
 fetch('https://cryptickle.com/db.json')
     .then(res => res.json())
     .then(data => {
-        console.log(data[year][month][day]);
+        db = data;
+        if (data[year][month][day] == null) {
+            noPuzzle();
+        } else {
+            thisPuzzle = new puzzle(data[year][month][day]);
+            initPuzzle();
+        }
+    })
+    .catch(err => {
+        console.log(JSON.stringify(err));
+        thisPuzzle = new puzzle(returnPuzzle(year, month, day));
     })
 
-
-if (returnPuzzle(year, month, day) == null) {
-    // location.reload();
-    noPuzzle();
-}
-// else if (Object.keys(returnPuzzle(year, month, day))[0] == "noPuzz")
-// {
-//     noPuzzle();
+// if (returnPuzzle(year, month, day) == null) {
+    // noPuzzle();
 // }
-else {
-    initPuzzle();
-}
-
-// setInterval(() => {
-//     var current = new Date();
-//     var time = current.getTime();
-//     var lastTime = localStorage.getItem('lastTime');
-//     localStorage.setItem('lastTime', time);
-//     if (lastTime && time - lastTime > 3600000)
-//     {
-//         location.reload();
-//     }
-// }, 500);
-
-
-// var puzzleID = day + "/" + month + "/" + year;
-
-
-// var puzzleGet = returnPuzzle(year, month, day);
-// if (puzzleGet == null)
-// {
-//     location.reload();
+// else {
+    // initPuzzle();
 // }
-// else if (Object.keys(puzzleGet)[0] == "noPuzz")
-// {
-//     noPuzzle();
-// }
-// else
-// {
-//     initPuzzle();
-// }
-
-// setInterval(() => {
-//     if (puzzleGet == null)
-//     {
-//         location.reload();
-//     }
-//     else if (Object.keys(puzzleGet)[0] == "noPuzz")
-//     {
-//         noPuzzle();
-//     }
-//     else
-//     {
-//         initPuzzle();
-//     }
-// }, 1000);
-
-// 
-// setInterval(() => {
-//     var loaded = localStorage.getItem("lastPuzz");
-//     var current = new Date();
-//     var y = current.getFullYear();
-//     var m = current.getMonth() + 1;
-//     var d = current.getDate();
-
-//     if (loaded != `${y}.${m}.${d}`) location.reload();
-// }, 500);
-
-
-
-// document.addEventListener("visibilitychange", () => {
-//     if (!document.hidden) {
-//         console.log('vis change')
-//     }
-// });
