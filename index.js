@@ -111,7 +111,7 @@ function selectCell(cell)
 
 function calcLine()
 {
-    console.log(thisPuzzle)
+    console.log(thisPuzzle, selectedCell, lineId)
     if (thisPuzzle.cells[selectedCell].lineID.length < 2)
     {
         selectedLine = thisPuzzle.cells[selectedCell].lineID[0];
