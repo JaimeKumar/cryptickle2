@@ -7776,6 +7776,51 @@
               "'spaghetti' is an example of the solution"
             ]
           }
+        },
+        "6": {
+          "3a": {
+            "word": "banjo",
+            "startingCell": "r3c1",
+            "clue": "Throw out skin of jalapeno with instrument",
+            "hints": [
+              "The solution is an instrument",
+              "'skin of jalapeno' = JO",
+              "throw out = BAN"
+            ]
+          },
+          "1d": {
+            "word": "cable",
+            "startingCell": "r1c1",
+            "clue": "Wire seems cold and healthy",
+            "hints": [
+              "The solution means 'wire'",
+              "cold = C",
+              "for \"healthy\" think \"fit and a.....\"",
+              "healthy = able"
+            ]
+          },
+          "3d": {
+            "word": "bench",
+            "startingCell": "r1c3",
+            "clue": "English bishop stood up finishing collection on church pew",
+            "hints": [
+              "English = E",
+              "bishop = B",
+              "'stood up' is a reversal indicator",
+              "'finishing collection' = N",
+              "church = CH\nThe solution means 'pew'"
+            ]
+          },
+          "5d": {
+            "word": "glove",
+            "startingCell": "r1c5",
+            "clue": "Goalkeeper's equipment requires weight and passion ",
+            "hints": [
+              "weight = G",
+              "The solution means 'goalkeeper's equipment'",
+              "passion = love"
+            ]
+          }
         }
       }
     }
