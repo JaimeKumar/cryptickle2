@@ -113,6 +113,8 @@ function checkFetch() {
     let newPuzzleID = d + "/" + m + "/" + y;
     let lastFetch = localStorage.getItem("lastFetch");
 
+    console.log("checkFetch - newID: " + newPuzzleID + ", lastFetch: " + lastFetch);
+    
     if (newPuzzleID != lastFetch) {
         getDB(newPuzzleID);
     }
