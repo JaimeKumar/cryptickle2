@@ -83,6 +83,7 @@ var puzzleID = day + "/" + month + "/" + year;
 fetch('https://cryptickle.com/db.json')
     .then(res => res.json())
     .then(data => {
+        console.log("got db");
         db = data;
         if (data[year][month][day] == null) {
             noPuzzle();

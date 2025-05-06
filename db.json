@@ -7821,6 +7821,37 @@
               "passion = love"
             ]
           }
+        },
+        "7": {
+          "3a": {
+            "word": "brisk",
+            "startingCell": "r3c1",
+            "clue": "Casual bikers lacking energy to become quick",
+            "hints": [
+              "'Casual' is an anagram indicator",
+              "'lacking energy' indicates to remove E",
+              "The solution means 'quick'"
+            ]
+          },
+          "2d": {
+            "word": "feral",
+            "startingCell": "r1c2",
+            "clue": "Untamed prisoner amid transfer alarms",
+            "hints": [
+              "The solution means 'untamed'",
+              "'amid' is a hidden word indicator"
+            ]
+          },
+          "4d": {
+            "word": "piste",
+            "startingCell": "r1c4",
+            "clue": "People on vacation take first ski run",
+            "hints": [
+              "'on vacation' is a letter selection indicator, people -> PE",
+              "first = IST",
+              "The solution means 'ski run'"
+            ]
+          }
         }
       }
     }
