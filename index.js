@@ -652,6 +652,7 @@ function initPuzzle()
         var mins = Math.floor(time / 60);
         var secs = time % 60;
         document.getElementById("time").innerHTML = `${mins}:${String(secs).padStart(2, '0')}`;
+        checkFetch();
         // handleResize();
     }, 1000)
     
