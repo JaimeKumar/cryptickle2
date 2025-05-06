@@ -80,19 +80,21 @@ var db = {};
 var thisPuzzle;
 var puzzleID = day + "/" + month + "/" + year;
 
-getDB(puzzleID);
+getDB(day, month, year);
 
-function getDB(id) {
+function getDB(d, m, y) {
+    let id = d + "/" + m + "/" + y;
     localStorage.setItem("lastFetch", id);
     fetch(`https://cryptickle.com/db.json?v=${id}`)
         .then(res => res.json())
         .then(data => {
-            console.log("got db on " + puzzleID);
+            console.log("got db on " + id);
             db = data;
-            if (data[year][month][day] == null) {
+            if (data[y][m][d] == null) {
                 noPuzzle();
             } else {
-                thisPuzzle = new puzzle(data[year][month][day]);
+                thisPuzzle = new puzzle(data[y][m][d]);
+                puzzleID = id;
                 initPuzzle();
             }
         })
@@ -114,9 +116,9 @@ function checkFetch() {
     let lastFetch = localStorage.getItem("lastFetch");
 
     console.log("checkFetch - newID: " + newPuzzleID + ", lastFetch: " + lastFetch);
-    
+
     if (newPuzzleID != lastFetch) {
-        getDB(newPuzzleID);
+        getDB(d, m, y);
     }
 }
 
