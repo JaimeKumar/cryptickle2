@@ -80,24 +80,43 @@ var db = {};
 var thisPuzzle;
 var puzzleID = day + "/" + month + "/" + year;
 
-fetch(`https://cryptickle.com/db.json?v=${day}.${month}.${year}`)
-    .then(res => res.json())
-    .then(data => {
-        console.log("got db on " + puzzleID);
-        db = data;
-        if (data[year][month][day] == null) {
+getDB(puzzleID);
+
+function getDB(id) {
+    localStorage.setItem("lastFetch", id);
+    fetch(`https://cryptickle.com/db.json?v=${id}`)
+        .then(res => res.json())
+        .then(data => {
+            console.log("got db on " + puzzleID);
+            db = data;
+            if (data[year][month][day] == null) {
+                noPuzzle();
+            } else {
+                thisPuzzle = new puzzle(data[year][month][day]);
+                initPuzzle();
+            }
+        })
+        .catch(err => {
+            console.log(JSON.stringify(err));
+            console.log("caught no puzzle in fetch")
             noPuzzle();
-        } else {
-            thisPuzzle = new puzzle(data[year][month][day]);
-            initPuzzle();
-        }
-    })
-    .catch(err => {
-        console.log(JSON.stringify(err));
-        console.log("caught no puzzle in fetch")
-        noPuzzle();
-        // thisPuzzle = new puzzle(returnPuzzle(year, month, day));
-    })
+            // thisPuzzle = new puzzle(returnPuzzle(year, month, day));
+        })
+}
+
+function checkFetch() {
+    let t = new Date();
+    var y = t.getFullYear();
+    var m = t.getMonth() + 1;
+    var d = t.getDate();
+
+    let newPuzzleID = d + "/" + m + "/" + y;
+    let lastFetch = localStorage.getItem("lastFetch");
+
+    if (newPuzzleID != lastFetch) {
+        getDB(newPuzzleID);
+    }
+}
 
 function returnPuzzle(year, month, day)
 {
