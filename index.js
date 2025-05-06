@@ -88,7 +88,6 @@ function getDB(d, m, y) {
     fetch(`https://cryptickle.com/db.json?v=${id}`)
         .then(res => res.json())
         .then(data => {
-            console.log("got db on " + id);
             db = data;
             if (data[y][m][d] == null) {
                 noPuzzle();
@@ -114,8 +113,6 @@ function checkFetch() {
 
     let newPuzzleID = d + "/" + m + "/" + y;
     let lastFetch = localStorage.getItem("lastFetch");
-
-    console.log("checkFetch - newID: " + newPuzzleID + ", lastFetch: " + lastFetch);
 
     if (newPuzzleID != lastFetch) {
         getDB(d, m, y);
