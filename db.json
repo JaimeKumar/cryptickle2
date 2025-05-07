@@ -7852,6 +7852,50 @@
               "The solution means 'ski run'"
             ]
           }
+        },
+        "8": {
+          "1a": {
+            "word": "plead",
+            "startingCell": "r1c1",
+            "clue": "Beg for soft metal",
+            "hints": [
+              "The solution means 'beg'",
+              "'soft' = P",
+              "metal = LEAD"
+            ]
+          },
+          "3a": {
+            "word": "crane",
+            "startingCell": "r3c1",
+            "clue": "Hoist damaged car, start to notice what gets engine started",
+            "hints": [
+              "start to notice = N",
+              "what gets engine started = E",
+              "'damaged' is an anagram indicator",
+              "The solution means 'hoist' (n)"
+            ]
+          },
+          "5a": {
+            "word": "relic",
+            "startingCell": "r5c1",
+            "clue": "Cleric almost defiled artifact",
+            "hints": [
+              "'cleric almost' = CLERI",
+              "defiled is an anagram indicator",
+              "The solution means 'artifact'"
+            ]
+          },
+          "3d": {
+            "word": "email",
+            "startingCell": "r1c3",
+            "clue": "Woman loses man over the Italian message",
+            "hints": [
+              "the Italian = IL",
+              "'Woman loses man' indicates to remove an M from a woman's name",
+              "The solution means 'message'... sort of",
+              ""
+            ]
+          }
         }
       }
     }
