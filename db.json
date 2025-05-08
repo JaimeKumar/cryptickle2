@@ -7896,6 +7896,42 @@
               ""
             ]
           }
+        },
+        "9": {
+          "2a": {
+            "word": "yield",
+            "startingCell": "r2c1",
+            "clue": "Fruit that is left in empty yard",
+            "hints": [
+              "empty yard = YD",
+              "The solution means 'fruit'",
+              "that is = IE",
+              "left = L"
+            ]
+          },
+          "4a": {
+            "word": "algae",
+            "startingCell": "r4c1",
+            "clue": "Drink containing silver hinges and tiny water plants",
+            "hints": [
+              "silver = AG",
+              "'hinges' is a reversal indicator",
+              "The solution means 'tiny water plants'",
+              "Drink = ALE"
+            ]
+          },
+          "3d": {
+            "word": "verge",
+            "startingCell": "r1c3",
+            "clue": "Rev up, leader in event is under weight limit",
+            "hints": [
+              "rev up = VER",
+              "The solution means 'limit'",
+              "weight = G",
+              "leader in event = E",
+              ""
+            ]
+          }
         }
       }
     }
