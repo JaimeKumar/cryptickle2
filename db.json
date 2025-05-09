@@ -7966,6 +7966,40 @@
               "if = IF"
             ]
           }
+        },
+        "11": {
+          "3a": {
+            "word": "cruel",
+            "startingCell": "r3c1",
+            "clue": "Savage and crooked ruler beheaded after starting coup",
+            "hints": [
+              "starting coup = C",
+              "ruler beheaded = RULE",
+              "crooked is an anagram indicator",
+              "The solution means 'savage'"
+            ]
+          },
+          "2d": {
+            "word": "darts",
+            "startingCell": "r1c2",
+            "clue": "Throwing competition for date, revolutionary strat almost ",
+            "hints": [
+              "date = D",
+              "strat almost = STRA",
+              "revolutionary is a reversal indicator",
+              "The solution is a throwing competition kinda, sorry im on a train"
+            ]
+          },
+          "4d": {
+            "word": "exert",
+            "startingCell": "r1c4",
+            "clue": "Make an effort to kiss surrounded by twisting tree",
+            "hints": [
+              "twisting is a reversal indicator",
+              "kiss = X",
+              "The solution means 'make an effort'"
+            ]
+          }
         }
       }
     }
