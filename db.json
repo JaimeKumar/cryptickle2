@@ -7932,6 +7932,40 @@
               ""
             ]
           }
+        },
+        "10": {
+          "3a": {
+            "word": "avoid",
+            "startingCell": "r3c1",
+            "clue": "Steer clear from heading to absolute nothingness",
+            "hints": [
+              "heading to absolute = A",
+              "The solution means 'Steer clear from'",
+              "nothingness = VOID"
+            ]
+          },
+          "2d": {
+            "word": "movie",
+            "startingCell": "r1c2",
+            "clue": "Almost vomit explosively before starting educational film",
+            "hints": [
+              "starting educational = E",
+              "Almost vomit = VOMI",
+              "explosively is an anagram indicator",
+              "The solution means film"
+            ]
+          },
+          "4d": {
+            "word": "unify",
+            "startingCell": "r1c4",
+            "clue": "Socially acceptable, if in New York, to marry",
+            "hints": [
+              "Socially acceptable = U (upper class, bit of an archaic identifier)",
+              "new york = NY",
+              "The solution is synonymous with 'marry'",
+              "if = IF"
+            ]
+          }
         }
       }
     }
